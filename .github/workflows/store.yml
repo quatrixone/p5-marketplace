@@ -34,6 +34,10 @@ jobs:
 
   ownership:
     if: github.event_name == 'pull_request_target'
+    permissions:
+      contents: read
+      issues: read
+      pull-requests: read
     runs-on: ubuntu-latest
     steps:
       # Run only trusted base code; never execute files from the submitted PR.
@@ -96,4 +100,5 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE: ${{ github.event.issue.number }}
-        run: gh issue comment "$ISSUE" --body "The submission could not be added - see the workflow run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+        run: |
+          gh issue comment "$ISSUE" --body "The submission could not be added - see the workflow run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

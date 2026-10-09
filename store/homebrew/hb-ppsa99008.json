@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99008",
+  "title_id": "PPSA99008",
+  "name": "ProsperoEden",
+  "description": "Unofficial Eden emulator port for PS5.",
+  "author": "BlackBearReloaded",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "1.000.090",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:donxk_JTAb9M5J71y6II0x8cAFYXN8jyJ5FwH8p7Zz4xRrU4eTm5Va3ogiIJmVQG54WgDJJc37356iRdjfOaklwfMd-nOkB-Ppl9Zdc",
+  "source": {
+    "catalog": "p5enc:v1:HIyOgI1Yrjsz8OdRBdeR1rthroLsW5uBDUgZCkatUv13zSZHr9Tnp3s8CuKG2wzOIVXPBfFK_z9isq05YVLyZkA",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:xzNuKSB8Snts_688CAsiRSBwS1rc5FfmU1RBlcsPlLE5V_CLhH_upa3dIma8MQkC3GyXzuKNTgnH6e2GDk0bjw"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99008.zip",
+      "url": "p5enc:v1:JJ_e7On4dV5zfAyecjnDybm3bXR3GVMW6BRccvscOwyBaDUaANndJyz38VxLZioGO6Lz6nAX-cCwNzSKHwPmvhTf1DH3TsQptXytoiY5GS2ZNuh9A4QSnOuEw1VeV3KlPkuUU9QOXw6gLouONkh28twPRBw6vwlAjcNhioB-0fWyQ51gO9A",
+      "sha256": "3ea843a90df9c8d0b2aeaf25406fe807328f294cd18cf586e692550ad85ba145"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99011",
+  "title_id": "PPSA99011",
+  "name": "PS5 FSR4 Showcase",
+  "description": "Shows AMD FSR 4 upscaling on the PS5: a city at dusk rendered small and upscaled at 60 fps, with settings to compare it against bilinear and native rendering.",
+  "author": "BlackBearReloaded",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "01.000.010",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:4ED81PvTpTdVcWhMDVX_83MvhUpHueZqvncw6Nvwxup_6K1f-D92t1XjcjtKWwVMgEhK0GE8go1qZdcONeDZGAd_fsT102MirQ",
+  "source": {
+    "catalog": "p5enc:v1:gGEfXmiXXUIkGbg6KU9FYfP9yq7vhL1g-HXW_Ee1B2nUJgqy7ajRsxrH-x2zbFmWnQLmovOOV579UAqX4yqK6Sg",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:SXqOwcAUMwrglwhL8rUONa2IlrPEOyPZS0vKdzg33jNEv8p05FzoK-nOBssnD6FVOJm9I8gCle54UKdEKyFGzg"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99011.zip",
+      "url": "p5enc:v1:AUvp2meQEXWLnAEFVAykkAlqictyY_Lor7CzqueGjetOesxbDKvcF07M0RlPt-FRBauXIXPCFnVurhz3JU_C5J0OUJwBjvUWTN1fhCxhw1Ob6wj41MzL5pbAK_Db8O8skje8Hm65KutWgAi0llTigjgZZ9t1T1b2yKWuwrLLmcdnScp1F6Ka-O9Z_VvNvkTAy1I",
+      "sha256": "4fd35889c6b07c2d4736c91a7ca5c92062ab3498a71264e9f9b7afbb39d3e223"
+    }
+  ]
+}

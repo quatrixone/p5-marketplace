@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99082",
+  "title_id": "PPSA99082",
+  "name": "OpenNOW PS5 - Prototype",
+  "description": "Experimental native PS5 GeForce NOW client: a working, console-tested prototype with hardware decoding and GPU presentation.",
+  "author": "Portablelle",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "0.0.7",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:zpUULHWr8T5KtUTsXBsyQc-E-qXZ3Kt0D6cMBzlPoV3SWY-frW9VvZ3GhVVLICzlB1HCUDQVQ6uOhs1xq_GKmFH2pG111g",
+  "source": {
+    "catalog": "p5enc:v1:x_sRaxZdlhtExZUr9PgVWyAnldCDHmGgb94dcvEzcXy_6eIkUNDYC4jxYMebg7kzZdT3LszgwZ6b3nu88lPkmkw",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:eL7KZxDzr_T4iMkJDLKErZ6ZCWDtAyvDeKOdHYa8TWjEr8qd77xbzn9CaAWiYLOi7P7CdhPkdlJ_GYBxLLpMJQ"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99082.zip",
+      "url": "p5enc:v1:bX5c_MdXaSwkx71-yZqmJLakJGoGKswJMAEfYsSTgtB2seaLAX-zL-jMRPPIbcnG75OjOBMx_TpgqpibeVLZICMqH8jGoPW7-wUi550rDJjWTTerADtGav21OEAeU9YMkSATVxOROjTPWUc2-fw1v62JPL8",
+      "sha256": "1e267e8600ad291cc856151107e1847e02d7d957bc419677e10eb3d3f9d1abc1"
+    }
+  ]
+}

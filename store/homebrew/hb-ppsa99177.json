@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99177",
+  "title_id": "PPSA99177",
+  "name": "PS5VR",
+  "description": "Native VR video player for PS VR2 on jailbroken PS5: 8K, 180/360, 3D, spatial audio",
+  "author": "Husam Osman",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "1.0.0",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:SmuDluhcdZYbxDbZL5aR3Gd8SLd5ewzXXF3K85mlc6HX6k0Gfovx89dqGPdrbYT-J--MF70yzxobY5FUDopcqTjMBw",
+  "source": {
+    "catalog": "p5enc:v1:uNnrkqAVDW1WeOE8K0qTpxfksUM2vjVonBkokZ7ya6Vp17EkrydAJZp-B58S3OIaVetg0NhDqxX2fapfuV_Fhqc",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:BO_2XuUkkweaKBKu_JBLhUNSzeS7d5W6sJNbvrWNP-PWTEd7GiZtvrZYsKECeciUQ58vJOmb571wwhRPNnCZ0w"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99177.zip",
+      "url": "p5enc:v1:jKCNJH9M_cHTLUXAcn7qLhr8zX44kSFc9cO7WsgAiIyOwkUfaydJJ4OUfRQP5_R_rSeBuaOc4Hn5hrTFSZ6jj1SlN1ctSjXONwp71lHtP0f3vGADDE4iklldtHLDywl5DDRboc2bSWJvw0vx1oKsOPxWd6sG5w",
+      "sha256": "3bbd8f7716d6b0057393771d4bf93b4f51ba16f75cfbd2f25e44fffaadcf1534"
+    }
+  ]
+}

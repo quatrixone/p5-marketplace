@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99995",
+  "title_id": "PPSA99995",
+  "name": "Prospero Win",
+  "description": "Windows compatibility runtime for native PlayStation 5 homebrew.",
+  "author": "mpereiraesaa",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "0.1.1",
+  "license": "LGPL-2.1",
+  "homepage": "p5enc:v1:Kz-9c36_BuMv_nNj58J4mguUt6WYTryf9qRlmxL9JYzU6rs408ygi4XDwmAACAQKhZe54XifT9DAA-vggRriYXqkGJYni9qP",
+  "source": {
+    "catalog": "p5enc:v1:mg2tKarByH_qC-fKMgrVxujnRsxZZ_vorHdvLrmS06gdX3JEAlKxIXhny2X3UY2crOw3rn6VnDsFhixjO9PYToY",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:FkFYwTINanZc0mahPCsjeayLSpQvklmkXP907b7HJk0sIwNlOxN4sjG3H9gumlEOHFasmjbvwwWTRcDAeZWPXg"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99995.zip",
+      "url": "p5enc:v1:v6PuybV3BO9GLWa7G9R_kZlkmpJ8yKQNAqHR4vbhUBNgNkJbMftKNI4NJoENLiQKHSOBS2-uF8gOLhYtblaRuTdTZ6ttRYQFhOucQnJnAHHa0gm9eGb0r8rOlqisSMuQNUlXCU0o3nMIIQ700A-WCBtsruSl2iBBHQ",
+      "sha256": "fdfa016cd60979aae08040e61d70929c8759c9bf66c16001c6db8178a4d6c162"
+    }
+  ]
+}

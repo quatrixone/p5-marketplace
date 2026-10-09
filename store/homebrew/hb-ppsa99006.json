@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99006",
+  "title_id": "PPSA99006",
+  "name": "ProsperoPuzzles",
+  "description": "Collection of puzzle games for PS5.",
+  "author": "BlackBearReloaded",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "01.000.010",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:Xc9OyrEaiFQJOFogAkv5Ze4yiud_8Blw1OqWy7skSyC_9Wqn3Y9_vCX5GHCKBdZV5mOUYZ_xoURsF_bKcw16AxvSi9vzddZfO3Z3pZy1fBc",
+  "source": {
+    "catalog": "p5enc:v1:3M14QkmOIQvLnOx7sGw6BBGjh4xCtRmRsO90IHN8LKJOcVLv8G4sQMF4Z9gXIQEo8JwmkxDI58hKP96waOwF44M",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:i4neiZb7XRF7pJyphg4pXD7eezH1MHkjRTd7XyAt6jxoUrCZd2z7hac3Tr0t1rqrBR12PsTIbwUdpA2DYPfrOw"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99006.zip",
+      "url": "p5enc:v1:m2NC7qo3dVqzreZzmWxlFvM0LosttJUjs9BZLDDC4yLi5sex5Y0FnULRmynil1v5S5yxUTjSq2YJi-DZlyC_u9Qi4BQuD5d_RUERTJQgnghTKIu9wa2bx6Oe-ix7FWptvAwmbgRgCjSPO8PYIWoM5aoPjJ00TLCQtgLo",
+      "sha256": "9c7c7b57a885b1ecbd694ee32f7f68847ae909d99600b4c6a73c06605affd313"
+    }
+  ]
+}

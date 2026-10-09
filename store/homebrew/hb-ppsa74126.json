@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa74126",
+  "title_id": "PPSA74126",
+  "name": "Stremio Plus",
+  "description": "Unofficial native Stremio client for PS5 with Prospero UI, add-on sync, torrent streaming, offline downloads and customizable subtitles.",
+  "author": "LoZazaMastro",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "0.5.6",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:7aD9o1gFmJ8i_xoUjlseKHLusG8dYtWfjNuhFBRoUg9sVQiPW6G2oPWAmpS022RdLm1USaKXZm-UeHXFlFX86l9tMzF7lBGr",
+  "source": {
+    "catalog": "p5enc:v1:m9OrfnrXwm0zjHPIY-ciFznOzi_vbtjyU3h1DX1F704dvxvca0G38PkFMtX5GyoNcJlZlZOAz8tG0z_vNWxolk8",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:SdooWeGkeWOzZP5Sb50ajW-RrHWLTSTb3aIs0Zl4boSxex68DY4fiFx6Z68pYx-4VQrgmrgsDqQ_bGViLNSIzw"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA74126.zip",
+      "url": "p5enc:v1:iTIIT2PS_DwezfA7Muu7fCT2hOU72hxL7NfxlMN6gg_BEBjIcGibfmbQHhbmaomVJkzRE5b8BXYWw8w3Wy3NgdnOFiTnopw_c7ai1TUeE7F_QCs06nnvxKaI7T0JaJPLkq5QpkD5YSsjkwDrp9Y",
+      "sha256": "b7be8ee7ab57dcde02635bd1f811ecb8518c861b6cba2c0cc0a87a7e03f9f78a"
+    }
+  ]
+}

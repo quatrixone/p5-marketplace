@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa01153",
+  "title_id": "PPSA01153",
+  "name": "OliSe Player",
+  "description": "Tracker music radio in FastTracker II style, streaming MOD, XM, S3M and IT from The Mod Archive.",
+  "author": "Marice",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "02.000.001",
+  "license": "GPL-3.0-or-later",
+  "homepage": "p5enc:v1:4EE_T81E-S928fThJp_dS6U859VHTQqKfNbsOj6Z00SSmuKfWy3677NMTfDHaUSnc42qfGTumUXKOG2WRkb00AI",
+  "source": {
+    "catalog": "p5enc:v1:FnUlOuTmOHBaGVucqyMsfkUc4HdcCubG6ko3Uam0XhY6H4qnTvUg4znzmJZySc7r5nIA-SS9oC-EddknlKNJETg",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:H8ZUKWtWww87BWiBbl9OSdVRfELooXl2yCMYPHWpEBIeY9_LMd9Ag75QpucgHbX63airsYrJikK1OyZp6kFRbw"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA01153.zip",
+      "url": "p5enc:v1:uKb0xTg1XxzaNVj-K9Z4MZbMihNLWqhFAtTkojImltYo8AdY2XdyZQRBhxEMvXOuBjZPYAS0fACGxZi3cfhsh3d1iq5RuaUDuy5fwBuNP8IBpNN3GAspEEaomrnSneuXO2i2BGGNOMF9F691",
+      "sha256": "c351a996249b2a905d69b3b52f5ad00a32cc6fc07f2bfe18ee47e2d9f5b2e93c"
+    }
+  ]
+}

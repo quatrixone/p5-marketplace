@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99001",
+  "title_id": "PPSA99001",
+  "name": "ProsperoRadio",
+  "description": "Internet radio player for PS5.",
+  "author": "BlackBearReloaded",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "01.000.010",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:PO_IUnnFnwulE-WWzJ8pfI-LBpe5IprcWcxbLpvf7a_K97CFVqKioC2dFw-5Aztpxnu-aLY5qO_szp6mp9FdkepQ8W1ZwtWDwVSYaD4Y",
+  "source": {
+    "catalog": "p5enc:v1:YsraajF77UqBL5mUFQh0pVunaloHTuL2HJ7cfMdxYPAbK19o3g2qpFovbRNtSlZyfXDQcL7I6BRCRDH7rhX41YE",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:vo786ALZxN0xan6-fhtKp_oGlwryLUynE0iy0LJZfqJk6R3iqZsCDGMplRFZ0OeWlo6rutNVhb7d_smo8KQFfw"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99001.zip",
+      "url": "p5enc:v1:s1m6huArP3UTOWnx501ni9h6GlKVX4g2cU1D2VITBXPO80u59FKs5YuRsaaOc0cuVhlAms-2D4HY57EjHRtI37Na5SOBn1x9mhlwm7Jq2hEHfB0hsGNWbsAg_ThuYpqdRoyq7dMGnLEh9-sNLI8Byi_HisvWjjHghQ",
+      "sha256": "413011fcaf2cee3b1ce796388f3c9b13d3a0ac2e1a1a2b5bc5bba1adcd0fc020"
+    }
+  ]
+}

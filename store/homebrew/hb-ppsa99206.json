@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99206",
+  "title_id": "PPSA99206",
+  "name": "PS5N64",
+  "description": "A port of PCSX2 for PS5N64",
+  "author": "GameMaster",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "releasev7",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:elcyxDrrxvv6CvZXCMM1KX2v-4sXEERWWk-jxWfL1GMP0XTKtJ7C0bdtelxxquZns_vDT5vhZSbyjiBFCewIfTkVWA",
+  "source": {
+    "catalog": "p5enc:v1:fGBh0QTJPDTdI2G6Kg2wJURgAz_aBO88_A3UAHZVSrL-WlHhk1QmQOa5T45xBx-0ok_euee5_aHRYsNXK5-k9Ps",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:W32YXbP0W9eRDUQF5wRjgjEKh6kolLIUYS-5tFP-gd55JvO_fG4IUp-249T5KSkLoZaTpKwkwmOpVM7fDeo1eg"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99206.zip",
+      "url": "p5enc:v1:xwYrqFuqOZVNM0M5h-SDS0awdVomG7_nfrGIy3XsKT96b15Aqp8_boBH9fgYy8xPlT9Jexa_MAvPIKblB6ggEn_ba603N9AlOe5Lh2-2US_O162fwmJCD1ZrvDfCcrJNk7gzcSJfOwzlznT_7w",
+      "sha256": "278ff37b8efca37e6b2a25346e215571810f08e1fe4a8ecf019196478f363f42"
+    }
+  ]
+}

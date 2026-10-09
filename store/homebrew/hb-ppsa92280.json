@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa92280",
+  "title_id": "PPSA92280",
+  "name": "Capy Mobile",
+  "description": "Java phone games (J2ME) on the PS5: a native homebrew emulator app",
+  "author": "Khalifa Al-Khatri",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "0.5.0",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:OWk3dOWrW7RdXFuv_tmpXmaS8vDEIvICm6bAs0UdqNAvYauWvtT3Clg_RdMIlI5n536-V9aA6wEbu393gLyj4wsUQFo",
+  "source": {
+    "catalog": "p5enc:v1:IKuBEchquGqc_eR7RKMIw7JsUMOZRIj90Ie0VgDSNlM8Qkv8cvmpBwk-H4h0utmtwfnoByNrOaEe11IKXAeEBZU",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:aaa58X_QppV60Ir7mwUg7w4aHO0fpuPdgR9x8W2Foy_tpCmrjNL782eaNZCjj9nfCuK8f5fzZQznqqKlEhXROA"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA92280.zip",
+      "url": "p5enc:v1:LP71UujtZ-ZWhggnSMBtDS2cK0iqDuuxns2lU6X0URc9m6TMakjmBYaLESLq5sufuPwl_jukIgk7OvnQ744v7xvM4Yqg8o4D6GlqrY0WEqlVtrA6XJ9fnqSKeoYWlJpj5R_VriDm3VXlz_6KihnvUyJUvKjoghs",
+      "sha256": "80b14507838cd835fca794a493cde6b4cf0e7ca923afafaa1bc37c08f8fca6ec"
+    }
+  ]
+}

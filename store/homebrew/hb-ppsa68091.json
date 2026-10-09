@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa68091",
+  "title_id": "PPSA68091",
+  "name": "Ruffle Flash",
+  "description": "PS5 Port of Ruffle Flash Emulator.",
+  "author": "AZiZ",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "1.2.0",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:qS5rc_c-jbN1_8Ul8wctQuC4MTlfholGGRenZDoFwMZt979zd1F5Hbt5T7NxNDoDziJz41tjYpS8dEKacogQX2DrVVfc",
+  "source": {
+    "catalog": "p5enc:v1:XFz1LnS3AJcXacfZOZ46U-o-6PEMcXUFQWWMqqie7N7FJdDhgJPBhRZpa-hKPC0KyzHyJ8JLXtvC4amkaBDanJU",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:mF3-o3TCh98uwTiKYhslVFvoNP2DYnyweb2BCW0CI22YfRlI3OGkPHr0TZbY3P_gQM0a621-1tU5shy53SxyhQ"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA68091.zip",
+      "url": "p5enc:v1:yCOstEtObE_xshuAlBF76qBFCeryNnYCuUnycjDT6SsHCxNbfaR4JQlHSHp631Lnj9MkMWOkSBdunTXHQ08eNhDXDzhw4bHivHDtLgd7ix_iUiTdhr9ppjD6USjSkL_lgmIa-zfTRXBoGKo",
+      "sha256": "b34b40b69da30dafce4ea67ee312a55b6bd9b07b59849741253b2c46147076be"
+    }
+  ]
+}

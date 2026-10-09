@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99005",
+  "title_id": "PPSA99005",
+  "name": "PS5 OpenGL Showcase",
+  "description": "Native OpenGL graphics showcase for PS5.",
+  "author": "BlackBearReloaded",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "1.0.1",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:icyds4Gr3TcYMzenT_4fIi1Bdq7bdm5FSM465g_4nAnV7Ff4xdU9RzUdXYiBOk0XfkR2soSflg-cIzGBd9ivgKfQUWlksG2QAyNw",
+  "source": {
+    "catalog": "p5enc:v1:B9JFsUAYYaX0wj_hKjrQ6nvwle4PCu6zNZaNikLmVYNlQBb6A6tRBOnJXFKSOI4sZtGdh2O-vSaHbws8W23ffgQ",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:YwU2uNWaW4JobiG_WedsShIv10gpGpGHEXFPPfz7LbcvZyV6ARTHu7APLpzhqzvO1HMGPb98uTYqSWotWe6MAw"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99005.zip",
+      "url": "p5enc:v1:OQlIHH2P9TKX8g6X91LnIYyKS2JQxrabFpK2GDKNhgOyJu4eJj-BtxOrJ8qG0onvEoYngeC1vijXDyJLEoUxrS0fJnC1g5l1OLCFK85g-eEu7Ghl5lujDWL5Cv8KvCPNnSEMx_En7Y7uljJZqW6O3YYQOX7DxJexnO-MOjE_0FVYTGTHI02NUIjCt6k",
+      "sha256": "d16eb7f779d382d21e7f3374a3871e54cce3dea150a9e7de1603a9011833c9f9"
+    }
+  ]
+}

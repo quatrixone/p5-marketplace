@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99600",
+  "title_id": "PPSA99600",
+  "name": "Cloud Play",
+  "description": "A Chiaki-based cloud streaming client for PS5 that streams games from the PS Plus Premium catalog.",
+  "author": "tertiumndatur",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "1.0.0",
+  "license": "GPL-3.0-or-later",
+  "homepage": "p5enc:v1:sdtHWBxvFVDV7XMv9MJu145NWOXwXGGmTY3KSNQGz4-gtZawkE1BovUfKCtV_h384JACMfbV5pppQtolLwOjjRY1FxJ10xFIsoFr",
+  "source": {
+    "catalog": "p5enc:v1:SPtrJMa9PeYHbrKx9R6xzx_CC8xEMkrWGXm6pEU3BoRvHl2M_jOnIJjYxcaUPxQx5CfovjKBy2qDh0VOGp-ixJg",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:yN1RBAawEooFCbzbPGJe-pvbw9YQC0M1nq9H-gJMQf6Ad-Ovi3GwVDXWwTtoacEuytZqqks62iPy5dNy7vW__g"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99600.zip",
+      "url": "p5enc:v1:32gXaLybcqWtujC9pymLFz95D30AMR_Jtbv6A8-ODRwqw5Xtw1IxTBPXoRUYgY4kC0eooSHRoYvE9uwfzHr0l9_-wGw_24wq-BXp_5acXpce9fIGW30FEcxZjMx6YCj1pNOVtDdsKEpuFuvNMPsAi97Qty_kkQ",
+      "sha256": "fa47dd13c4ec4c8f1acf8ae41cc38f1411710b40c4853cddd65b135dc45ebb70"
+    }
+  ]
+}

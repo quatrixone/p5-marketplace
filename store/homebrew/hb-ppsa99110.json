@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99110",
+  "title_id": "PPSA99110",
+  "name": "Prospero Multi Tools",
+  "description": "Backup manager for PS5: browse and edit PS1 to PS5, PSP and PS Vita backups, install packages and launch PS1/PS2/PSP titles. Needs the unjail payload.",
+  "author": "SvenGDK",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "1",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:-MtiX5d8_K6lFsmGc__uVNTLz_WNHX9urEbYrswLQwTJsEpsQxtvPITTgiJYJKUqioESrptGWyQ_5DwtVQbDclnG8ZwQCys3LatK",
+  "source": {
+    "catalog": "p5enc:v1:hYzSt8jW4Lf7bAUG8L7_9cJmaT2Dzs24LHV7aHgN44B6Qd2JXGTOT14-LzkSJO5L752UKu496sVJW1sAQX0Dii4",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:oVunhJPN-GVf7plMSgBQYQo6W04q096QuHjrDO-2qngQXecaN5j7X-_JyPgXQx8nkK97P8L5UCHsfm9HvUaK_g"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99110.zip",
+      "url": "p5enc:v1:6VW-wsbdrBrGS73jnCBEI-TSsPcup_Ek_v5g2txcOUREYP56QmmEq5KKvHBh9ociM-LVPDr4aIC8oSL1RP11USsYcNa-nOok36GlprXdb6smGfU56GMKyTkK7ai7LZDf6Glb9BTnIzzYmIeDaXyj610Ia5ti_Us",
+      "sha256": "0e7c60d0e860cd0cafb939f668ccae57f53503f2c2371b4193a81ab306346d6b"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99109",
+  "title_id": "PPSA99109",
+  "name": "Prospero Explorer",
+  "description": "File explorer for PS5 that manages files and archives, plays media, edits text, installs packages and serves files over the network.",
+  "author": "SvenGDK",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "1.0",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:jBpWUw5zq4wkQ9bxf9QBfLX8mV9L3m4ellsArCxlEO5w3ZQgQX_OavfmzMjIWh1UcoikiY3gStY9yVwZ2QI4_eNBnp87uMWf",
+  "source": {
+    "catalog": "p5enc:v1:AcebSy5rN47yR9WViqwCSeOOcjXzzB80inAZeVkiAnK1utUkKQofXWdh9uKoJSzHR2grKag0zPn32m9EZaoWLOo",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:ybFOQi1n992p39z57paBzKjq1XHKlvAqWBTuBVm-HDilQ4mSmJDR9CspwYY2tk4tBhaU2wEzQehy2XW46Ci3TQ"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99109.zip",
+      "url": "p5enc:v1:xm97cbLn3rykjw-qgj-6M9gK1aHASOVg5AqeMNG7fH9xgVyMXEZhJlfl0JEDMPkjpDIIXlrKlozpChIQNbtL_FmdkwIkDNqtu8_OcSYW2gtwuVE260J9remTpFqshDm5k54dvpHnfNjFJBfzmEMj91x1HZcF5WQ",
+      "sha256": "3eaee706e8aca772fce734b494e56729ddedec218597ab9baf940094a0cdfc7e"
+    }
+  ]
+}

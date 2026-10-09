@@ -27,7 +27,7 @@ export const STEP_TYPES = new Set([
   'convert', 'input_script', 'rp_session',
 ]);
 const KINDS = { template: 'templates', script: 'scripts', homebrew: 'homebrew', payload: 'payloads' };
-export const HOMEBREW_FILE_TYPES = new Set(['pkg', 'elf', 'bin', 'lua']);
+export const HOMEBREW_FILE_TYPES = new Set(['pkg', 'elf', 'bin', 'lua', 'zip', 'ffpfsc']);
 const MAX_STEPS = 100;
 const MAX_SCRIPT_CHARS = 20_000;
 
@@ -80,21 +80,28 @@ export function validateStoreItem(item, { submission = false } = {}) {
     if (!['ps4', 'ps5'].includes(item.console_type)) errors.push('console_type has to be "ps4" or "ps5"');
     text(item.app_version, 20, 'app_version', errors, { required: false });
     text(item.license, 40, 'license', errors, { required: false });
+    if (item.title_id !== undefined && !/^PPSA\d{5}$/.test(item.title_id)) errors.push('title_id must be a PS5 PPSA title ID');
+    if (item.comingSoon === true && item.kind === 'homebrew') {
+      if (!Array.isArray(item.files) || item.files.length) errors.push('coming-soon entries cannot contain downloadable files');
+      return errors;
+    }
     if (item.homepage !== undefined && !/^https:\/\/\S{4,300}$/.test(item.homepage)) errors.push('homepage has to be an https:// address');
     if (!Array.isArray(item.files) || item.files.length === 0 || item.files.length > 5) errors.push('files has to list 1 to 5 files');
     else {
       item.files.forEach((f, i) => {
         const n = `file ${i + 1}`;
         if (!f || typeof f !== 'object') { errors.push(`${n} has to be an object`); return; }
-        if (item.kind === 'payload' && f.type === 'pkg') errors.push(`${n}: payloads cannot contain pkg files`);
-        if (!HOMEBREW_FILE_TYPES.has(f.type)) errors.push(`${n}: type has to be pkg, elf, bin or lua`);
+        if (item.kind === 'payload' && !['elf', 'bin', 'lua'].includes(f.type)) errors.push(`${n}: payloads cannot contain pkg or homebrew archive files`);
+        if (!HOMEBREW_FILE_TYPES.has(f.type)) errors.push(`${n}: unsupported file type`);
+        if (['zip', 'ffpfsc'].includes(f.type) && (item.console_type !== 'ps5' || !/^PPSA\d{5}$/.test(item.title_id || ''))) errors.push(`${n}: native archives require PS5 and title_id`);
         if (typeof f.url !== 'string' || !/^https:\/\/\S{4,500}$/.test(f.url)) errors.push(`${n}: url has to be an https:// address`);
         if (!(submission && f.sha256 === undefined) && (typeof f.sha256 !== 'string' || !/^[0-9a-f]{64}$/.test(f.sha256))) {
           errors.push(`${n}: sha256 has to be 64 lowercase hex digits`);
         }
         if (f.size !== undefined && !(Number.isInteger(f.size) && f.size > 0)) errors.push(`${n}: size has to be a positive whole number`);
         const name = homebrewFileName(f);
-        if (!/^[A-Za-z0-9][A-Za-z0-9._-]{0,120}\.(pkg|elf|bin|lua)$/i.test(name)) errors.push(`${n}: the file name (from the url, or "name") is not usable`);
+        if (!/^[A-Za-z0-9][A-Za-z0-9._-]{0,120}\.(pkg|elf|bin|lua|zip|ffpfsc)$/i.test(name)) errors.push(`${n}: the file name (from the url, or "name") is not usable`);
+        if (!name.toLowerCase().endsWith(`.${f.type}`)) errors.push(`${n}: filename extension must match file type`);
       });
     }
   }
@@ -116,6 +123,7 @@ export function indexEntry(item, path) {
     description: item.description,
     author: item.author,
     version: item.version,
+    ...(item.comingSoon ? { comingSoon: true } : {}),
     ...(item.console_type ? { console_type: item.console_type } : {}),
     ...(item.kind === 'template' ? { steps: item.steps.length, requiresProfile: item.requiresProfile !== false, ...(item.autoTrigger ? { autoTrigger: item.autoTrigger } : {}) } : {}),
     ...(item.kind === 'script' ? { lines: item.script.split('\n').filter((l) => l.trim() && !l.trim().startsWith('//')).length } : {}),

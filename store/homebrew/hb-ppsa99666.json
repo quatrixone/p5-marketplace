@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99666",
+  "title_id": "PPSA99666",
+  "name": "DOOM Native Port",
+  "description": "id Software's original DOOM source running natively on the PS5, with the shareware episode. Add your own DOOM, DOOM II and Final DOOM files from a PC or phone browser, a link or FTP.",
+  "author": "lowbit",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "1.1.1",
+  "license": "GPL-2.0",
+  "homepage": "p5enc:v1:SyhBlo-5NiVtzkQHLN4Z8fCCzgbxQHhnUF2eH_QVGtiAlenzSn6DE-so63_XB2AKCJoGGVHHzOaKb7nX0hA",
+  "source": {
+    "catalog": "p5enc:v1:67uedgNma-A9HybWci57jOEyBjaJuOKlZVrDyA0EesXL9Psti_zPTZFdurmyFdyWUVd_23j9io0altOiL1ft6QE",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:gP1uuVgTcWXgDVfP3jD8m4XXyNrTAqwAL9YPhnFirWNHJ9GOqFiTPIp25aLkCk-Y5Sz80HGdyrkHXsvdwRcT_w"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99666.zip",
+      "url": "p5enc:v1:ZJ0DB9pEE-Sh5l5IIz0zjDbqlSF8zdf1RZvOGx4pW39WiDzVnOmDijKjxy4fQYCA6AKkZ0702ZgRbuqEOt1fuErDUwjaUM-5MmnCPbP_G33aWnFfdxMQHmDuLqeeIBoNUM_NTWA",
+      "sha256": "4d8e5b785b61696fbf1988c2d0d87c5c977734ff60b1ce11cc49134b0e711b5f"
+    }
+  ]
+}

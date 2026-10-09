@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99004",
+  "title_id": "PPSA99004",
+  "name": "ProsperoAI",
+  "description": "Local LLM chat app for PS5.",
+  "author": "BlackBearReloaded",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "01.000.000",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:VQQRhvfonXV4YMSbHtP01quOtXXG9A0G6xn2dYZAk4RUM0emLS82fD6xl8BhB3kjqhnJpn-wCB2F9HSMlj1RzNThDiOzaBGgxiC_",
+  "source": {
+    "catalog": "p5enc:v1:_-0dWim0hapk7CzgDPoOHyeF3nSvHLKo2w7h3OjUxw-TZOTu1tWHwSjOPUX62Tl0OgSGy_zMcekiCLGRYm4u8r4",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:UXJdPrQa9SnrkYQRn5VH_xPyZ2pJ5kPpZ-4c9KSNXExBcAiF4UdPdkKkJ0_wtpUlzZgSgv-PvpkmXbeZ30pg0w"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99004.zip",
+      "url": "p5enc:v1:KhkG3XDTm9jYqZFucY0nAmHQZBWyOOoXHUTooQhJqyC-R_7QgTp8Lr2qNz4MigRkJgb7Kv2vd_FKOCA7csigMtKhY012Mb0wrZj8NAQ4AJNhKQErwFb4AL-wCd0D5-Ov4iN1PTO5vjed8X2NIEf0OFTE-9dxRg",
+      "sha256": "19c2bacebf6fb1587b32d458fb5af2fb472d9f3844085993b0f1a30669dc0c69"
+    }
+  ]
+}

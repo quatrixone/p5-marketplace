@@ -27,3 +27,12 @@ node --test backend/src/lib/storeOwnership.test.js
 Runtime contracts and catalog decoding are kept under `backend/src/lib/` to match
 the app. `scripts/store-accept.mjs` requires `STORE_AUTHOR_ID` and
 `STORE_AUTHOR_LOGIN` supplied by a trusted GitHub event.
+
+Metadata imported from [homebrew.page](https://homebrew.page/) and
+[ps5-homebrew-catalog](https://github.com/blackbearreloaded/ps5-homebrew-catalog)
+is redistributed under GPL-3.0 (see LICENSE). Source commit and entry URL are
+preserved per item. P5 Manager-derived tooling retains its MIT notice in
+LICENSE-code-MIT. Original binaries are neither mirrored nor relicensed.
+
+Refresh the upstream catalog with `node scripts/import-homebrew-page.mjs`,
+then rebuild the index. This preserves item owners and raises changed versions.

@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99007",
+  "title_id": "PPSA99007",
+  "name": "Yamagi Quake II",
+  "description": "Native PS5 port of Yamagi Quake II.",
+  "author": "BlackBearReloaded",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "0.2.0-alpha.1",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:fo7m59vhR8ClsI-xtDHRaHkCNMY4m3W0qeLyy87abLKUA7jmu3K7JEeWAbqn88j3OMPBTxhyfD4Jg79JNyCn4XUeBYkEygFPJGIeaNx1SdqXiw",
+  "source": {
+    "catalog": "p5enc:v1:T4WQXzD05JXuKiqbwdyWOYzN6y-FGG1I6yGaXnNqpnbo8zwI10nN2e8G0ZqkGpN5kNxkcIM0YVb-TDILDHqdEiU",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:wO7gYhPg7Uw-oBWDPyJjltAiP3P-A0gkP4HxyJ8Tx6yk0N3vnoQqJgfK6mc9GxNlPDXNbHwGN6wzFl773KH-WQ"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99007.zip",
+      "url": "p5enc:v1:PKBIC0ZnA1tZMsuGq0WpCwIqyW6yU5g2i2tXsbBnY_qNm2WKTgWyBxqhbvE84za2c0T8jkI_fgaioXFBq_nAkjAzPkoB1Q-3PC_XLdCFoSnbisJF2mTbnmT7f9_48G_mxFdypF0ZI_Vp8nrLURIAoWWqaAlmhfYXwZtGmCsZk7Wm",
+      "sha256": "4fa5da07498fe64ffc67229eed2347e0ddffd5073f1fea248ba5e69307229a70"
+    }
+  ]
+}

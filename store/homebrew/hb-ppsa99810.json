@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99810",
+  "title_id": "PPSA99810",
+  "name": "PSBox Cloud Gaming",
+  "description": "Unofficial Xbox Cloud Gaming client: stream the cloud catalog, your own games and your own Xbox (Remote Play) at 1080p60 with sound, using the DualSense as an Xbox controller.",
+  "author": "RafaelNGP",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "0.7.0",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:jEvBdI7nWVkycWBDnsRPiW72y-1UPbbbS5gS-G9HF5-BEC78WoOw2aEzkStqRXD4FqFtzPukvUbtvvEgDIcFPbzuYXYpfxITR5HJ8Uo1",
+  "source": {
+    "catalog": "p5enc:v1:1ruzPpnjAJAw7-58xBXfMq1pJj6x38wIBSQBhmt6xRQvcxIRTnFpmvOasOPjuw4eFeZ2XROkWVJXRmslbTbyUbQ",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:ZRmCs1Usvobi-YcgO5Pmdv-a1fhcQPaQddpaMk5S-yVpgBAkhi1KpBv5uEm4FAdB04JDyPhyIFI_EcRhaoOF5w"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99810.zip",
+      "url": "p5enc:v1:6MXPJYXX23-ieqaJAn06H9x_6PQXnJEwOj4cFc_0JkwbIsyRlBGpHmEf09OYA-TXA8b7cyiTBS7PlU8l--yKpxweu4_eECknHg8Bk4SAhr8cH1YICENLlQeUBsZGa_mjyE7Es6Wb-FKP0eV7qeeAavO96i33",
+      "sha256": "94a9a61038eacfc13f1c8835ad496aa8789b272d4167fef0d481f87a439aff95"
+    }
+  ]
+}

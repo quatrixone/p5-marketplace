@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa97510",
+  "title_id": "PPSA97510",
+  "name": "PSXS5",
+  "description": "PSXS5 (PlayStation X Super 5): a PlayStation 1 emulator running natively on jailbroken PS5, based on PCSX-ReARMed. Cover-flow shelf, xBR upscaling, RetroAchievements, cheats.",
+  "author": "SynoPiia",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "2.2.0",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:BOpR8hTTcZuzfD1wTjgLU1mX4I7t8FiysB6Q64Pj9qIeu5uKK1klIhKLbufJogKHAR6rnyvCFdvCzGusOA",
+  "source": {
+    "catalog": "p5enc:v1:1oyghoQTGubh-ahuoC4k4Hf4y6ZB3H_MBKsckGyR17fzy1PvvM5l3UaT1jP80OynGaHGnRTZ7Bcx6kYxdoAlrJc",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:1btEpjl8KLlzRzx8GtnJX9w5K59PmTNPj2P8VgeobJtOD_6D6rqb0febD1GdhWH3_K_rUb-RhL8TmAt0UqIv6Q"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA97510.zip",
+      "url": "p5enc:v1:ONH6whgxxVSsfcDyR84VkrHrMLMUbBBHaaK_4mGvwv_64RKI_Ob3e2IZkZTaIHw7zY3fjT5kop51YiHJrOPkrfxCHmQ_miaIGEJVqv_LAT8iKLojrVdrMlzwVcOK-frrdGWupv7EQA",
+      "sha256": "8904a734f99ecd837071f78167214cb2fa867870936afe996f6f3c95f7b4af60"
+    }
+  ]
+}

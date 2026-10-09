@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99420",
+  "title_id": "PPSA99420",
+  "name": "PS5MC",
+  "description": "PS5MC, an unofficial port of the Kodi 22 media center for PS5, with a 4K GPU interface, hardware H.264, HEVC and VP9 decoding and HDR output.",
+  "author": "VivaLaVent",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "1.2",
+  "license": "GPL-2.0-or-later",
+  "homepage": "p5enc:v1:uKs4LH9DDHg9NmO0Fhb-qJcpeZUjj8FyZUWi-APGjtqm3jSMvvHL9yPMzAJx-CteS-r5SXAE-Emw57I6oD7B",
+  "source": {
+    "catalog": "p5enc:v1:yBUigeXvqGax3uP64z3BG-kuVYzycjpil3U-N1Z0IPaERV1Jc0sYoLoHFzPPWd67KYBN4OriEFM3W9K6xBa06OY",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:CwSomUxIM_iqF4ERUuCN48TN84-3CJbie1eN_n487OfVDCJlW6DzPee8JSS02ZGZyxpkVHBcN4bC3yOlgZ-P_A"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99420.zip",
+      "url": "p5enc:v1:pkFNm4U84UmqsjEiA7FoMBot2rWLmYJmIpjFDjLnRwK950U7JTisOmOeI1j6NjQVO4EnsBGhcPFAY4QQ5ggQycGojBlkg5n8dIXp0YcqaebqcgLIYQ2G6EFsGR5fZS8VnFeNgzTIPhXBjbYFX-_iCqreejY",
+      "sha256": "5a9eeff4a0024a341a4924b8d283fe65b4ff94d7f5dbea446c8a677c4db157b6"
+    }
+  ]
+}

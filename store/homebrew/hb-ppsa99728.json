@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99728",
+  "title_id": "PPSA99728",
+  "name": "OpenRCT2 Native Port",
+  "description": "OpenRCT2, the open-source RollerCoaster Tycoon 2, running natively on the PS5 and played with the DualSense alone. Send your own game files, even the GOG installer, from a PC or phone browser.",
+  "author": "lowbit",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "1.0.0",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:W_BIt8gpnVcv7t_Ij6r1yeOiapmtmIt2Ekrpvb1G57Z_ra-ueB_gUoKub8hhuRdhc9esk_xbQJnlxxZ5XcLJV_us",
+  "source": {
+    "catalog": "p5enc:v1:jGFMtEUKL7IbcutTIKofYyB18Zz4_cisablda8GCMcxaYjZt10RPFMevTMD9e9NCJuhiznXEt_K1owP8tmMg_dc",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:y1fCfBdaxhbROzvI3ii9vX4kuA8Uwm6Q2ncfxlcttQXRgffuSfKkIl7InOH8eqBCB3W3Yic9SOYEsCpbfavuOw"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99728.zip",
+      "url": "p5enc:v1:Th8Z8yIcrwmU90XxIZP6EucCPu2KxjYdCoWAnuk3aC_xEL_M_sImogKHbvex_92nkMnzploc-YX4dxukXckht4ixsxlpVE5lqSHpdJ6ofxMrhJ3372jdNaOWXauvehivi08CI7uSY0wT",
+      "sha256": "f5c3d0a2168b5527a08ab2f335ab89057ab93082cde08813b6567b156fb1667e"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99997",
+  "title_id": "PPSA99997",
+  "name": "Nuvio PS5",
+  "description": "Nuvio TV for a jailbroken PS5, with EVO native playback and the interface served by the console itself.",
+  "author": "Bilawal Riaz",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "0.1.0-alpha.2",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:C9OLs9rTBvPrmvJm5TVdrcBEBrODXG4EUzi4kLdlkVAntNmVvd-ZGDccJjW1Kjqc7Ww0Y9-DOnL5Ovp7yvLsz6BB6kSzk_nIfWumwbk",
+  "source": {
+    "catalog": "p5enc:v1:rBoHIRa-rMHvw2xQ9ZnGMDPg2c2juWeZmGz3i_x-Cectd39uSq5ftaDsXMT3ukvMKrjPMSB6jO4CHbiMrI1ugvM",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:t6tqyvnz_p6H7ADVzvHjS0l9P4scc65wiA9PXYNSPK1DXBD_uo4cSd2JXLZDTu16jYqjSw8PnqBtDpKTX9f7eA"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99997.zip",
+      "url": "p5enc:v1:vJZ3ABKgQ0LkwpPB-3JdfMdNsZdtypw-Oea7iNgrkMHozOvFlDHKti1nXMbji89QYiK_iwwADlygIqScYZRkV5NeIuGcCMJeFW8H75FlaGzHgXcZNfGmkLP8S_p25ION_ivIXYnSvhKhjgSQwQ3aJH7EoUmDpnnI5era2Q",
+      "sha256": "48c795bb1083c9a3fa698714d1c2b23150459a93b72e9b8d1b626087d0349fb1"
+    }
+  ]
+}

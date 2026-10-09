@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99920",
+  "title_id": "PPSA99920",
+  "name": "Prospero Vibrate",
+  "description": "Controller vibration studio for PS5 with live motor control, preset patterns, a custom pattern editor and timed playback.",
+  "author": "SvenGDK",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "1.0",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:Sw_Tbw5i5gYmNWeuVTM9eGLAq5fHJ93OkmWJK9lx8PAoOuPMkM0yNPHHRrmgTtHjXm6mQsC7UOzvngOI5_iVnneEQzWBk9o",
+  "source": {
+    "catalog": "p5enc:v1:Z5Kg4RcpJbB-wrpuMzQdc0mbip9aXLbY4Q5UcINSi7Z4TJSwibzCRIroft9_T5dzfxzWkUx87UXWEXMVrQqVbG4",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:F1P2ERJho_XHtiKD17hDl2V1SilolHE-nz7ybFFMKVs1UiWkCSvwy1SUPlcE0Jle37ryav0tCT60wJ3EGd9ULw"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99920.zip",
+      "url": "p5enc:v1:DV9fEkkzLqFU93mRVCslhNTaw7hkZCwMs1ShthzWVgBfCTuFsFsLMf2qpKao6i1FcKjDAz2Y6ZSUI7n8AfyCOcENTACI7eVuE3_H0-iiSuqBMrGmOvwTHOSvW_rrxNUt_B1j58ZLhev9GVKd",
+      "sha256": "c48443aa779f682426b1ea94c669370d3ec10aeb70974f18bea7269745b90051"
+    }
+  ]
+}

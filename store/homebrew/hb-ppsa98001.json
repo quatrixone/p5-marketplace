@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa98001",
+  "title_id": "PPSA98001",
+  "name": "PokeMMO Prospero",
+  "description": "Runs the official, unmodified PokeMMO Linux client natively on a jailbroken PS5.",
+  "author": "Shabbypenguin",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "1.0.1",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:ICyC6FEsHzlf1J9B_wQxapExP0mKgzt-rBS8QUz-tgz__HB3E3uFgeT9E_R2BWy3b794vIku6jKHKpPUBKtqYABDHxXgOJNkVb1t0As",
+  "source": {
+    "catalog": "p5enc:v1:gxt0CD9Tj0TloKRNDcf8GXBjejsmaUTzZCb_ZnjOqVTHCWPU8dJheKGt_64zHJEYr8jnmd55yVL4ujX4vNXMnnU",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:p-wWQsF7cwWHz9yWVjQKD_CCt4NxrvSNWzzFANi9qIgeoRcHzeIS4aFsHnedN_5D77oij8MExwJtpqSdkuUSIg"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA98001.zip",
+      "url": "p5enc:v1:oxQ-t6Y2ZmK_oyqm7yoiz8HpfgdOjOEaolVhTAR9f4EhE1qDOZ1MOPDC2PZx6jJjfRxqUXBJMP7mQxmz5SiLtUBA-3J_XCT4oSZCbfSDlB3Yi96dr9UYwaghGdHH2GiQSQ1-ezNmf3HjRg4TFPQf3sytg34",
+      "sha256": "1c4ce867d890b797a87630042e4cd0c4371eb27ad0bb9dc6171c2fe42020a527"
+    }
+  ]
+}

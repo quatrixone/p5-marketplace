@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa69420",
+  "title_id": "PPSA69420",
+  "name": "ScreenTester5",
+  "description": "Screen tester: solid colours and test patterns to find dead or stuck pixels, check uniformity and geometry, and run stuck-pixel recovery.",
+  "author": "Marice",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "01.000.000",
+  "license": "GPL-3.0-or-later",
+  "homepage": "p5enc:v1:y17AbB_ejTfY1hBSm8wKsqTTN6OnCrO33embR6GU8n54B_8bmdoPImJkTReJXhOV3U3LBpZkHixcpv3HPwLQfayv_g",
+  "source": {
+    "catalog": "p5enc:v1:T2Lt3d-yrWfcEHWeNMLkySPxmvKRdqFNQ1KTWX6KCDH4DAmr8wKw4cJvj1XXqO9qAFx3aQHHTYnKgEp0QQy88Ho",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:Yr3ZozZkb63XLzaJ0RSWrr6IgyqBihY0Llrh3atScSBz7lgNmrC_8uy1OcRb7BIKxu3HGiZbyoXa0IQ2eYcChQ"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA69420.zip",
+      "url": "p5enc:v1:nvJaky5_ae9aHSnJKtAiSHIHmbyro5tePOMhT5V8FmzOhEY2XyBxh3g3m6J4d8-B0207S5yOE020Y3upwO0Cpn6EVnoruZouDGEMH1wbBijhGh3fA5leX-N2dzOR15iPPrP2fz28ax3N6SiPjLE",
+      "sha256": "49a5c6d7bbb08f5a1539feb65b7fd2b537b6d7b304bdd3eed1c923e4ccbec8fd"
+    }
+  ]
+}

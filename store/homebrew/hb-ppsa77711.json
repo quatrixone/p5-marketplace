@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa77711",
+  "title_id": "PPSA77711",
+  "name": "Stremio",
+  "description": "Unofficial Stremio client for the PS5",
+  "author": "Argyris Vazaios",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "1.0",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:aAEjfWu7bIgs51gd2Sz_gsF-MyoKvDxU1VYLKPIlaveNACkPb_9Oq5YEKgp-uUfUh2Nh4pBSdRuvXoh0XK_MsanUTQo16EKrs5iYZC-pz9eT",
+  "source": {
+    "catalog": "p5enc:v1:Ed9MxNeT5hoCVFa9RoOJyQPQ_GNzzW6ygKukRSXq-VMURF6hPWcl7it6UTfPfaGYLtASKY-9pI-CxmpJiARJTqQ",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:wKYZrb6Noiyh5wakgI0aIuNW3Z-zFgYiPV_7533OabUpNUKhYg_eEOgUidXoz1t1lSdUcXs6Pwb7guxMf2Ij2A"
+  },
+  "files": [
+    {
+      "type": "ffpfsc",
+      "name": "PPSA77711.ffpfsc",
+      "url": "p5enc:v1:GZF11aCk_2vKTPGyej_1CVgOyV6sf015eHsqEAtLYN0wGuWXqOixhY-V_TnlT2Nk23GJYK1vOqxjEqQIbT8U5iZ9DNRrXR0b-bGyKvx-yOIAaMm7bcyCbXyGie8TuPJsSwchJFOp1yVp5NVEqyOjCLx6J6XLPTUmtg",
+      "sha256": "7054e2022b73bca6d6fb0dbe807eadb006af07985aca0e0c770fd747c6c244a0"
+    }
+  ]
+}

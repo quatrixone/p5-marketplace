@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa59322",
+  "title_id": "PPSA59322",
+  "name": "ccleste",
+  "description": "This is a C source port of the original celeste (Celeste classic) for the PICO-8, designed to be portable. Now you can enjoy the port on your PS5.",
+  "author": "AngelXex",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "1.00",
+  "license": "MIT",
+  "homepage": "p5enc:v1:HH0DaMn9nJqSK-aNy-5L3-KpfKklk0W-DxnZPyr8pdn7z9E7-ZptyRUUQ_CKR-gNje9jfMJYSesKXHsG1pQ9bmZX",
+  "source": {
+    "catalog": "p5enc:v1:GqJ7h65D73oR-kxbKAAm07FafcYLU5QfW37-ng-Rfa47ggZsOolYBxjdSKl8VJJ7khEXRVMQP93cJwvh8LsLYbI",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:CEBnj8Qt2jsXOVoqwK1K2Gzi3yBz2itJ5z-iaojYEJ4Pql2S5MXjtfSJRIdr-qqTDleXt3HcaXzA8tYdmpv4jQ"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA59322.zip",
+      "url": "p5enc:v1:TtTz77sA-gjNEyWD6syaWBJdTs0SN3mfMEuZZuiqa1kg0c58BdJetvxIfnntJlsAnfs9kiPkgVpUuspy_7tufl99G10NqSDf4g3qR899iB_NhZL61wSfOivyejIFZ_nv-8oqJBcOCA",
+      "sha256": "96861b81c1fbaac818080d1bf958b575e6b44d2c258684e1931f2940cee2fb43"
+    }
+  ]
+}

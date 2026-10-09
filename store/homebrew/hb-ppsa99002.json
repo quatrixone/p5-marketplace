@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99002",
+  "title_id": "PPSA99002",
+  "name": "ProsperoLight",
+  "description": "Unofficial Moonlight game streaming port for PS5.",
+  "author": "BlackBearReloaded",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "01.000.090",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:n7F_zvtuyHr1DoXZ_mS1v757ORJ1G54AEtfoUEgKiksP2bCO5rvIqgQ63RFM-DyHJGo4toS-fD5nF7Ug8J49CtqgRTTjPv2N_LiY3Xjd",
+  "source": {
+    "catalog": "p5enc:v1:d3qSWH6Z8hvIu-li9rz55BV0TJYKQitJXrwrpyrZHFh8FRXBEFcEKNukvfrQyj7rpBdDIlPLC2V0Sv17FHK2Rcs",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:vju986JgZ0UTg1G3c62LjhxO7K4xqHvjzB-doHhGHLCTH9IV8UKEMxeZpjDw5VeWvz1NMHpiSsD7nkOWGmvJYQ"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99002.zip",
+      "url": "p5enc:v1:RmMMtYGRnHhqS_1FdzzOq7Dv9ko7A0YeASDl_m9iDymL-DGd16qdNN8klbWQOsrEuM7ax9ifBq6P3xCeCORxGUUFEUO0McT5WkDZqz0kWe9mV1Kxfgr6-hozb-1z-JaY9QXO8Z9rGb1CTZgtKnC4cKp7b2fnlaUroA",
+      "sha256": "5c6be91f0f2a432949748bd3d73e8514f9fd18a97e25cf7ff10665feb361ec7c"
+    }
+  ]
+}

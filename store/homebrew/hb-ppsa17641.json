@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa17641",
+  "title_id": "PPSA17641",
+  "name": "SymphonyStation5",
+  "description": "A native Navidrome music client for the PlayStation 5.",
+  "author": "TsvetomirGT",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "v0.1.0",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:wLnP2WLoeys8L9lvcNk9SjHGZoUn_rMhu6g3piSHRE0RpWWEpxENI9XDvvJ2HlpBqEeUvpORNMR0yfieLW2F5xQYZpWGfbV5Hsey",
+  "source": {
+    "catalog": "p5enc:v1:aZf10iaIoyJaKZtCHZp19yteUHrxKdR2cREu_lfqAG93IcZsWRQQgket0fD8Ex0qdOUAEGNVfkxwjNi-DpQj9QU",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:yoMnFnQt9WX9eKp6GMpQLOZTJXFbuP9DZ_Kr2iQ4dPoh6OdY3psPZLWllHXL0Dp2xg1d7fzS285aHEeY90AXlw"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA17641.zip",
+      "url": "p5enc:v1:rQ_MoT-Fed4LDxOGtUjnDHeYs1CgGd1twlP-TGd15b4cnvuER7NvS-s4giCCsh7fsNjzA2KLfpEeY1iCtxfvZjctKa_SmZY4JFmU_zw8u-yxpOyo4_0NWIGntMh6r6Csi6HVC_Kw76hq717oB_sSUl_3T3dX1uzbQMLNkiI2Zg4",
+      "sha256": "5327e36b9a57776a7bb7a32a16865d54b28be3b1622280c4dbc9e6ee469e2993"
+    }
+  ]
+}

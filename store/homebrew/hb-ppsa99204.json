@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99204",
+  "title_id": "PPSA99204",
+  "name": "PS5NES",
+  "description": "A port of PCSX2 for PS5NES",
+  "author": "GameMaster",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "1.0.0.8",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:21mhKXp69tG4CdXScY0M9iSk0ueNB9xIruOfM-QAVa3cMg5iK10WrrWJr9UXPi0leWdgdRIninViTVBv2-2oov9OPA",
+  "source": {
+    "catalog": "p5enc:v1:2PqAMdwX2H9rzsz9D5-RjRpmwO2Z9vfF-3RbC-ro_ha74tEyKgzZgFI7Qf5nbTI0Lohw-9izM_n7cayBX5rmYLs",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:SyUp5uCAahuqzm2tWuY-2zBaXA9MUX29wMD9dd0q6F05koPgMmxVvsJ_GoM-Z5TwR-4mIzsWJmrVrPd_I8dotw"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99204.zip",
+      "url": "p5enc:v1:4rcD1vBRv-cchAZg9An_wrEmYCzxriSUqI9BgJZ9II8oNl0wuTBEiQzjCDy4Le2i5gAkR8Wi8oSiiCELx84j7sMTne0yLA8bt_3qKBjYWH0Dkdm0Nip90eVA0B3zcEtnwJCqLSwwnks_t8A",
+      "sha256": "f1226e8db42b37cab75b4d6ec10854f85961611c238af27072e3f6961861a54e"
+    }
+  ]
+}

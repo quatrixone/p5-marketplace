@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99203",
+  "title_id": "PPSA99203",
+  "name": "PS5SX2",
+  "description": "PCSX2 port for PS5 that runs PS2 games natively with a Vulkan renderer, up to 6x resolution and settings from your phone. Bring your own BIOS and games.",
+  "author": "Sword",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "vk-285-139",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:0d2JHAkWghfYwglqa1iV8EYZ-htrYCz_PPHUsVy7Zmd4MWK7stsoX3hllHdZGaFPLyhyYYt8vZVPzbW0uwc",
+  "source": {
+    "catalog": "p5enc:v1:OTfrdtE_Q8Xdu0v6vX_NWQVmMEx2NLc5Xi0Aoff11pECpzbSvwdFqsoyZ871mDVZbWx46AEBkd6mr5k4Bm0DMog",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:Wvy3Lh7SlO5BpI-XCx7-yVMjNW246yARQEdIM-O-bVXRRW1rnhKD0GOgrCExi4O9qpEaN3UHh6FKKvTJWQ2LMA"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99203.zip",
+      "url": "p5enc:v1:Ky-ZY6JTCaVGt2kRigNxigb7_uFkrxYop-z-xb4ESy-Ri9IGWe4KWPQFxL3qrXUmBSDEgUlpPDA6bQNMkbQ6NTjPq6B_S4bNAU5r1-JuNfidI0RXzz7IsODAIS-N3zIYPDDsogzS1lygAVd_-vQTGlI",
+      "sha256": "7780c568edffe517cb282f7b33a0af1d49f9f025e122dcf2f77b841880c43046"
+    }
+  ]
+}

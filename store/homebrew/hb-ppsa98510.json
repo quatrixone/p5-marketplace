@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa98510",
+  "title_id": "PPSA98510",
+  "name": "SwanStationPS5",
+  "description": "SwanStationPS5 is a PlayStation 1 emulator. It is a fork of PSXS5 created by SynoPiia that runs all games using SwanStation core.",
+  "author": "AngelXex",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "1.0.4",
+  "license": "GPL-3.0-or-later",
+  "homepage": "p5enc:v1:faSpKqTuyl6EW4r8xPFJidfn1PHMh7MPltXa-THw4aRGs-r0Y5ZjWM22ydNRtbrTY2r_f8vd87pf9cROcP6I5XFF6-8k",
+  "source": {
+    "catalog": "p5enc:v1:97G_U-U7GUxsayhNmIGhRE2K6krMPTkFLjRB1fh1LOIA_lp0P7EUcNrta9yeORjzcgGPCMVB4PjbTyBdkZkN53c",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:qKTTt3ckU8s4n-JiYbHIVSQctrAx2BzwXEUwrqxkiBeIWklht6wfJeeHbpHnITNAtpYke_3VWVvfiVWFT-Q8ag"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA98510.zip",
+      "url": "p5enc:v1:Dzdns_zzA5t7_J9KLowA4D8l5J5UdfAqhgUsGUB0RMgcSrsvnHMjSBxlLLa18DcvEiISHyHspSM5VAZ0BQZa17evPzS3_d89Abc7WiGQS0W9Xp0-NaELHSm98KZ7U9s1c0Y2xK2ZzLg5IZo",
+      "sha256": "16b2caf318a4abe3a49f465d5efb12421ab71a89ed0e95aeaa4b1f210f052eb2"
+    }
+  ]
+}

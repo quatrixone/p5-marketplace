@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99009",
+  "title_id": "PPSA99009",
+  "name": "ProsperoLichess",
+  "description": "Native Lichess client for PS5: play online chess with the controller.",
+  "author": "BlackBearReloaded",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "01.000.000",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:Xn0-FHAk_xkvn615ZZEowWKwWNG-HQLKdvODJTOivj4ybAgmxDBqg77UbTS7d63lZJaoW6OgSZ9OwcVrxiFdqScFy-rIP1GNNXYcO5hsSk8",
+  "source": {
+    "catalog": "p5enc:v1:SX5K8mcCLuOeEHGpOXvPX9QYf3pOTnGtfXjIUJqakzeiKq_vbeU3syxmB35SbNm8_3bEbCPJE8d7dAzGN5qcghA",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:en0ZLgl1bbEu2CyVGlShZpgW8w8mINt7bFCYV-wqAUVjXbZ4W_flkVCuS7bvL45ZF4pvROkemluNmVtN8XdfoA"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99009.zip",
+      "url": "p5enc:v1:X71fQclI8ggg4V7KQhcVDtlce44Ow5ticH9sWIQdx62w7Gw11w_Gt_OYrF_0yKJTDO9ybc9CcRRKYVK-pS5Tfl27fHQQ2RBHK6x3cz7dbluFucn0LACalZ_sG5hSOOuFDTs4PSAKGzEvCQhBvpmYeOL0Evj6K_TbHW96",
+      "sha256": "37d4cd3021dffb43a951ce3d888051403c6a099a258bbf0c785f51203c6ef8bb"
+    }
+  ]
+}

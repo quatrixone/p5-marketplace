@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99764",
+  "title_id": "PPSA99764",
+  "name": "Porpoise",
+  "description": "A native GameCube and Wii emulator for jailbroken PS5, powered by Dolphin. Cover-flow library, box art, memory cards, original music.",
+  "author": "Ruben Ripalda",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "2.7",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:_uwGdtadm2i_yn-E1li1FjvrIKAIuHe0YxPTAc1ub2t8qdSNrNGd-jYq67F720239AmkDjGr7lcNx4ofaypfAGSCGjY7qlL5IJLE6NT-XssGuynLjDpWIaLJ",
+  "source": {
+    "catalog": "p5enc:v1:vaCwZC74utzVqknYxN8cchEZOJiqCzPqmjpqcDE9kOfHwfy0F0GHytPu5DjsuyIDTnrd2GEXmQMNNaeypJ2nzQI",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:nLvdJhAG_pkzV2ye1gutsQGd6FrMs7-LcFEYNymMVxIpZQ1viH-KrptPcHckXXJNdg2EnSnJeFelWOihmXzdxw"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99764.zip",
+      "url": "p5enc:v1:8q913pILw5h_BOvHdFYLM87ujzcRsmPqBleqluLnnor9erWX_GKWwbrsA77EMm9zbStfSarcn2sI6-peQ-tr48TA9PXgkdSb8_6zILqwMsKZBIHBSKg2qs5mnqyeWwh7gmyIEy5Sz5g24UvSD2unYwCYI54apuqhq2_wTkcnTzBrKw",
+      "sha256": "dbb895934d84a2445dc36cbcabdc0c299359aa76ddb540c8b4791da5e400891c"
+    }
+  ]
+}

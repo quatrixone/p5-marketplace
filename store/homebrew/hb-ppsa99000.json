@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99000",
+  "title_id": "PPSA99000",
+  "name": "ProsperoStore",
+  "description": "Native app store for PS5 homebrew: browse this catalog, install apps and keep them up to date.",
+  "author": "BlackBearReloaded",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "1.000.050",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:WhpTxF8twsqJruns4q2GOG1RX3zNJOE5CpQOt2KdP4Tff8KsuDWuAVQZZhx9yuN_bogJhfjPLWaehZYlmnyXEz3rgdPtNaASEMMqkmKA",
+  "source": {
+    "catalog": "p5enc:v1:SArcta-O0p0MUmRgDKlBVdH8qWfs54CcuuH-UIj124kdHquIFcSZNbciIhIu6NLwyc9gIrihBP8-Pi-Y_4UDRvo",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:XTNaj6PimCh8skTreDhmhlv9I-7dtyGFCuy4MVmnA4H0YHXweQjLe7xQdMKPX8OUAs889Qd1rQiClXYKFGSptA"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99000.zip",
+      "url": "p5enc:v1:WxBSIx54yq4cpJya_kzyuZ1kAqyw6j7s1I1mlc3tkyZMkSMkPs5B27kD8sugvGrofiVqOF4R9Gow6Tus9l-2ODFDftQIe8xcUhWoAVqfliQ5OFau4EM6qEwSLKLnSQUEZVrKVd_51V6_-SO7P9bGQ2WxLbnW3hAWtA",
+      "sha256": "acea9b0fac84c86ace96ee17c4d6f54522b681ba08d9dd72e6d9cd661e7cc500"
+    }
+  ]
+}

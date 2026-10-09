@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99808",
+  "title_id": "PPSA99808",
+  "name": "PICO-8 for PS5",
+  "description": "Unofficial loader that runs your own copy of the PICO-8 Linux build as a native PS5 app.",
+  "author": "RafaelNGP",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "0.1.2",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:MTf3K9vD26IzLAqUgTcD78PHfrAGp2onJg0glWr9Jq1gvYCazcq_yRpxWODC4K9uTRZh40-ZX-4z4OqAsYRdqYxo",
+  "source": {
+    "catalog": "p5enc:v1:PWoEQJ-uXEAz6jT0AjK0MXdgJPPxXZIrRMvvOhBcDXxoAF5ibZfbyFWXOOvIM2V-GlACVJifC7LMLfPMvblvqeA",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:8KPJ8keZnQMph7SJPbblpmwelBCqeoYP3KCr9WtGf8ZAPE9cgps1cftTCf9otHaidun_8T7qk1oHinuBDrX10g"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99808.zip",
+      "url": "p5enc:v1:y4REFj-LkkoTj-znsXUV8j1yPknY_VkBahJMNtx0MA1Q11jaRLEeZ-8mxifUnyxF8v4QLEM6989PqS0ucr3XtG309Q3TjdfKFlOS9UCxeLqwULK6uwKlLSSYAGqULBRoUhIetSkdP1Qt",
+      "sha256": "d76e2bd55ea3cb465da4943938bbeb575abde54fdd3ecefa09fb251f58e1382d"
+    }
+  ]
+}

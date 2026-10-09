@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99515",
+  "title_id": "PPSA99515",
+  "name": "Emby5",
+  "description": "A native Emby client for PlayStation 5 with media playback and optional Seerr requests.",
+  "author": "bornaradusin",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "1.1.0",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:HKzuTZbvstRYnPqnBW_X-CMSiCCozD9cJjOOvvwULbPfk_jvlAkMikaeFgKbMaXoZiULpjGrGoFBSla3s24u6Zk",
+  "source": {
+    "catalog": "p5enc:v1:MferzbnokwjTpqFHeWhJfyzr3gejJCfLOr1e7ri1YBZw_h_TrdPf7jocuJFn6DxklHlI3QW7uwrAWxa8mF45BmI",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:s-WHFIOqB5kdyGAiemGSJqyTwz2kBaZ2Jl7_hnD-hFZzQ5_YF09kncV23gbNE4jrXe4AaphNXtlRwMpGw_TBzg"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99515.zip",
+      "url": "p5enc:v1:0XbFRnePY-Xh8cQR5MmH1r0jf1cJkM428uEeIf8hBH_DfUuOtQlHE4gslSLRGoTlfico-wI-DLro48VvvYKHmjaz5jhu3r6YbRYrx1bdmTWOucwKf3okLAsaORyV3pabu-DQmXs8OgS7",
+      "sha256": "9c6670d7642c3ed465183dd692f109672b981d50ac5b6d42776f76c45701b9d1"
+    }
+  ]
+}

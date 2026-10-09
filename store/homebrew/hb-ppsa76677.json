@@ -1,0 +1,23 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa76677",
+  "title_id": "PPSA76677",
+  "name": "RommPS",
+  "description": "Syncs your emulator saves and states with a RomM server and downloads games from your RomM library.",
+  "author": "s0liton",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:w-14Vw7C-eykqzCsUI5sHRbLSTDxX4HkdbxbZS0lR4gSg6X34F8iSUFoDd7PzLDNIg91B5KPvD-7tkevG8th7Q",
+  "source": {
+    "catalog": "p5enc:v1:wkNZflZXlmeMiHXsa4C0C26N8nX1RWti_2L3VBq75zM5na5XC8uxdvBpCnRX9h6452Tbk3KgL0R4wuNdE31BSgo",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:Lm2-h83ZQPq6lGfzqriNYjCwBbcsA26moTNJnk9QMV2c7_kAOjnHc6S1YJ2IpPwG90usBlcQA7nlsh1gZ2sF3g"
+  },
+  "comingSoon": true,
+  "files": []
+}

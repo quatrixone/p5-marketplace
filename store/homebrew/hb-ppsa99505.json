@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99505",
+  "title_id": "PPSA99505",
+  "name": "Jelly5",
+  "description": "A native Jellyfin client for jailbroken PS5: its own liquid-glass interface, hardware-decoded 4K HDR",
+  "author": "02dnot",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "0.5.0",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:gT8M9jobVsm75uFBNf9mhXUA7lbHwTbUG_hEqc8HUyqLaNaZKK_i0vF0dMFSvERlMpd4MdGU17aPUh7A",
+  "source": {
+    "catalog": "p5enc:v1:216g5hgmRgh3ud0Eey-DIoHh-SzljcJGR8iOXrECtbPIeTWJACDvZgKf5EAeJvMpmnNbgfw2tQTv93TfIlqYP0c",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:8F-pcurSNVdpIksP1VfZ3pQdBWhBRuhvNwjbIKg2Ui2R5JkF-Q4xOpbOQ1IXnR2wL_IkuUa4-qAiI6O4N7Wrxg"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99505.zip",
+      "url": "p5enc:v1:Wtb5_rwZGBnTvgYS_2_gO2S1ahJQUG88A6SlsJcfFBQIo3ete9_UOXpD4D-C9C6qZb8F3boFgdDvE5QqCQuyo-GRk_ULBwF1VbYDkrTodeaeSNqaX4OHd60k7OcykqdMn1pgUMkCHyb8U8A",
+      "sha256": "89c2a701d5a6bba75358922d4b0d6c1c7191284d70d22ba49e6d5160c2ff9d2a"
+    }
+  ]
+}

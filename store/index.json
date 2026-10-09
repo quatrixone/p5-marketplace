@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-09T07:49:07.362Z",
+  "generated": "2026-10-09T08:00:46.653Z",
   "items": [
     {
       "kind": "template",
@@ -69,6 +69,725 @@
       "console_type": "ps5",
       "lines": 2,
       "path": "scripts/user-guide-loader.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa01153",
+      "name": "OliSe Player",
+      "description": "Tracker music radio in FastTracker II style, streaming MOD, XM, S3M and IT from The Mod Archive.",
+      "author": "Marice",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "02.000.001",
+      "homepage": "p5enc:v1:9xKN86eMHDsewIXg8IsqN045CKcV_yYfp9wVZiglP9TEztRm-YTumCHHnzSZkGIb-DM40zx1P7SZCukVHCFINfs",
+      "path": "homebrew/hb-ppsa01153.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa17641",
+      "name": "SymphonyStation5",
+      "description": "A native Navidrome music client for the PlayStation 5.",
+      "author": "TsvetomirGT",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "v0.1.0",
+      "homepage": "p5enc:v1:erHXTR8xzXvnYpXoAt62AoDljpVB7ztATNwkUZL7FURzmleS4GPsh16qqQB_ZXWsMZl1KugCmyg8jc0HSx7VQA8W0cN8KjZJU31o",
+      "path": "homebrew/hb-ppsa17641.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa19111",
+      "name": "XashPS5",
+      "description": "Native PS5 port of Xash3D FWGS: Half-Life, Opposing Force and Blue Shift up to 4K at 60 FPS with DualSense input. Needs your own Half-Life game data.",
+      "author": "GordonProsperoMan",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "1.3",
+      "homepage": "p5enc:v1:9c7IlYCngA-ea8WzUvrDRoC7x1w06Jkgcx-Roy7ddPzQH2hSSqizwdT_WV7vh4YLR3cDgG3zQSp0wPWGtfoFwUW68U1Hc46IQrZ8",
+      "path": "homebrew/hb-ppsa19111.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa39410",
+      "name": "VITA5",
+      "description": "Play a PS Vita on the PS5 over one USB cable.",
+      "author": "StonedModder",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "1.0.0",
+      "homepage": "p5enc:v1:fzUNO0V0NILiLBJM8E5kpf_71onuM-dEryXZ-3lLnEAVLvWS9iSo-Uc60RDXcYGPVao1c6iYD9PBRv41CGiYxEw",
+      "path": "homebrew/hb-ppsa39410.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa59322",
+      "name": "ccleste",
+      "description": "This is a C source port of the original celeste (Celeste classic) for the PICO-8, designed to be portable. Now you can enjoy the port on your PS5.",
+      "author": "AngelXex",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "1.00",
+      "homepage": "p5enc:v1:RG_7qvWESJbfZVOttaB5DRfxtVKs8pYCzHEoChXWxDsaom9qIofrzRJW7y2-_jcudidGdT66cBYqntaZva48TZ5V",
+      "path": "homebrew/hb-ppsa59322.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa68091",
+      "name": "Ruffle Flash",
+      "description": "PS5 Port of Ruffle Flash Emulator.",
+      "author": "AZiZ",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "1.2.0",
+      "homepage": "p5enc:v1:VSLEo3PyYtsiQ3D-q9DjMZDVLiMEpjfEZw6A6Tv2aakU9nbEkHAOituDoRz8mYbglV6EmuwjgLk4VrMSSll-7fFuFyFI",
+      "path": "homebrew/hb-ppsa68091.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa69420",
+      "name": "ScreenTester5",
+      "description": "Screen tester: solid colours and test patterns to find dead or stuck pixels, check uniformity and geometry, and run stuck-pixel recovery.",
+      "author": "Marice",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "01.000.000",
+      "homepage": "p5enc:v1:yUot5zgQuoR7Xps-fMWupe-dPrb_aCkWRXg4_m8G5bqZQDxiv-v_s8XdoOm9O8Q6addHCyvqFgNw3aFv7lPEmidoJQ",
+      "path": "homebrew/hb-ppsa69420.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa74126",
+      "name": "Stremio Plus",
+      "description": "Unofficial native Stremio client for PS5 with Prospero UI, add-on sync, torrent streaming, offline downloads and customizable subtitles.",
+      "author": "LoZazaMastro",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "0.5.6",
+      "homepage": "p5enc:v1:urjmsG0dJMtI9yHWk76soeVWI6axiKqWpXp6jCyqhEZ78-rwP1RVbpdLEus2PpNI2FqZhXzeBNTf0vpFl5QGGsfhCCtz6q4R",
+      "path": "homebrew/hb-ppsa74126.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa76677",
+      "name": "RommPS",
+      "description": "Syncs your emulator saves and states with a RomM server and downloads games from your RomM library.",
+      "author": "s0liton",
+      "version": 1,
+      "comingSoon": true,
+      "console_type": "ps5",
+      "files": [],
+      "size": 0,
+      "homepage": "p5enc:v1:E7IwnxjGU5M53mRyzqt-yFqLxH8nPL5-TtBQ4pFc5ZPvUWtcGyRO1TfUPfbP3fhZW6t-IYYWxuAWchhcSKzLWg",
+      "path": "homebrew/hb-ppsa76677.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa77711",
+      "name": "Stremio",
+      "description": "Unofficial Stremio client for the PS5",
+      "author": "Argyris Vazaios",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "ffpfsc"
+      ],
+      "app_version": "1.0",
+      "homepage": "p5enc:v1:gw4AIbM1GUOepnGsEnIJiauWb75feoTx5Z09-NlviOf1slw5tbkccy_i8Cdedf4q0DajH1UUzxeJd73TC83Dz03YzlW-Jdeji7nkBuMrHKOH",
+      "path": "homebrew/hb-ppsa77711.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa92280",
+      "name": "Capy Mobile",
+      "description": "Java phone games (J2ME) on the PS5: a native homebrew emulator app",
+      "author": "Khalifa Al-Khatri",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "0.5.0",
+      "homepage": "p5enc:v1:71jLCsA_GULDWhlqES6EhRQfBxDLY4xfA-MXLaBXmBOs3tboiwpLPVcStYZMmmSgY3BxCjMXKv3moyHMNP24UeALroI",
+      "path": "homebrew/hb-ppsa92280.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa97510",
+      "name": "PSXS5",
+      "description": "PSXS5 (PlayStation X Super 5): a PlayStation 1 emulator running natively on jailbroken PS5, based on PCSX-ReARMed. Cover-flow shelf, xBR upscaling, RetroAchievements, cheats.",
+      "author": "SynoPiia",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "2.2.0",
+      "homepage": "p5enc:v1:3NAJanZCuV-pgVjDwHtx6QPXNWQFUvo-lsR0q1J6zwHEjJObQudE5CKkhlcu7LO-RaHKemFzDu80soZllw",
+      "path": "homebrew/hb-ppsa97510.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa98001",
+      "name": "PokeMMO Prospero",
+      "description": "Runs the official, unmodified PokeMMO Linux client natively on a jailbroken PS5.",
+      "author": "Shabbypenguin",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "1.0.1",
+      "homepage": "p5enc:v1:1EDxJYcwGqwI_hu2Srhb5yOS_2VqeHwX8b5SU7U2X3bd4f4mgI8a6yKpYOyBOed_Ix2JQWc0KIfPMHmvfwe73nPLiaOJAeDvJHt6e4g",
+      "path": "homebrew/hb-ppsa98001.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa98510",
+      "name": "SwanStationPS5",
+      "description": "SwanStationPS5 is a PlayStation 1 emulator. It is a fork of PSXS5 created by SynoPiia that runs all games using SwanStation core.",
+      "author": "AngelXex",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "1.0.4",
+      "homepage": "p5enc:v1:c1dYFuykzLcmz8A3IYabLnFsxXnS7iP37e8ZeHH7uGrldVF-03b02CJxKu-Rn5lx53s12DWqolnlJMiOq4AUSY5YU3kB",
+      "path": "homebrew/hb-ppsa98510.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99000",
+      "name": "ProsperoStore",
+      "description": "Native app store for PS5 homebrew: browse this catalog, install apps and keep them up to date.",
+      "author": "BlackBearReloaded",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "1.000.050",
+      "homepage": "p5enc:v1:S3sAQn7Ge4zEy9ZZoyKvvz84w0js0bVt9rittv7t1qg3woXSD-FHA-SfH0wRAxGh9GLNMx-ID3PAZlUqTwcOsh6W6YUP9QMyp8fz5tjB",
+      "path": "homebrew/hb-ppsa99000.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99001",
+      "name": "ProsperoRadio",
+      "description": "Internet radio player for PS5.",
+      "author": "BlackBearReloaded",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "01.000.010",
+      "homepage": "p5enc:v1:GoI7SDYeyrnV2xhYLrHJKk9w-gmNgKCYvLfy8VyHqwDXSoVQYwh903LNimZnQP2bAGSngxRzdM4mvJj8SN9JzGM3IIigyck7cuDe9Dew",
+      "path": "homebrew/hb-ppsa99001.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99002",
+      "name": "ProsperoLight",
+      "description": "Unofficial Moonlight game streaming port for PS5.",
+      "author": "BlackBearReloaded",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "01.000.090",
+      "homepage": "p5enc:v1:sl3s0ws5bF3T42Y_vvROgNfnzJClq6r6TlNkda60TFvXzm9mN1d5zt1X7P8SGVtaUkiDt3FX4Pr9VG2x55Ak2orQ-gInh1K6ELHbo8Eb",
+      "path": "homebrew/hb-ppsa99002.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99003",
+      "name": "ProsperoTV",
+      "description": "Native IPTV client for PS5.",
+      "author": "BlackBearReloaded",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "01.000.030",
+      "homepage": "p5enc:v1:B7IfOGQ6lCvj5B1kPo6ilZTFn2nTqPsqZpxzROyhmmaWdzdtuq9f9aBGqtdgbcCjZLciikVXsElNAKWii3AjXiC8PMNCy4_v7Aug",
+      "path": "homebrew/hb-ppsa99003.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99004",
+      "name": "ProsperoAI",
+      "description": "Local LLM chat app for PS5.",
+      "author": "BlackBearReloaded",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "01.000.000",
+      "homepage": "p5enc:v1:cf_GxejlkhUOjKhCYEd2VrwkF28zjtndu4KDGgkVzHkTRIrrY3h4Gdmd0kn4Ll6vPkyDguiPYaa6WuBmw77zkNhzDXAwgp8hSV_P",
+      "path": "homebrew/hb-ppsa99004.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99005",
+      "name": "PS5 OpenGL Showcase",
+      "description": "Native OpenGL graphics showcase for PS5.",
+      "author": "BlackBearReloaded",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "1.0.1",
+      "homepage": "p5enc:v1:6UiDkd_BcJVolSwW0TVYBzUNSEcwYXd-ObDpgGpuZJcCA4PhDLXIQDwW-tEs5Z8bXZyHPWhj_DNf6elfgcmayZ7cRZ1P9YTAgtNZ",
+      "path": "homebrew/hb-ppsa99005.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99006",
+      "name": "ProsperoPuzzles",
+      "description": "Collection of puzzle games for PS5.",
+      "author": "BlackBearReloaded",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "01.000.010",
+      "homepage": "p5enc:v1:j48bdjeMX2Lijlhfuv1cYTZ92R1L1vzc-liT6EnC8CwvZksHRapiIt5NgSwQTVeBuDnf0TkdGInXBO3zYunJ5bPL_5CZvnW2lEacNX_PNFY",
+      "path": "homebrew/hb-ppsa99006.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99007",
+      "name": "Yamagi Quake II",
+      "description": "Native PS5 port of Yamagi Quake II.",
+      "author": "BlackBearReloaded",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "0.2.0-alpha.1",
+      "homepage": "p5enc:v1:tOkJ2yMGEmGtX4ZMo0tlmxEQqhoCa2Sxt4lk9Ig5-5Sr2DZHzoltxfoHogz30_5d_YN9wCP2HZZl6O1n0WKOnKkkj1svVsCyS61MtDO2RPJflw",
+      "path": "homebrew/hb-ppsa99007.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99008",
+      "name": "ProsperoEden",
+      "description": "Unofficial Eden emulator port for PS5.",
+      "author": "BlackBearReloaded",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "1.000.090",
+      "homepage": "p5enc:v1:4hfQhwIo7Uk736tsKBQHxQQmupPf4Xwlx4BApMOKFPJ703g_qMgaBfebHigv63LInMQXsxc_NZqgkqhYVSABITDnZCo0YdD5ZplCjtw",
+      "path": "homebrew/hb-ppsa99008.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99009",
+      "name": "ProsperoLichess",
+      "description": "Native Lichess client for PS5: play online chess with the controller.",
+      "author": "BlackBearReloaded",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "01.000.000",
+      "homepage": "p5enc:v1:De7nnlZkTwci-_X19aZ27vRBGlkzBEUqNeyNl1LMPveQiNcK9QLK0sO9guKB_HpLrCsupSnXhoYVJ7DEJ7kww85Cj3YPdupaPTUnKopb0Us",
+      "path": "homebrew/hb-ppsa99009.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99010",
+      "name": "vkQuake",
+      "description": "Native PS5 port of vkQuake, the Vulkan Quake engine, at up to 120 FPS and 4K with DualSense input. Needs your own Quake game data.",
+      "author": "Mihawk",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "1.0",
+      "homepage": "p5enc:v1:b2xuyT0wD3nHwiexR2cn7Q8byzvHCTJizW2-QeeWajUi8OzpMBhpQW473SsqQjI1-Z21yNywPx3izzRwCorL3HKkcoY",
+      "path": "homebrew/hb-ppsa99010.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99011",
+      "name": "PS5 FSR4 Showcase",
+      "description": "Shows AMD FSR 4 upscaling on the PS5: a city at dusk rendered small and upscaled at 60 fps, with settings to compare it against bilinear and native rendering.",
+      "author": "BlackBearReloaded",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "01.000.010",
+      "homepage": "p5enc:v1:eJCvUSke8hIe5Aak6xh7T9gmyEx5JZuhKwPJfYVF51TeTHR984a6DcZEkociCHRKmMYVe5gjJcMZqF14f5RRSB8FWY3UF4wxrw",
+      "path": "homebrew/hb-ppsa99011.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99039",
+      "name": "EVO Player",
+      "description": "Media player for PS5 that plays video from USB or internal storage, with hardware decoding up to 4K, 10-bit HDR and surround audio.",
+      "author": "Sain Saji",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "0.11.0",
+      "homepage": "p5enc:v1:g0Km5ebkH3uBoa5jG98lHUsVT7ENjlfMO5u8qqLMMWalM-8F50ho1b80IFOiV9FykGeOVBYVtV1zNIW9QnemoAxYezdfow",
+      "path": "homebrew/hb-ppsa99039.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99050",
+      "name": "Homebrew UI Lab",
+      "description": "A gallery of 21 complete, working interface designs for PS5 homebrew, drawn with OpenGL, with 30 themes and a reusable widget kit. Switch designs with L1 and R1.",
+      "author": "BlackBearReloaded",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "01.000.010",
+      "homepage": "p5enc:v1:5J__wii7JVDLICDE8gMRxQDEQlABVUue3Pk-9PqBNC6nDAUKbNpMdLacvDiJFRw9EhzlcxJ183ikw1EtK69TGgonbbQDXrgaNeet4K38UAI",
+      "path": "homebrew/hb-ppsa99050.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99082",
+      "name": "OpenNOW PS5 - Prototype",
+      "description": "Experimental native PS5 GeForce NOW client: a working, console-tested prototype with hardware decoding and GPU presentation.",
+      "author": "Portablelle",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "0.0.7",
+      "homepage": "p5enc:v1:6CwUtwfDz-XxhrpqDhQmlqSD16F2TSgo3kW9CF-4v3vy1GcAEoq6cLQzZaTNkLFiQFVzpw3_ZVWdtOgf0kE9qLJ6gGKCsg",
+      "path": "homebrew/hb-ppsa99082.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99109",
+      "name": "Prospero Explorer",
+      "description": "File explorer for PS5 that manages files and archives, plays media, edits text, installs packages and serves files over the network.",
+      "author": "SvenGDK",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "1.0",
+      "homepage": "p5enc:v1:dn6CnZWsyqaA__wBM9BmddrxkLaIjuICRbzB2uvjgQC2Ruttxih5Z2F86XKgf3Mxdr6G7taoZIPtp8B1HFRPiTryAfEOTcnx",
+      "path": "homebrew/hb-ppsa99109.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99110",
+      "name": "Prospero Multi Tools",
+      "description": "Backup manager for PS5: browse and edit PS1 to PS5, PSP and PS Vita backups, install packages and launch PS1/PS2/PSP titles. Needs the unjail payload.",
+      "author": "SvenGDK",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "1",
+      "homepage": "p5enc:v1:udWsikm2Ofc1k2bjm2TurLb-oNw1RmrSLEsYf5XaW0RFGPgz8W3KG3YIsU30xZBmnz88m7z3uwD8ojiQhj85Axe8MXNUO00Xq-Wm",
+      "path": "homebrew/hb-ppsa99110.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99169",
+      "name": "RetroArch",
+      "description": "Native RetroArch port for PS5 with cores for NES, SNES, GBA, Genesis, arcade, PSP, GameCube/Wii and PS2.",
+      "author": "Mihawk",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "1.0.0-beta.1",
+      "homepage": "p5enc:v1:ddSr0WMnbiHr0LEoLS0UletjhX6EfC0_aaXekK6WzA5PjvY4l68OTiSXr6M9LFcV-DnKKJrIKnrJ0P_0snBxkm4BkioXmQ",
+      "path": "homebrew/hb-ppsa99169.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99177",
+      "name": "PS5VR",
+      "description": "Native VR video player for PS VR2 on jailbroken PS5: 8K, 180/360, 3D, spatial audio",
+      "author": "Husam Osman",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "1.0.0",
+      "homepage": "p5enc:v1:7lGUA6lNzRFuRs4ndQDivuvbl9GaNkBm81sDSmeNpuckxqtMKtyZDO0YojwoRUKiQS_-enf_Ve2186aKc9lT2iUt8Q",
+      "path": "homebrew/hb-ppsa99177.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99203",
+      "name": "PS5SX2",
+      "description": "PCSX2 port for PS5 that runs PS2 games natively with a Vulkan renderer, up to 6x resolution and settings from your phone. Bring your own BIOS and games.",
+      "author": "Sword",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "vk-285-139",
+      "homepage": "p5enc:v1:cudA5BQ4L1bac__7yHKHkjyFxF8qC-rfj7C20qtF-tPpnoTw8ZJozvzXzMK-v_HRhEqadq4cqWBkII3vd_I",
+      "path": "homebrew/hb-ppsa99203.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99204",
+      "name": "PS5NES",
+      "description": "A port of PCSX2 for PS5NES",
+      "author": "GameMaster",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "1.0.0.8",
+      "homepage": "p5enc:v1:wwiYZ40ccu_EjNwtcmB2WZKsxOEzZ-YxDjKFiLHLNBZjXEYA5FwFRxAGXLgElS1cyAdDmcR0ZCERv7EK7aSK7VFeNA",
+      "path": "homebrew/hb-ppsa99204.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99206",
+      "name": "PS5N64",
+      "description": "A port of PCSX2 for PS5N64",
+      "author": "GameMaster",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "releasev7",
+      "homepage": "p5enc:v1:HgBt2Gjq4t6GjE5LsE26EGt4vqHQLf0UrL44bIOvXCHUWJcSnK0Z-SLm2rdRcK_Q_Itt8uKDGFchZ_AGSfYurfLLWA",
+      "path": "homebrew/hb-ppsa99206.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99420",
+      "name": "PS5MC",
+      "description": "PS5MC, an unofficial port of the Kodi 22 media center for PS5, with a 4K GPU interface, hardware H.264, HEVC and VP9 decoding and HDR output.",
+      "author": "VivaLaVent",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "1.2",
+      "homepage": "p5enc:v1:cT0vUcr570IZ_iAOMNx8XQDjD_nTZdPOQnrvyBUtdxdV7QHC1wQMXnVMs5FSDTb_ZL62qr71_kDlVR9FzVUa",
+      "path": "homebrew/hb-ppsa99420.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99505",
+      "name": "Jelly5",
+      "description": "A native Jellyfin client for jailbroken PS5: its own liquid-glass interface, hardware-decoded 4K HDR",
+      "author": "02dnot",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "0.5.0",
+      "homepage": "p5enc:v1:v1YcLnOodHok3UnZWsNa-ypAUjEMVz0dRZG-5_PgKg-Xu_3c9TG02WKb3yYIQ3ZIlDmNKEGytrpj7QXY",
+      "path": "homebrew/hb-ppsa99505.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99515",
+      "name": "Emby5",
+      "description": "A native Emby client for PlayStation 5 with media playback and optional Seerr requests.",
+      "author": "bornaradusin",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "1.1.0",
+      "homepage": "p5enc:v1:BJ3_boa_R-oAkyx7dOETgDcWdxMEcNb3z5jy8tGt9t1EzWhd7o3J5Xmcw5xNqY09LslHP8ncxgAhCyPR4fC6wDg",
+      "path": "homebrew/hb-ppsa99515.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99600",
+      "name": "Cloud Play",
+      "description": "A Chiaki-based cloud streaming client for PS5 that streams games from the PS Plus Premium catalog.",
+      "author": "tertiumndatur",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "1.0.0",
+      "homepage": "p5enc:v1:8huHwlIvuG3ljQRJ0TXM9uDa_xQ9B4fu2WUCgJHh-JbgSa0v-8yzOGWrCHiqAuhMf1WdVZLHa2t70PjydAwaHfSN5NYlpgB9pkM0",
+      "path": "homebrew/hb-ppsa99600.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99666",
+      "name": "DOOM Native Port",
+      "description": "id Software's original DOOM source running natively on the PS5, with the shareware episode. Add your own DOOM, DOOM II and Final DOOM files from a PC or phone browser, a link or FTP.",
+      "author": "lowbit",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "1.1.1",
+      "homepage": "p5enc:v1:m4dzCLduVVltUgwzL_ezwb5amzuHqGoA6EMYrMo9MzVSIoA_aHcp82jEuvoT_Pdv2VlrmaZkUiUW-FdMgac",
+      "path": "homebrew/hb-ppsa99666.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99728",
+      "name": "OpenRCT2 Native Port",
+      "description": "OpenRCT2, the open-source RollerCoaster Tycoon 2, running natively on the PS5 and played with the DualSense alone. Send your own game files, even the GOG installer, from a PC or phone browser.",
+      "author": "lowbit",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "1.0.0",
+      "homepage": "p5enc:v1:qCmWIQNRSo850gKOq5cJ713ij6SFPcvRCPGrdI2PyI9hwaTdFakAjdUJtpuXmDY5_PEgZjjNEygar-mu6FN_CxuH",
+      "path": "homebrew/hb-ppsa99728.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99764",
+      "name": "Porpoise",
+      "description": "A native GameCube and Wii emulator for jailbroken PS5, powered by Dolphin. Cover-flow library, box art, memory cards, original music.",
+      "author": "Ruben Ripalda",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "2.7",
+      "homepage": "p5enc:v1:WUt3kCvBzEbW_MNzQHyNTOzQYrUqWpUQUkZ8zPBjbKfepBeXki1-8h_7L_cWXZGO_ZT-P20FnVuUlDT_6JmbsKKjnsblMe0lLJOsBMgGZYRK_Ci9YsBxoWS-",
+      "path": "homebrew/hb-ppsa99764.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99808",
+      "name": "PICO-8 for PS5",
+      "description": "Unofficial loader that runs your own copy of the PICO-8 Linux build as a native PS5 app.",
+      "author": "RafaelNGP",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "0.1.2",
+      "homepage": "p5enc:v1:kbilmxNUb8Nrhz0FfD6WCqMslJMok4bYjuaRH_mk4zR_Nnn3e0nYaxzxyzSB0T02Vy0Liy7P_JbeIQ7TpblTUyrR",
+      "path": "homebrew/hb-ppsa99808.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99810",
+      "name": "PSBox Cloud Gaming",
+      "description": "Unofficial Xbox Cloud Gaming client: stream the cloud catalog, your own games and your own Xbox (Remote Play) at 1080p60 with sound, using the DualSense as an Xbox controller.",
+      "author": "RafaelNGP",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "0.7.0",
+      "homepage": "p5enc:v1:29sZulZHWsj-S7q7xUUoLi64o2YemR_0m6yJWaJ8OFJAl4-movdIugqRXrZUJGRmGmO0jTSaARlWHcFUDTDBf_gIvoZ7GxnlJ8MTz6nr",
+      "path": "homebrew/hb-ppsa99810.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99920",
+      "name": "Prospero Vibrate",
+      "description": "Controller vibration studio for PS5 with live motor control, preset patterns, a custom pattern editor and timed playback.",
+      "author": "SvenGDK",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "1.0",
+      "homepage": "p5enc:v1:19A5xVBodLhI94xcn_dXAsmxlE_PtpXaXN-kHk_PxeFZDMNpzeUla-qtEbx3zZ5zzPGzvMHNyHUZ37F9MSvNwAovzWm16Ww",
+      "path": "homebrew/hb-ppsa99920.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99995",
+      "name": "Prospero Win",
+      "description": "Windows compatibility runtime for native PlayStation 5 homebrew.",
+      "author": "mpereiraesaa",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "0.1.1",
+      "homepage": "p5enc:v1:GTJxyF_6p5wSagx-Jv9hJdrooNLmyVe12QSMnjW-uX_gRAgJhhLmv0ByRkThNU0kIgiMlXgfy6oOuT_9CSefM2GuE1y8_QqF",
+      "path": "homebrew/hb-ppsa99995.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "hb-ppsa99997",
+      "name": "Nuvio PS5",
+      "description": "Nuvio TV for a jailbroken PS5, with EVO native playback and the interface served by the console itself.",
+      "author": "Bilawal Riaz",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "zip"
+      ],
+      "app_version": "0.1.0-alpha.2",
+      "homepage": "p5enc:v1:oiMJWPvnd8bU73edLuS88PqOMwVI_hQ0tim0IDKB7TzxfEMHe8gUoXC66uWWaFLgqz2Srfnd3yUzKY0ok_SsXM_h3_Y46RTeMNukE9Y",
+      "path": "homebrew/hb-ppsa99997.json"
     },
     {
       "kind": "payload",

@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99050",
+  "title_id": "PPSA99050",
+  "name": "Homebrew UI Lab",
+  "description": "A gallery of 21 complete, working interface designs for PS5 homebrew, drawn with OpenGL, with 30 themes and a reusable widget kit. Switch designs with L1 and R1.",
+  "author": "BlackBearReloaded",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "01.000.010",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:h1Z_Ws_h9_sKA2aOsjEOJ2OKpGIjg6S5pld40gXVgU5-XDSwsizYE_Fo8_wBdeRqUoiCIa5IUe5cIqLKj0YR2ymEK7zHvO_tQYSnvI5HWkg",
+  "source": {
+    "catalog": "p5enc:v1:98OfT1yA0pARuUoZwIjYqQ4vCn8KTwKxzTo3jVJsQbMAwGiU5s4nboO8fe_UYtpY9qzjdEoghipVK_eImNoUrRI",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:9Tfo9DAQ3KUfxtDdK6yvdz1-3Okkh6jBIhP8Ee-yoolEVBovhmW90oU0bPWxOP292Sc4mJwy8K-TO-vEgk8TAA"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99050.zip",
+      "url": "p5enc:v1:EVnLR7bkl3R3bCQW65D-7q-Is2Rlzlp5QJPbqnSe9u_N1xy6rfvXcG7R82LLo6yXbJXGGBpvBABKNcpWslwfbIQJKSv57hz4iT3q_rPizd48KNTjInTXouNb6Dkvy9gY2yKEPmtHXubcvQYOIdNNd73OTMmNNmtQ8ZQ6",
+      "sha256": "420a3fb50ad6451c0d63f5e9a5b6ca3e8579a9e29b63f2eb187e740ce853cdaf"
+    }
+  ]
+}

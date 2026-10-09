@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99039",
+  "title_id": "PPSA99039",
+  "name": "EVO Player",
+  "description": "Media player for PS5 that plays video from USB or internal storage, with hardware decoding up to 4K, 10-bit HDR and surround audio.",
+  "author": "Sain Saji",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "0.11.0",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:kYJlLzbkRVIjHPKMYvTlvjNBOU_SFB2TVuuuAUpSqDAFnjoMtwbbD6ik5Pppjz6qdfu4WMJ1mcfAbki-PmlPfd4lCpYywQ",
+  "source": {
+    "catalog": "p5enc:v1:YesMFI-EP0Q0muP0RHCR8xvFvOs6mcFpPtgTjEOEXde_tXAXZng6zjyJgeshNVwmuc0GovZObmqyxNK-3iLmesQ",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:XmIOfGWHxG4YUcOd_jGwM3YE9GgcQYqpZSiAi8TwiOT9nxKPE44VzJarJtsXOfj3qDXDKB3q2c0fiexa0v73ZA"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99039.zip",
+      "url": "p5enc:v1:W_SXZROUJSHE5W0GlesFfcFudQi4o4T3xYvB2oTXnp4PpfcnFpNfMlBIgamMcpVstmHzQLKgKe9vjoiIUzyTtpDIX-KIqrEeLhFi54fTbbwHSuGQgr_s7GSPsJbkvK_l8VOAG2bFp5k-w2Hakg_E-zI_ns-5REzfe84QboeIO4M",
+      "sha256": "687c0f0f7b409807777716b8d947d7dcb48d07c218b39c0018f648e6af9b5349"
+    }
+  ]
+}

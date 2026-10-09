@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99003",
+  "title_id": "PPSA99003",
+  "name": "ProsperoTV",
+  "description": "Native IPTV client for PS5.",
+  "author": "BlackBearReloaded",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "01.000.030",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:OY4bEGaN7ogXrWf9_xF6K6b6WHmYp79JNQ_CcKRXe0KlXCMGwb-T-rqmVfhV8YvW6i0O6ja8_7NPjNj33JyFg_EsHfgYRlBQs5Ge",
+  "source": {
+    "catalog": "p5enc:v1:H4RMCzxKo-LoeOTHqho3CuWBBd0sZ3al10u6tv31b0rmrpja-_L54fT68cYwzXAa-lKnU8V23X0CB0xngzMZ8fI",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:OWmW7Bl6zZXtH_3DHnq5kvKyCTksVSvQF-Z-GEeIF3E37UjgLlNa_mlS0LyXZXpkRNpeUUA82qyF79dVzPAiOA"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99003.zip",
+      "url": "p5enc:v1:e3kJeUdbNM4wuPZM6NVHE-ua66RslzRrWRjX7pvIPOAASv-KQJEbmHB_tqjfW-XdGAphM_vCJKFN8Rm4dAPBFJJ2RacYWrjYfWNkqTpAVOfJVXuLvczdmgNRCX-Jr4u81uzPkteSkPAkD9dlTXLzLnf-OBrK8Q",
+      "sha256": "a2fa4b370c228cbcbef176cb4582dde4d2d9dfb36824b86f0b6dbeb74323b106"
+    }
+  ]
+}

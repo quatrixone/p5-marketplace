@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa39410",
+  "title_id": "PPSA39410",
+  "name": "VITA5",
+  "description": "Play a PS Vita on the PS5 over one USB cable.",
+  "author": "StonedModder",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "1.0.0",
+  "license": "GPL-3.0",
+  "homepage": "p5enc:v1:iuCF1g8YVcVxlykou5JVpcQEDYEsKVVRS7szPzI80DREKSN_IBa_zLG4aDW5plim0K5omd357HgOyEinyCciHvI",
+  "source": {
+    "catalog": "p5enc:v1:80czhxusOlvAD0Qch6xD1GwdzFVRECOdu3ygYSPrTNbty_fZRXFsmuoEDbMfg9CK9tU0zv4vJolW_xV75ZS_1aU",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:qnAZvpvz45IQmn7gGUEjiXgC2DgA8TC4jdd6St6iwiYqSU0PI_30eot6j821Djmng75nqbLeZR0xxK0Fhfrtdg"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA39410.zip",
+      "url": "p5enc:v1:Z-O4ed_hQps5h6yUTAAD36fJgQOGsKb9gNxufSyS5zDsT9Z-FhotpMdJxhaYYNGqsVlVONlPaTBxeaOfsTEwN1UsU-c6WYkQjspWWNXk8Ca7-AZXaOovMY9k33LsaGeBIhJAiHKuPns",
+      "sha256": "d4e23aa6e511c2d9b7905174b11f0a4a70cf7d0a457ec0a1772b02d5d7e6ea09"
+    }
+  ]
+}

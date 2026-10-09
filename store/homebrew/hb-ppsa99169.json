@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99169",
+  "title_id": "PPSA99169",
+  "name": "RetroArch",
+  "description": "Native RetroArch port for PS5 with cores for NES, SNES, GBA, Genesis, arcade, PSP, GameCube/Wii and PS2.",
+  "author": "Mihawk",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "1.0.0-beta.1",
+  "license": "GPL-3.0-or-later",
+  "homepage": "p5enc:v1:q7frdm0NVTX57bbDEiyYO1OjRdvOQSOj_k6NSiz2yVXbbdGXbLUHnIfbrc71jPrGLY81FJftCLPNnYrBJDnXv-IY8twkYA",
+  "source": {
+    "catalog": "p5enc:v1:CD_OlIe_2ZyVdMndxY5qnESazpUePulzO2soKmwCIIAos14-E0yHRvRO5HlrG7N2IE8IJnLbH87WYshH-sCNxAE",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:exe1RYz5I_tBPNjHAnJ3GTuoOAZPqUVagT8dtj2UaUvBY5W4S2zOnYKVxm1ZsVzo52duksptH4P6wxDaZghWlg"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99169.zip",
+      "url": "p5enc:v1:xRvmFTcitQaCAbWvbZxwNyW9Qo08VFrINIwCQXm6qG7igAilLop4j1zQHR26sR00MPa4tvVTUfU8NNq3vfe3rCvSRwVV4Q1DOOFMbMNF75U69TGqrLf1fAcWTMe1LzHNa-bY7NF3Sa3Mkd-3K7_jmKQcXA_DOpwBJaz3WGrH0pDBFVrNSg",
+      "sha256": "9ba38f6608cb3b9c218135c1ba65ffe06da57e3a4a4d532fbf5aedb7663b7175"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "homebrew",
+  "id": "hb-ppsa99010",
+  "title_id": "PPSA99010",
+  "name": "vkQuake",
+  "description": "Native PS5 port of vkQuake, the Vulkan Quake engine, at up to 120 FPS and 4K with DualSense input. Needs your own Quake game data.",
+  "author": "Mihawk",
+  "version": 1,
+  "console_type": "ps5",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  },
+  "app_version": "1.0",
+  "license": "GPL-3.0-or-later",
+  "homepage": "p5enc:v1:2fGP5p-Li2Pn-fPt2zqIa51fybOkmqSHUq9GWQftaodM_qSGWXEZEunHiKSgOzUQCzXNJuHl_39nfktAPPPvOQDrjbo",
+  "source": {
+    "catalog": "p5enc:v1:05t5BvxCPTiAu2fl_2OQoJV_HF4KxRuu3psRCf41Jb-q1qOzMctHti0JYuCeXTyrDjJAmjH0IkkeAKIm4llBJ44",
+    "commit": "f8e4e2008f28a8d9c14e25cfbf9af30ffe88dd7e",
+    "page": "p5enc:v1:KJMInzvjNgEgoCFnKEJL9Io1mOHuBle9UeazoGPpJtVBuPbXtg1PayKQi_N7jrCb3Pt_bXnuWJIrJjRJvfaOWA"
+  },
+  "files": [
+    {
+      "type": "zip",
+      "name": "PPSA99010.zip",
+      "url": "p5enc:v1:dy_nnStwYk3PwOwcPK6j2iJ17zfWseFCJJ3SgRGRxLWPlsAkVQRTiPSmxpAyeFJy2P5ueSDV_174jEdylGBrT7fL3lk31CtSTUXGS2_H7my_DLzPUR20GQtTyaxBvfsb0BJbRpAslAU",
+      "sha256": "aeabf17512eada3e96c18fb2d842b7e077ffea2fbb65caf93276cc0b2797b0e6"
+    }
+  ]
+}

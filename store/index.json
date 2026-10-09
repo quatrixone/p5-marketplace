@@ -1,0 +1,186 @@
+{
+  "generated": "2026-10-09T07:49:07.362Z",
+  "items": [
+    {
+      "kind": "template",
+      "id": "goldhen-load",
+      "name": "PS4: Load GoldHEN (wake → wait → send goldhen.bin)",
+      "description": "Wake the PS4, wait 8 seconds for a manually enabled BIN loader, send goldhen.bin to TCP 9020, then verify the payload-sender port stayed open. PS4 takes longer than PS5 to open the GoldHEN exploit listener, so the port check retries the wake + wait pair. Requires your own compatible goldhen.bin (and ftp_server.bin for the FTP template). These templates cannot bootstrap a jailbreak from a closed BIN-loader port.",
+      "author": "quatrixone",
+      "version": 1,
+      "console_type": "ps4",
+      "steps": 4,
+      "requiresProfile": true,
+      "path": "templates/goldhen-load.json"
+    },
+    {
+      "kind": "template",
+      "id": "userguide-jailbreak-autoload",
+      "name": "PS5: User Guide → kstuff → ShadowMount → zftpd",
+      "description": "When the PS5 is online and its ELF loader is closed: open the configured guide loader, wait for port 9021, send kstuff, ShadowMountPlus and zftpd, then verify FTP. PS5 only. Configure the User Guide host and calibrate both guide scripts for its prompts and selected action first. The watcher runs only while the console is online and the loader remains closed. A failed port check reruns the guide steps at most twice, then reports failure; it never reports success merely because the button script c",
+      "author": "quatrixone",
+      "version": 1,
+      "console_type": "ps5",
+      "steps": 9,
+      "requiresProfile": true,
+      "autoTrigger": "loader_down",
+      "path": "templates/userguide-jailbreak-autoload.json"
+    },
+    {
+      "kind": "script",
+      "id": "home-ps4",
+      "name": "PS4: Return Home",
+      "description": "Tap PS to leave the running application for the PS4 home screen. ",
+      "author": "quatrixone",
+      "version": 1,
+      "console_type": "ps4",
+      "lines": 2,
+      "path": "scripts/home-ps4.json"
+    },
+    {
+      "kind": "script",
+      "id": "home-ps5",
+      "name": "PS5: Return Home",
+      "description": "Hold PS to return to Home from an application, Settings or User Guide. ",
+      "author": "quatrixone",
+      "version": 1,
+      "console_type": "ps5",
+      "lines": 2,
+      "path": "scripts/home-ps5.json"
+    },
+    {
+      "kind": "script",
+      "id": "open-user-guide",
+      "name": "Open User's Guide",
+      "description": "Return Home, find Settings from the right edge, open User's Guide and confirm the certificate prompt for a configured local guide page. PS5 only. Live-tested on the configured console: long PS returns Home; the top strip stops at the profile icon, then left selects Settings. Twenty Up taps reach the first Settings entry regardless of its last focus. The final Cross accepts this console's local User Guide certificate prompt; remove that line if your guide page has no prompt. The script leaves the",
+      "author": "quatrixone",
+      "version": 1,
+      "console_type": "ps5",
+      "lines": 20,
+      "path": "scripts/open-user-guide.json"
+    },
+    {
+      "kind": "script",
+      "id": "user-guide-loader",
+      "name": "PS5: Start guide loader",
+      "description": "Press the selected action on the already-open configured User Guide loader page. Run only after Open User's Guide has reached your loader page. This console's Relapse page opens with the pointer on Jailbreak. Adjust the button/navigation if another host or page is used. The Autoload port check, rather than a fixed sleep, determines completion.",
+      "author": "quatrixone",
+      "version": 1,
+      "console_type": "ps5",
+      "lines": 2,
+      "path": "scripts/user-guide-loader.json"
+    },
+    {
+      "kind": "payload",
+      "id": "klogsrv-ps5",
+      "name": "klogsrv-ps5.elf",
+      "description": "PS5 Kernel log server (used by Log viewer)",
+      "author": "ps5-payload-dev",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "elf"
+      ],
+      "size": 135248,
+      "path": "payloads/klogsrv-ps5.json"
+    },
+    {
+      "kind": "payload",
+      "id": "kstuff",
+      "name": "kstuff.elf",
+      "description": "PS5 kstuff-lite v1.11",
+      "author": "EchoStretch",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "elf"
+      ],
+      "size": 1737080,
+      "path": "payloads/kstuff.json"
+    },
+    {
+      "kind": "payload",
+      "id": "offact-ps4",
+      "name": "offact-ps4.bin",
+      "description": "Check or activate a PS4 console account for offline Remote Play.",
+      "author": "quatrixone",
+      "version": 1,
+      "console_type": "ps4",
+      "files": [
+        "bin"
+      ],
+      "size": 46660,
+      "path": "payloads/offact-ps4.json"
+    },
+    {
+      "kind": "payload",
+      "id": "ps5-backpork",
+      "name": "ps5-backpork.elf",
+      "description": "PS5 BackPork ELF",
+      "author": "BestPig",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "elf"
+      ],
+      "size": 99800,
+      "path": "payloads/ps5-backpork.json"
+    },
+    {
+      "kind": "payload",
+      "id": "rp-get-pin-ps4",
+      "name": "rp-get-pin-ps4.bin",
+      "description": "Read the PS4 Remote Play PIN and console account ID.",
+      "author": "quatrixone",
+      "version": 1,
+      "console_type": "ps4",
+      "files": [
+        "bin"
+      ],
+      "size": 51972,
+      "path": "payloads/rp-get-pin-ps4.json"
+    },
+    {
+      "kind": "payload",
+      "id": "setlogserver",
+      "name": "setlogserver.lua",
+      "description": "PS5 Lua log redirector (used by Log viewer)",
+      "author": "Gezine",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "lua"
+      ],
+      "size": 997,
+      "path": "payloads/setlogserver.json"
+    },
+    {
+      "kind": "payload",
+      "id": "shadowmountplus",
+      "name": "shadowmountplus.elf",
+      "description": "PS5 ShadowMountPlus 1.7beta3 (game mounting + Library API)",
+      "author": "drakmor",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "elf"
+      ],
+      "size": 2437848,
+      "path": "payloads/shadowmountplus.json"
+    },
+    {
+      "kind": "payload",
+      "id": "zftpd-ps5-zhttp-v1-6-0",
+      "name": "zftpd-ps5-zhttp-v1.6.0.elf",
+      "description": "PS5 FTP server zftpd 1.6.0 (File Ops, downloads to the console)",
+      "author": "seregonwar",
+      "version": 1,
+      "console_type": "ps5",
+      "files": [
+        "elf"
+      ],
+      "size": 19221056,
+      "path": "payloads/zftpd-ps5-zhttp-v1-6-0.json"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "kind": "script",
+  "id": "home-ps4",
+  "name": "PS4: Return Home",
+  "description": "Tap PS to leave the running application for the PS4 home screen. ",
+  "author": "quatrixone",
+  "version": 1,
+  "console_type": "ps4",
+  "script": "home\nwait 1200",
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  }
+}

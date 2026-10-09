@@ -1,0 +1,22 @@
+{
+  "kind": "payload",
+  "id": "zftpd-ps5-zhttp-v1-6-0",
+  "name": "zftpd-ps5-zhttp-v1.6.0.elf",
+  "description": "PS5 FTP server zftpd 1.6.0 (File Ops, downloads to the console)",
+  "author": "seregonwar",
+  "version": 1,
+  "console_type": "ps5",
+  "files": [
+    {
+      "type": "elf",
+      "name": "zftpd-ps5-zhttp-v1.6.0.elf",
+      "url": "p5enc:v1:1rPNRO0NtUPzoOPqtE8csBO5zuyqMvfC5X7xm8LXFMNtahpg36jfB4pdofQiRP3xC3c_G1BliURMC_j-waZCjCvZF2CXqM1JF1fcv5PJ5bHzTdij5AaAwvHb2V8qhjDGczf0p7RAgPSPZU9a99u_PNx2hg",
+      "sha256": "fc59b60aab2dce9a8bae385c106bfa174048d765c826101355f1f010a789b497",
+      "size": 19221056
+    }
+  ],
+  "owner": {
+    "github_id": 57962558,
+    "github_login": "quatrixone"
+  }
+}

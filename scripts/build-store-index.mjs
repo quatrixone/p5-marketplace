@@ -15,6 +15,8 @@ const store = path.join(root, 'store');
 const check = process.argv.includes('--check');
 
 const items = [];
+const catalogs = { script: [], template: [] };
+const builtinIds = new Set();
 const problems = [];
 for (const [kind, dir] of [['template', 'templates'], ['script', 'scripts'], ['homebrew', 'homebrew'], ['payload', 'payloads']]) {
   const full = path.join(store, dir);
@@ -34,7 +36,15 @@ for (const [kind, dir] of [['template', 'templates'], ['script', 'scripts'], ['h
     if (item.kind !== kind) errors.push(`kind has to be "${kind}" in ${dir}/`);
     if (`${item.id}.json` !== file) errors.push(`the file has to be named ${item.id}.json`);
     if (errors.length) problems.push(`${rel}: ${errors.join('; ')}`);
-    else items.push(indexEntry(item, rel));
+    else {
+      items.push(indexEntry(item, rel));
+      if (item.builtin_id) {
+        if (builtinIds.has(item.builtin_id)) problems.push(`${rel}: duplicate builtin_id`);
+        builtinIds.add(item.builtin_id);
+        const { kind, id, author, version, builtin_id, owner, ...data } = item;
+        catalogs[kind].push({ ...data, id: builtin_id, store: { id, author, version } });
+      }
+    }
   }
 }
 
@@ -55,4 +65,34 @@ if (check) {
 } else {
   fs.writeFileSync(indexFile, JSON.stringify(encodeCatalog({ generated: new Date().toISOString(), ...body }), null, 2) + '\n');
   console.log(`store/index.json: ${items.length} items`);
+}
+
+// Runtime catalogs are generated from the same item sources as Marketplace,
+// so an install picks up a curated change without waiting for an app release.
+for (const [kind, name] of [['script', 'inputScripts.json'], ['template', 'templates.json']]) {
+  const target = path.join(store, 'builtin', name);
+  if (check) {
+    const have = fs.existsSync(target) ? decodeCatalog(JSON.parse(fs.readFileSync(target, 'utf8'))) : null;
+    if (JSON.stringify(have) !== JSON.stringify(catalogs[kind])) {
+      console.error(`${target} is out of date: run node scripts/build-store-index.mjs`);
+      process.exit(1);
+    }
+  } else {
+    fs.mkdirSync(path.dirname(target), { recursive: true });
+    fs.writeFileSync(target, JSON.stringify(encodeCatalog(catalogs[kind]), null, 2) + '\n');
+  }
+}
+// The app's default payload list is a committed source file here, not
+// generated: it is app-shipped data the catalog republishes so a running
+// install picks up a new default without an app release.
+{
+  const target = path.join(store, 'builtin', 'payloads.json');
+  if (!fs.existsSync(target)) {
+    console.error(`${target} is missing: copy it from the app's frontend/builtin/payloads.json`);
+    process.exit(1);
+  }
+  if (hasPlainLinks(JSON.parse(fs.readFileSync(target, 'utf8')))) {
+    console.error(`${target}: unencrypted catalog links`);
+    process.exit(1);
+  }
 }

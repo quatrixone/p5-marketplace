@@ -31,6 +31,7 @@ jobs:
           node-version: '22'
       - run: node scripts/build-store-index.mjs --check
       - run: node --test backend/src/lib/storeOwnership.test.js
+      - run: node --test backend/src/lib/storeItem.test.js scripts/build-store-index.test.mjs
 
   ownership:
     if: github.event_name == 'pull_request_target'

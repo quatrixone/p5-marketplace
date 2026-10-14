@@ -1,23 +1,22 @@
 {
-  "kind": "template",
-  "id": "userguide-jailbreak-autoload",
-  "name": "PS5: User Guide → kstuff → ShadowMount → zftpd",
-  "description": "When the PS5 is online and its ELF loader is closed: open the configured guide loader, wait for port 9021, send kstuff, ShadowMountPlus and zftpd, then verify FTP. PS5 only. Configure the User Guide host and calibrate both guide scripts for its prompts and selected action first. The watcher runs only while the console is online and the loader remains closed. A failed port check reruns the guide steps at most twice, then reports failure; it never reports success merely because the button script c",
-  "author": "quatrixone",
-  "version": 1,
+  "name": "PS5: Guide loader → kstuff → ShadowMount → zftpd",
+  "description": "When the PS5 is online and its ELF loader is closed: open the configured guide loader, wait for port 9021, send kstuff, ShadowMountPlus and zftpd, then verify FTP.",
   "console_type": "ps5",
   "requiresProfile": true,
   "autoTrigger": "loader_down",
+  "notes": "PS5 only. Configure the User Guide host and calibrate both guide scripts for its prompts and selected action first. The watcher runs only while the console is online and the loader remains closed. A failed port check reruns the guide steps at most twice, then reports failure; it never reports success merely because the button script completed.",
   "steps": [
     {
       "type": "input_script",
-      "name": "Open configured User Guide page",
-      "script": "home\nwait 1200\nup\nwait 500\nright 5x\nwait 500\nleft\nwait 500\ncross\nwait 1500\nup 20x\nwait 600\ncross\nwait 1000\nright\nwait 400\ncross\nwait 5000\ncross\nwait 5000"
+      "scriptId": "builtin:open-user-guide",
+      "builtin": true,
+      "name": "Open configured User Guide page"
     },
     {
       "type": "input_script",
-      "name": "Start selected guide loader",
-      "script": "cross\nwait 2000"
+      "scriptId": "builtin:user-guide-loader",
+      "builtin": true,
+      "name": "Start selected guide loader"
     },
     {
       "type": "check_port",
@@ -60,6 +59,11 @@
       "name": "Verify zftpd FTP port 2120"
     }
   ],
+  "id": "userguide-jailbreak-autoload",
+  "builtin_id": "tpl-userguide-jailbreak-autoload",
+  "kind": "template",
+  "author": "quatrixone",
+  "version": 1,
   "owner": {
     "github_id": 57962558,
     "github_login": "quatrixone"

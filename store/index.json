@@ -1,14 +1,15 @@
 {
-  "generated": "2026-10-14T21:52:56.718Z",
+  "generated": "2026-10-14T21:53:41.688Z",
   "items": [
     {
       "kind": "template",
       "id": "goldhen-load",
       "name": "PS4: Load GoldHEN (wake → wait → send goldhen.bin)",
-      "description": "Wake the PS4, wait 8 seconds for a manually enabled BIN loader, send goldhen.bin to TCP 9020, then verify the payload-sender port stayed open. PS4 takes longer than PS5 to open the GoldHEN exploit listener, so the port check retries the wake + wait pair. Requires your own compatible goldhen.bin (and ftp_server.bin for the FTP template). These templates cannot bootstrap a jailbreak from a closed BIN-loader port.",
+      "description": "Wake the PS4, wait 8 seconds for a manually enabled BIN loader, send goldhen.bin to TCP 9020, then verify the payload-sender port stayed open.",
       "author": "quatrixone",
       "version": 1,
       "console_type": "ps4",
+      "builtin_id": "tpl-goldhen-load",
       "steps": 4,
       "requiresProfile": true,
       "path": "templates/goldhen-load.json"
@@ -16,11 +17,12 @@
     {
       "kind": "template",
       "id": "userguide-jailbreak-autoload",
-      "name": "PS5: User Guide → kstuff → ShadowMount → zftpd",
-      "description": "When the PS5 is online and its ELF loader is closed: open the configured guide loader, wait for port 9021, send kstuff, ShadowMountPlus and zftpd, then verify FTP. PS5 only. Configure the User Guide host and calibrate both guide scripts for its prompts and selected action first. The watcher runs only while the console is online and the loader remains closed. A failed port check reruns the guide steps at most twice, then reports failure; it never reports success merely because the button script c",
+      "name": "PS5: Guide loader → kstuff → ShadowMount → zftpd",
+      "description": "When the PS5 is online and its ELF loader is closed: open the configured guide loader, wait for port 9021, send kstuff, ShadowMountPlus and zftpd, then verify FTP.",
       "author": "quatrixone",
       "version": 1,
       "console_type": "ps5",
+      "builtin_id": "tpl-userguide-jailbreak-autoload",
       "steps": 9,
       "requiresProfile": true,
       "autoTrigger": "loader_down",
@@ -28,12 +30,25 @@
     },
     {
       "kind": "script",
+      "id": "close-game",
+      "name": "Close current game",
+      "description": "Open Control Center, navigate to the running game card and pick Close Game.",
+      "author": "quatrixone",
+      "version": 1,
+      "console_type": "ps5",
+      "builtin_id": "builtin:close-game",
+      "lines": 23,
+      "path": "scripts/close-game.json"
+    },
+    {
+      "kind": "script",
       "id": "home-ps4",
       "name": "PS4: Return Home",
-      "description": "Tap PS to leave the running application for the PS4 home screen. ",
+      "description": "Tap PS to leave the running application for the PS4 home screen.",
       "author": "quatrixone",
       "version": 1,
       "console_type": "ps4",
+      "builtin_id": "builtin:home-ps4",
       "lines": 2,
       "path": "scripts/home-ps4.json"
     },
@@ -41,10 +56,11 @@
       "kind": "script",
       "id": "home-ps5",
       "name": "PS5: Return Home",
-      "description": "Hold PS to return to Home from an application, Settings or User Guide. ",
+      "description": "Hold PS to return to Home from an application, Settings or User Guide.",
       "author": "quatrixone",
       "version": 1,
       "console_type": "ps5",
+      "builtin_id": "builtin:home-ps5",
       "lines": 2,
       "path": "scripts/home-ps5.json"
     },
@@ -52,21 +68,35 @@
       "kind": "script",
       "id": "open-user-guide",
       "name": "Open User's Guide",
-      "description": "Return Home, find Settings from the right edge, open User's Guide and confirm the certificate prompt for a configured local guide page. PS5 only. Live-tested on the configured console: long PS returns Home; the top strip stops at the profile icon, then left selects Settings. Twenty Up taps reach the first Settings entry regardless of its last focus. The final Cross accepts this console's local User Guide certificate prompt; remove that line if your guide page has no prompt. The script leaves the",
+      "description": "Return Home, find Settings from the right edge, open User's Guide and confirm the certificate prompt for a configured local guide page.",
+      "author": "quatrixone",
+      "version": 2,
+      "console_type": "ps5",
+      "builtin_id": "builtin:open-user-guide",
+      "lines": 22,
+      "path": "scripts/open-user-guide.json"
+    },
+    {
+      "kind": "script",
+      "id": "restart-ps5",
+      "name": "Restart PS5",
+      "description": "Open the PS5 Control Center Power menu and select Restart. Check the Power icon focus in step mode before first use.",
       "author": "quatrixone",
       "version": 1,
       "console_type": "ps5",
-      "lines": 20,
-      "path": "scripts/open-user-guide.json"
+      "builtin_id": "builtin:restart-ps5",
+      "lines": 11,
+      "path": "scripts/restart-ps5.json"
     },
     {
       "kind": "script",
       "id": "user-guide-loader",
       "name": "PS5: Start guide loader",
-      "description": "Press the selected action on the already-open configured User Guide loader page. Run only after Open User's Guide has reached your loader page. This console's Relapse page opens with the pointer on Jailbreak. Adjust the button/navigation if another host or page is used. The Autoload port check, rather than a fixed sleep, determines completion.",
+      "description": "Press the selected action on the already-open configured User Guide loader page.",
       "author": "quatrixone",
       "version": 1,
       "console_type": "ps5",
+      "builtin_id": "builtin:user-guide-loader",
       "lines": 2,
       "path": "scripts/user-guide-loader.json"
     },
@@ -82,7 +112,7 @@
         "zip"
       ],
       "app_version": "02.000.001",
-      "homepage": "p5enc:v1:V7c9jGDduSmSeD4L6oTkpvDylmYDhbBuy2AZ4a1vWutKBTINnnoUw66JNsa50uJ2Ip9BqBgTELQ7qAcbOb6DCBo",
+      "homepage": "p5enc:v1:TxmFoPOxdwzGHXE2UpqVU2iHxtGDHj5ASuwWxS1Qi7u-pWjz9yi6mhGkRdVaFegXCe2Sem0CKJN6QpH-k_Hq1T8",
       "path": "homebrew/hb-ppsa01153.json"
     },
     {
@@ -97,7 +127,7 @@
         "zip"
       ],
       "app_version": "v0.1.0",
-      "homepage": "p5enc:v1:xSKFGRN6PJRVRh1bIPgx3PO7Hbo1Q-IHbmJUpm37tTEdlSjFBx0NEyaMZdmCprKggp59Oz65PeYGb2hGQLgn4BpT3Lo70GM_tHJo",
+      "homepage": "p5enc:v1:eSXRaSQtAsD2sbD_oGPl3rETsCwVD3D5HroLmHLU8NRNZQ3_o5o-t4aHWd-Ue25QhMDxsTywI0Jqd0Dz5i0vuJZyOE1bd_wIrGD-",
       "path": "homebrew/hb-ppsa17641.json"
     },
     {
@@ -112,7 +142,7 @@
         "zip"
       ],
       "app_version": "1.3",
-      "homepage": "p5enc:v1:0p4ntxlyRP5FUNEKrgiPiLUfCurncSlnBUPzUbxjzTi-5p8C-c9upLkUS0hyYHHEMOz-sEN-4_Kz-fycvvx5Z1wd91hDXFII1KRD",
+      "homepage": "p5enc:v1:JqaUYtESxr7DhMla4goGw8d9_LwgUfElVjTa0Bp1KPI6xgBSVlbdo2AuVswWDWbrHLesg9SWi4cFuliHC_4JhT_0WdVYDcrNMsmR",
       "path": "homebrew/hb-ppsa19111.json"
     },
     {
@@ -127,7 +157,7 @@
         "zip"
       ],
       "app_version": "1.0.0",
-      "homepage": "p5enc:v1:12oNLBdurnf5Vyqhfc2gQ-Iny4GHH-cbGnmFZ9H5Cbjo3PXGJj6JACnZkL4dGGxpVvj3OEV3sQsPggBWLk6qjnU",
+      "homepage": "p5enc:v1:947tZBD6FTnvX5DzWuqQb3qkJZz5HlxmMOINmojNh2aR2Zdbq7aoRPXCDXyH5NpW2J2TgUctxBYaAR7JpbmP4hs",
       "path": "homebrew/hb-ppsa39410.json"
     },
     {
@@ -142,7 +172,7 @@
         "zip"
       ],
       "app_version": "1.00",
-      "homepage": "p5enc:v1:RlFRTMc7mPDOheaxtCvwgY6D624gXIt-8BBd0Dd22YZ0i9JGO94n5-7AuyHqvqvk76MPue3sSLsTHU4M_yUo7hjK",
+      "homepage": "p5enc:v1:5zgFCtCwvS57QZOSF0S3eKBS-lUnBNi1wErmKotCNoqRlziKJJnM5ly9cp91dGKeUXXruxtwuYFbCDuffKXK4ZA7",
       "path": "homebrew/hb-ppsa59322.json"
     },
     {
@@ -157,7 +187,7 @@
         "zip"
       ],
       "app_version": "1.2.0",
-      "homepage": "p5enc:v1:RhnaghgbRfdHUFJrz0q70bvbQFMePRsYuDFTJks8h5vlXvK1xkcJ1TxBCO25Yn7K_7R16O0qPfENeLvxIq7KITen_NhD",
+      "homepage": "p5enc:v1:IV-ddyrGKTUwaX0tglcKkUu9-ZqLAg1sezWRPIOKi0s5ZLHfFlN2HEfaOuEdfaydJyL1WGk2gszhCo-c5MEgWCq93sgn",
       "path": "homebrew/hb-ppsa68091.json"
     },
     {
@@ -172,7 +202,7 @@
         "zip"
       ],
       "app_version": "01.000.000",
-      "homepage": "p5enc:v1:zRbAZgo3UzAP5sIpcsHUWo-IkgX1Uqir0RvSYMHsoG8ONJFF2q6PKhDJs-FatEDzi3XZynY0C8hfHfw6OlnO9JLWTQ",
+      "homepage": "p5enc:v1:mv3_6PVTlZtLUzJGSaerKYjF9kBhNBPQMbVj3MCI34NUDx94utXgGYXJKlXdrRQwel9Zy-oBuwT5KxIAEZBOZu1yaA",
       "path": "homebrew/hb-ppsa69420.json"
     },
     {
@@ -187,7 +217,7 @@
         "zip"
       ],
       "app_version": "0.5.6",
-      "homepage": "p5enc:v1:k9MQPU0jp1RJJn_B1dTOGvs-PuqQPll8Qr3LuBdfJSPqcw9oPX-negpmzO8nXvNu7TzynfohRlrmEN_eSeaJeRE9ggW_il00",
+      "homepage": "p5enc:v1:9vVVqAxCBskzzcWr5iOKaHVibhrpcL5STX9PeGp9HwFVvl-ANDdvm2gaX5mWqS59tnB40seUmWDTP4FHU549imEy6xkT88m2",
       "path": "homebrew/hb-ppsa74126.json"
     },
     {
@@ -201,7 +231,7 @@
       "console_type": "ps5",
       "files": [],
       "size": 0,
-      "homepage": "p5enc:v1:qV68FjO395TvoJa6JUYGaM1tJ1QGivuUBS1YvT6E-GJH9ST3vc0vUfY-VfTwQhNFBYrCff530Q1jmXn1t6R17g",
+      "homepage": "p5enc:v1:uy54xwj8PV4k1IPN1n4OTZyaoXM6fjT-GDm11LswRzJlRo1vUuaoGuHUnV8LKgtsmiOcVbmVuh2FCV38S84h1A",
       "path": "homebrew/hb-ppsa76677.json"
     },
     {
@@ -216,7 +246,7 @@
         "ffpfsc"
       ],
       "app_version": "1.0",
-      "homepage": "p5enc:v1:Dr12soARuZjWmyzVmxt9iu9GK7jDxXQvAFAwpfkXCIpsLrHZU8CWhvMfy0L-FD5O2eoF8RzfCikmV5VC8gyOQf4wTIAATs7FlmtvChu-5-nP",
+      "homepage": "p5enc:v1:kbO57M1jnRDtnqmuA2eWfJNjhP-ZVgUiL4rYOreJxmfv27qz1_o-OVB9Hq3TKZlDFlHpdwcS-qZPKJwcaxERM0gnzaMY0mTdgVQpVAwgL95D",
       "path": "homebrew/hb-ppsa77711.json"
     },
     {
@@ -231,7 +261,7 @@
         "zip"
       ],
       "app_version": "0.5.0",
-      "homepage": "p5enc:v1:S-bQhgQMx6xtdLpTk2mNwqK6w--ZV-QLRcnjxFZidP7k8YrpUXkcmWMgeGfGhRGxlnn000Mevop6vkLYcnMo-lZ9s8Q",
+      "homepage": "p5enc:v1:ieYniktgYMOjlRdGOZTasySMFyVTO79_d2_l8Rv9L6d6TBut-ESZCUydAubEbHyUtSrUwcmcZd5nTJ7bXPdLaDz2ms8",
       "path": "homebrew/hb-ppsa92280.json"
     },
     {
@@ -246,7 +276,7 @@
         "zip"
       ],
       "app_version": "2.2.0",
-      "homepage": "p5enc:v1:uyMrFKesowTYbjW9leqZGqMgNkuOJACbCbXhw9x4Oi97s84LTv7ZhjiGsyWjM4cyBdsL0FipQrEfmFVa2Q",
+      "homepage": "p5enc:v1:wr_URq-JmBI4Ge3f1naVCDz7SG-064KGHq4l05BujOzLRXd3dL7oi7ZBnUD0MQHGZukSiKIBnLd09LqnKA",
       "path": "homebrew/hb-ppsa97510.json"
     },
     {
@@ -261,7 +291,7 @@
         "zip"
       ],
       "app_version": "1.0.1",
-      "homepage": "p5enc:v1:YmqcwVGuesATERUIgYwsKUENKtMh-S1PHaa24Lx4KBGfTq_PWX6zRALNzDDJaJLKBB-CROFMJggfs6Q8tSAXEiCg_DFWVWYFPL9sddM",
+      "homepage": "p5enc:v1:mLauQldLYaQ1KBSD2Zs_ZMhsJBnol61VfZIR5l9pmu7exR4zPO1Z4p2opvOH0-yZ4vuciaBQqOEqZx57rV9nxdO-zHx_SfziZlofnxc",
       "path": "homebrew/hb-ppsa98001.json"
     },
     {
@@ -276,7 +306,7 @@
         "zip"
       ],
       "app_version": "1.0.4",
-      "homepage": "p5enc:v1:fUxd8BAC2cGRMQeFM_8G9uW4khFAPh6QchxJn_ENO5aNenCFGyqB_59jo4a2XNfW5L9EdyyY6t_-2VbH1s3yhe8kvs_O",
+      "homepage": "p5enc:v1:8FxRFe9HaCoXrqPu2PNAaYSYXVKiuHhfirc7WFL9NNNflrVmXjjyfVT9xTMTHTxDyGOtqNm1PopXXdedcQPUgVlHb3uz",
       "path": "homebrew/hb-ppsa98510.json"
     },
     {
@@ -291,7 +321,7 @@
         "zip"
       ],
       "app_version": "1.000.050",
-      "homepage": "p5enc:v1:PSXmCM58HP_JMvKAP7Ob0OZD66Ex66h8B2Y_LK6HELfwTBq-TMD0hbCLOmTVi6pAK1Ehgs_-VkdMTSNlN3AIprPwJrWKD8OLx32N820x",
+      "homepage": "p5enc:v1:I2D3803m1O-HsKtbsjclkD_oVCsHddAZG8znrJvDTYIr_Nu3BAKyEQRYE_tcreMScj0DnKjTLaOqdRj2UvXj4jMWd6s9aeFgbtzwPFlK",
       "path": "homebrew/hb-ppsa99000.json"
     },
     {
@@ -306,7 +336,7 @@
         "zip"
       ],
       "app_version": "01.000.010",
-      "homepage": "p5enc:v1:AyYliyWsbjwJcnowS-0h8NOyk6m2qKXv9yJkSKyEsUp5bhr-v9AGVaVSUWJyNS7wgo-qqt0j6vRZz5R2otMHE5UC-MpakPcUpkB8R7C1",
+      "homepage": "p5enc:v1:fp36EyvVzgDOgjEhPtA8B_RxZr2odZ0jLIIIc_KyDy4nllDJTwUeVbYBuvbXZM5kj5dCwelgsiMth6nLh7J9xUziAc1KSc20f6imLKkM",
       "path": "homebrew/hb-ppsa99001.json"
     },
     {
@@ -321,7 +351,7 @@
         "zip"
       ],
       "app_version": "01.000.090",
-      "homepage": "p5enc:v1:kJ7-rQTug4qhO6ynw7KxbJnM_hmsUabK-OXVzVqzaBvcdgfSG1eY10RLjsLvLdRc_zuQBDadseTk2Rr_9OpUxzfGoFdlgTyp4uq45I1E",
+      "homepage": "p5enc:v1:3nkEMrctWs9DwUGv_Om1MFS5J0YhNuUA83ZYFljHE9_PWY1_w4gBft7J7rNHRBOFjOF2JITlZa1DBAljnRWGOpuxKJtaCfaAadjMvXNn",
       "path": "homebrew/hb-ppsa99002.json"
     },
     {
@@ -336,7 +366,7 @@
         "zip"
       ],
       "app_version": "01.000.030",
-      "homepage": "p5enc:v1:qYoj5rOPDiD7D5iplA47ArZoRFMSI_PGzKuv2aFCBoo7It2UQ5uDBGgQ7PyL1P_gLJIYB_54Gvxom29fh3PXkb6Hsj0B8iz5YxqB",
+      "homepage": "p5enc:v1:LZl_8lASE2gQb7oMMfwVl01HCnAQp_tPhaC90l5Hs9tlzU0smvyA9s0aU41wmkY5FxcQTGsoZoE3HgDsJLoO6A8AIcTFjcyCu2dt",
       "path": "homebrew/hb-ppsa99003.json"
     },
     {
@@ -351,7 +381,7 @@
         "zip"
       ],
       "app_version": "01.000.000",
-      "homepage": "p5enc:v1:Rmf2gW37dZpbUkW8TQbtjEOEKhucL5hV3fEXD_O-WtEYbP3FblFplQ1-pU4KM1skgtFlMTsSdzJ5tp54pQJQrK6H4hIdcc-gVrmO",
+      "homepage": "p5enc:v1:OlmK7Wfa8_4TD4zlaRveHbR5uOMBOV-TAMMI31rgIErpmCzEiUqUMn1lP25ZP5b4pR8M9M75O3ES4sOX6lfQE34wL5HVEI54zeP5",
       "path": "homebrew/hb-ppsa99004.json"
     },
     {
@@ -366,7 +396,7 @@
         "zip"
       ],
       "app_version": "1.0.1",
-      "homepage": "p5enc:v1:KZTfDJMugDVbQQN47LugXix65zmGALW34DDNWcZQhuq89Ipy4WoKwbj2W3ybGVKamuhhaJ-7BZw29IzxydlIkF8AkeamgNOx35ZK",
+      "homepage": "p5enc:v1:xN606AxkAyLV_Wk-R4uCQjg3SfVQKOouIlXHZWmYO4BOWqbl8QZOeZBX2PDPa_3ZgM8QVKZ30lYn0G1sAK6XbiaLzKH7oJu3y0OE",
       "path": "homebrew/hb-ppsa99005.json"
     },
     {
@@ -381,7 +411,7 @@
         "zip"
       ],
       "app_version": "01.000.010",
-      "homepage": "p5enc:v1:ued7Ob-G3I3l52DV_a2DTUP_BGlO9iSamEVKEEVRkcSacYZ2xechQ-EEn3e7zDYEt5g22_BWDqJppYrmzZnJcbzj146oHfNyM6hS3I7irro",
+      "homepage": "p5enc:v1:q5VkAJMScJ8mzQMHDAe5BQ56foZu_4ER7w3GaHSbZr4r9DgnTp-S10NbUlngojyp6IbzwimTZpEaz2_vB3tnCW3MZuDZzDO1YfzTVfrc5C0",
       "path": "homebrew/hb-ppsa99006.json"
     },
     {
@@ -396,7 +426,7 @@
         "zip"
       ],
       "app_version": "0.2.0-alpha.1",
-      "homepage": "p5enc:v1:u0IXMjAjCVXw2a2WktkocTYvB7kCxp6xiu0QPAor8ewa5EGNFOA15FOgLeBHRYIa7zJOQXPwOnhwhI9CxEKfk6RLPkiHZJmELSC7Sw81M54eLw",
+      "homepage": "p5enc:v1:r5hOA-6BHr-86atIplr8YkxOn_Q6nU3gZlJt_cmP3f0dPlE5e_bkGbsaa2UJONJmH76AbaHOsA1-kqehaGLrj2S0NAYGa0l6onhwOgQY8sL2Qg",
       "path": "homebrew/hb-ppsa99007.json"
     },
     {
@@ -411,7 +441,7 @@
         "zip"
       ],
       "app_version": "1.000.090",
-      "homepage": "p5enc:v1:e-470cyxpYvyhuBGi6Puc-BVHHSWlmIjhfcIFBtayfg71PlosY9r9cX__UZ_ryV1xmpFXZeK8GIHDSbd9NoZBEeUUukokg9UeaiPO-E",
+      "homepage": "p5enc:v1:9Hn3Fu6HXCaYbaeIR48iUu6ERxLNTP1pYhQfnSz2e5P-Xce6GDvjnz26-XTWpoxyYKxxuXDe2MpR2DzKojDZMetBRrWO203HgiWC-QQ",
       "path": "homebrew/hb-ppsa99008.json"
     },
     {
@@ -426,7 +456,7 @@
         "zip"
       ],
       "app_version": "01.000.000",
-      "homepage": "p5enc:v1:Y9RmR0Xkatw7hmJ1ezfTU44RY_3sXrQZhcpqkgt7TlbQZr4S3iZiYrL345IfQy6Hq9MedsmYIqLTtnwD7laJayR7ntrSiILlpjrxsComGHo",
+      "homepage": "p5enc:v1:YmBzPGvGEpAKNytYptLmSdrmmiUNUSsQbN8JRLV2hwHGfRAI1wOBif0TbmpUurZfQ8UN3sWe9mTGmAH0SmBZZCnXy0fS2wNK1pc-f4qnQMA",
       "path": "homebrew/hb-ppsa99009.json"
     },
     {
@@ -441,7 +471,7 @@
         "zip"
       ],
       "app_version": "1.0",
-      "homepage": "p5enc:v1:Z-UZ2luLi_FamrsSWB-j7aIJQJA_ZXYzkO_OB2BNguKQ-_W3BfoYS7KJWA4cf6USp9Gc71-cnEynpFbUB7liIZaQ2CI",
+      "homepage": "p5enc:v1:2ABeJ5I-xH-fmnHDg9fr6SIk-PpRDSKyM4cgvDwdL7Vx5JoAC3vZESUSpNkXEjUKu9hTsgihlZZ7Mboen9YPKRNLEqc",
       "path": "homebrew/hb-ppsa99010.json"
     },
     {
@@ -456,7 +486,7 @@
         "zip"
       ],
       "app_version": "01.000.010",
-      "homepage": "p5enc:v1:HX_uBzBN8icgE5Vj_YmFAdyaslz78PMs3TKDw4BGWQM2RlZpbEpoTu0OTeC21eNNsaZRzSrbAHdEUVMX9_TO91Mz-O4KNZr8BA",
+      "homepage": "p5enc:v1:0XMOKg7VAuzG2qLSyZoRpONkhQRcw6AL9Y7efCfwNliuMc0dAjCL50qWX6PcE1O-GwLGk5tHfJrFH_X5hPhY7USHRYAMYGJ-bw",
       "path": "homebrew/hb-ppsa99011.json"
     },
     {
@@ -471,7 +501,7 @@
         "zip"
       ],
       "app_version": "0.11.0",
-      "homepage": "p5enc:v1:CIWO8GVeXsiW-woN4oEjIGnL9tdIDq27jxD-UrM_U7o3ZayAYGsZlYER7sv71lzPrdQfUEmiKhKmABDTB6EOFR0b37uitQ",
+      "homepage": "p5enc:v1:l4JH212BINv9ib6JtvBbcVqm02G3rQRkF_RmrSlNRzpZMpE4O-M4Wc1VCZfeBTXxOtq9lN9cE5CBeoq_bzrVoIkWLFguIQ",
       "path": "homebrew/hb-ppsa99039.json"
     },
     {
@@ -486,7 +516,7 @@
         "zip"
       ],
       "app_version": "01.000.010",
-      "homepage": "p5enc:v1:0-Q3vygq9obcC7meUEGZqWdEGr6WXWDJEDsyVpapX9xWM0bwidvqqAslByoSrzeKQdwyaa2ETHJCwp4fpT7S47JTO5PqxYremOl49qKKndw",
+      "homepage": "p5enc:v1:CVCzsKNKt8H4UHUPQGC_4YN4FqD4XOShhkX4Bvzi5NogFDxdKfy5vy_WON4soHGUn0k2wMh4gwTdPXbxtiS52S2tI-Gz50Girvdrv5SfrjQ",
       "path": "homebrew/hb-ppsa99050.json"
     },
     {
@@ -501,7 +531,7 @@
         "zip"
       ],
       "app_version": "0.0.7",
-      "homepage": "p5enc:v1:a_BnSlHzwXP8o5j0GjmICOlV30pmvs9aHPReRcszDHocUgUxVojm4-Hdg_OQx1TpKfRGD4TmFmFUDlYm81sdv_Le1j0UUg",
+      "homepage": "p5enc:v1:KthihC_GG05r_0NmdqGG0VR-K2XcTp6_jyOUFDDLRcbm54-RpSObvncxzSgRa0u-plMgX3mwSwEnTuXecG8Py9tVeS-x1w",
       "path": "homebrew/hb-ppsa99082.json"
     },
     {
@@ -516,7 +546,7 @@
         "zip"
       ],
       "app_version": "1.0",
-      "homepage": "p5enc:v1:mG7SydlNajHuYQeAMTlbTWrkN2IoIoEF2eIj3EUKF-ewP22rQNs3Q1LAlKIVSPmmAbCeV6ypg5FvEBfO9jjWqaytFzOQPgui",
+      "homepage": "p5enc:v1:2MkL2rcPL3S2s0JQ-6sPfTwuQ64lxlH5Qiekg9bVEsdmJqO_ptvqrmGkiUuwrNjFkIee1zhCqymHz6RIE_MrLfsHADlY7LVg",
       "path": "homebrew/hb-ppsa99109.json"
     },
     {
@@ -531,7 +561,7 @@
         "zip"
       ],
       "app_version": "1",
-      "homepage": "p5enc:v1:62YmnVz9hHUNjOkTkh9WajXOJQQuikaG8TLucDapkyX5rknE_FlInkVQ7r0KX_sFa3diO2xCmNdgMyz08neGc5Zulj68HgoNGmNT",
+      "homepage": "p5enc:v1:vQxaorNf0cMVsTExXRrT99vEQ-3De4xly71Z_nVnOokZ5Ln69pX1NtgTzmNUqei5iUxSw7Olbm6y3BZiAQPSrG4ffXyJkalcM0xE",
       "path": "homebrew/hb-ppsa99110.json"
     },
     {
@@ -546,7 +576,7 @@
         "zip"
       ],
       "app_version": "1.0.0-beta.1",
-      "homepage": "p5enc:v1:rEEvtFmLyI22UI7_e2rmuunhzulzj4fQKf0l74Scw3XIqcWkGidTmNJrbKb1VGWsyXrzmAFWO7ctpoV_CFaWT8R-gAYUnQ",
+      "homepage": "p5enc:v1:yDtNvisZU4QikzR66rsfdJlDBfIEr_PAemgc3uEvTC9m-BS_YxMMMqaZZuXlQ7tao6HXIUs-6X0LbGyba0aY7mnSOc-atw",
       "path": "homebrew/hb-ppsa99169.json"
     },
     {
@@ -561,7 +591,7 @@
         "zip"
       ],
       "app_version": "1.0.0",
-      "homepage": "p5enc:v1:ZeK7tD4PgrQlevAwQCCq3FDvdnvG4gyETpCs6Sowna5L8vzcyTVkpQqx7VBqOVLocjIeVZsKmAo52Rwvar-kvP7JmQ",
+      "homepage": "p5enc:v1:QYMIkmLS633KIZTNhbSwvUf1xroV1GUYmg4PEZKePz8NEfxqB_7MrJQyKYL8nhsAiFnCw7ss7XY15YokhaVO0nt-1A",
       "path": "homebrew/hb-ppsa99177.json"
     },
     {
@@ -576,7 +606,7 @@
         "zip"
       ],
       "app_version": "vk-285-139",
-      "homepage": "p5enc:v1:f9yXuzBDYrVS-RO4atMNPiitbCJU9MBiZJH_9cmixvIpFx6kQK6-wijt46-TOjeCDzHT0QGZ2CBHOIZfJLU",
+      "homepage": "p5enc:v1:L6sfUL1jY2a6WWxdCuQCtNVD1_3uELZjU_K8c1AYYdHLIWA7cY7UqyF86glbJswlpH3g5CaCvosSks-KMJw",
       "path": "homebrew/hb-ppsa99203.json"
     },
     {
@@ -591,7 +621,7 @@
         "zip"
       ],
       "app_version": "1.0.0.8",
-      "homepage": "p5enc:v1:snnaTxCfElHxd56Tt0mXl5LdGu36cfVRLVEPh3goJ8i6kJYVJjWelG0terBWUTzvyWtHjAnUmr25Qy_pl3WliAiOWw",
+      "homepage": "p5enc:v1:6xpOJBoGB8cTWeXWq2S8N_fpiyYNxSgPBSzkGapNRd0JHUUt1P9c2TBzPBiQJ8My9-sW_PgH1V-TNKIguee-2MgVyQ",
       "path": "homebrew/hb-ppsa99204.json"
     },
     {
@@ -606,7 +636,7 @@
         "zip"
       ],
       "app_version": "releasev7",
-      "homepage": "p5enc:v1:9lIzQ9Jp7qox3im7SjWmqXwxc_2zlUEbO8a0qLmPy23P8cr8AqLiS0hQFqp41F8DkLHisBrj7MlXWfcI3Z_7ogTBCA",
+      "homepage": "p5enc:v1:eioX3rzNpNt-xk-1ue3Ja1xskxYB72omj95AikJminOMn4YozwHpsB5n0Fv-flgdF4NuvYHxjjzfDMSsX5gRX9O-KQ",
       "path": "homebrew/hb-ppsa99206.json"
     },
     {
@@ -621,7 +651,7 @@
         "zip"
       ],
       "app_version": "1.2",
-      "homepage": "p5enc:v1:p-PE45viZkO7xzwhf9HSCf4RUkD3KkB2YPzpAQEqMch-egj84XZXq7AWMh4oj3hgzjC2XJ6w2DDkYVc2tfiE",
+      "homepage": "p5enc:v1:gWHlr3HS8ftptdt3w8M8Em7Wejco4CVHZkdCoeWCcp_Kwgr263qYiD9cgITzGsIVqkGyeVqEp9qb58ihb7wg",
       "path": "homebrew/hb-ppsa99420.json"
     },
     {
@@ -636,7 +666,7 @@
         "zip"
       ],
       "app_version": "0.5.0",
-      "homepage": "p5enc:v1:pZBrg7sE_r8g8_Tg6s8Git2PO8CmNR5zpJdseRcS9xKim7XL03lOSc8HVF4ibjR40hQdXI4hciKrP7BX",
+      "homepage": "p5enc:v1:4rs_g5bfkw6jfpaQsst1MPaq3sHFfg-p-bXBHTzmatpSOISjj-PuXK7arOrYPg4n1dVXFVgE4_iMVjdU",
       "path": "homebrew/hb-ppsa99505.json"
     },
     {
@@ -651,7 +681,7 @@
         "zip"
       ],
       "app_version": "1.1.0",
-      "homepage": "p5enc:v1:4bdQGhUCi94VVeuDiJfCD3uyNFuQTObpeMK65yyTNbRWh74z4TLxL2-L1B-uZm8QHk-vBvU9j1AhL7V2WTxgqzM",
+      "homepage": "p5enc:v1:rzE2v27kC82vygOfhLsfYfPP5hdyEv_2lmWZc2ApyqiqQHiI3fhODm0gu2992gur_2SH60baEEK9CjPKyCKpDl8",
       "path": "homebrew/hb-ppsa99515.json"
     },
     {
@@ -666,7 +696,7 @@
         "zip"
       ],
       "app_version": "1.0.0",
-      "homepage": "p5enc:v1:NCagB4K5gjBBDma5re9W1We5e2iavQZ5i00lcZxX6P9VXJ5K9_sDKOI3no-StkhbwsVTgdoq8WLgYATJWh8Ua2DEd29jDUzSzr_-",
+      "homepage": "p5enc:v1:ZuguKCiV1gCpFBticN74aVFY_7x4JEoMO0N7UwvI_U6YQGKGftaKONLG-k10IqjNmFeg5cWNKMzNgSSEiXDFvxM1pkXYASmsgHjD",
       "path": "homebrew/hb-ppsa99600.json"
     },
     {
@@ -681,7 +711,7 @@
         "zip"
       ],
       "app_version": "1.1.1",
-      "homepage": "p5enc:v1:AzyvSpKHo54mAMQiuiTRD5kwMIfeN-2vF8n7VC19dIi_h3VOC6KaXhMLInIvN56Img23T_tqxaV6bZzYTew",
+      "homepage": "p5enc:v1:5L_wG_Dhcd9eEAb8o6IKPwVDNf0RmbGF7j7ZkEKjx9Esz6XsTJ6sdbx7U81LEyEc-yLoKej5kNSY5fXIm7g",
       "path": "homebrew/hb-ppsa99666.json"
     },
     {
@@ -696,7 +726,7 @@
         "zip"
       ],
       "app_version": "1.0.0",
-      "homepage": "p5enc:v1:JCQ2izGAC7eRo6IgBCrwluGhpPCuHjnchkzZ5FZavCWMAaTOJiSEt7RAeZkHSNpkiDhzJQJRnLniCjyFTt820TIC",
+      "homepage": "p5enc:v1:fY7BO6tWOvhCp-psrsgzB21R1A1epXxJkazqGRcgzPxXOsYdI0J0JMYaLn5IZlgqse-_yADhE_h3UsG9mDo_lVR_",
       "path": "homebrew/hb-ppsa99728.json"
     },
     {
@@ -711,7 +741,7 @@
         "zip"
       ],
       "app_version": "2.7",
-      "homepage": "p5enc:v1:s3jl_INduKWWC1g6HNnmV273rZ6vMfo7Pije3H7tEhhv1f-Ra99pI09HoQG45WXfVdX2j6vQ0T_stNn01T35Bj7FRw9IcujqJw9M8a5t_wiPvxpeH944fHBr",
+      "homepage": "p5enc:v1:wrbt7oCvuZC70heGYBgwp-RV5TuebF2RxGEjMEGRZ_hcsTJSHCiZm9LI7SgvAXAVNSOwQvTQY50Z3kYWzzcwZO0O5jHNdl3p3cbXX8sTjSMoDQAUjj5yMDkf",
       "path": "homebrew/hb-ppsa99764.json"
     },
     {
@@ -726,7 +756,7 @@
         "zip"
       ],
       "app_version": "0.1.2",
-      "homepage": "p5enc:v1:AH36HEed5MSRXKanxholUuRYS2UFRWKa3gWMDbN4KvIrR5eEo50cGVTTlpatGnXpUPqLfR8rnn_P3eL__abxBm98",
+      "homepage": "p5enc:v1:7_p_ovtu9axHDlbmysBHeJ8OLX7oyQH0j2p4xLpRymaxqAIvNFNBsJTAJHmvPvSnH8RChwO_XnMwVgbL5xtNywqZ",
       "path": "homebrew/hb-ppsa99808.json"
     },
     {
@@ -741,7 +771,7 @@
         "zip"
       ],
       "app_version": "0.7.0",
-      "homepage": "p5enc:v1:8arKWHSyh6fUm1WUduvzn45-w02cTE12MfcjDtEVMjYwek2Xyyxx2GoVSVMDIz4NCIHcrJw2ID3RjVEk1UnJYvO2Pa4HrY1yFDufQDl8",
+      "homepage": "p5enc:v1:SXeJaGvU3Qb_-eNRRuVzPyBel2RtK07TBSyD1tpoK_75mpfuvdIshNUwiRGQAgLyg1ESzYYbbghhEJk1oQc4277Z0EVNOK3GpulQEifV",
       "path": "homebrew/hb-ppsa99810.json"
     },
     {
@@ -756,7 +786,7 @@
         "zip"
       ],
       "app_version": "1.0",
-      "homepage": "p5enc:v1:iiWmkTl-LX0LHe_kJhBIKPDCOQA0YQozgeUUP-099Dwbge1M6zG_RdIZHlQCOryZZ97ez4dlXbKsysOC5mZW1iaX1OOf_Uo",
+      "homepage": "p5enc:v1:uK2HFfDbzi-lIkfTgCn8gFJ_HETMdrtu4kcKaa0XQPflmAToZn_gCeAyWJ9J6XwHb6qIsgkGyl9AAl66ZSNWEKQ7DG-BBOE",
       "path": "homebrew/hb-ppsa99920.json"
     },
     {
@@ -771,7 +801,7 @@
         "zip"
       ],
       "app_version": "0.1.1",
-      "homepage": "p5enc:v1:5PpVuUKMdVpbXU9SbO00p2C2To-fSM_SpzBVqQOh-0zKr0dsQk8UTdK2MOfCQfjdbjFeF22uEWmlrVgOhRXahH7_6eOjDHnV",
+      "homepage": "p5enc:v1:6n-10-xNoD98n-YRlTB9_2Q038msAD6x2P0lKl6srsbdhsEBVhbTHhxZk1WbYRaWgjD9CRiw3Pd1RTlctB_q6iXdLHpA8Fir",
       "path": "homebrew/hb-ppsa99995.json"
     },
     {
@@ -786,7 +816,7 @@
         "zip"
       ],
       "app_version": "0.1.0-alpha.2",
-      "homepage": "p5enc:v1:rJ33SkSjnFWe47qizWcF5nKtKKvV8YgDzK8zNG7wCWpEHw7E7qin23n079an4hpyiNAq5vhwiWJhO-7B-C3niysymcUa4kvlZHYEtac",
+      "homepage": "p5enc:v1:3qGm4kZJPhrz6YDPawLctpqHArEVBgd1YhfjSQs9dWEnXUNaEAzjEQ-mHQDnU5TCxe5YVsgqmydIWff0qto-_sbBmb4h6JHs3_h0yrQ",
       "path": "homebrew/hb-ppsa99997.json"
     },
     {

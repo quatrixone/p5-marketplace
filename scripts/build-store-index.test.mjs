@@ -75,3 +75,17 @@ test('the payload manifest is a committed source file the build insists on', () 
     run();
   }
 });
+
+test('every curated script and template the app expects is present and current', () => {
+  run();
+  assert.deepEqual(manifest('inputScripts.json').map(s => s.id).sort(), [
+    'builtin:close-game', 'builtin:home-ps4', 'builtin:home-ps5',
+    'builtin:open-user-guide', 'builtin:restart-ps5', 'builtin:user-guide-loader',
+  ]);
+  assert.deepEqual(manifest('templates.json').map(t => t.id).sort(), ['tpl-goldhen-load', 'tpl-userguide-jailbreak-autoload']);
+  // The jailbreak guide page asks for one more Cross than the certificate
+  // prompt alone; three in a row is the live-tested sequence.
+  const guide = manifest('inputScripts.json').find(s => s.id === 'builtin:open-user-guide');
+  assert.equal(guide.script.match(/\ncross\nwait 5000/g).length, 3);
+  assert.ok(guide.notes.includes('three Cross presses'));
+});

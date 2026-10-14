@@ -1,12 +1,9 @@
 {
-  "kind": "template",
-  "id": "goldhen-load",
   "name": "PS4: Load GoldHEN (wake → wait → send goldhen.bin)",
-  "description": "Wake the PS4, wait 8 seconds for a manually enabled BIN loader, send goldhen.bin to TCP 9020, then verify the payload-sender port stayed open. PS4 takes longer than PS5 to open the GoldHEN exploit listener, so the port check retries the wake + wait pair. Requires your own compatible goldhen.bin (and ftp_server.bin for the FTP template). These templates cannot bootstrap a jailbreak from a closed BIN-loader port.",
-  "author": "quatrixone",
-  "version": 1,
+  "description": "Wake the PS4, wait 8 seconds for a manually enabled BIN loader, send goldhen.bin to TCP 9020, then verify the payload-sender port stayed open.",
   "console_type": "ps4",
   "requiresProfile": true,
+  "notes": "PS4 takes longer than PS5 to open the GoldHEN exploit listener, so the port check retries the wake + wait pair. Requires your own compatible goldhen.bin (and ftp_server.bin for the FTP template). These templates cannot bootstrap a jailbreak from a closed BIN-loader port.",
   "steps": [
     {
       "type": "wol",
@@ -32,6 +29,11 @@
       "name": "Send goldhen.bin"
     }
   ],
+  "id": "goldhen-load",
+  "builtin_id": "tpl-goldhen-load",
+  "kind": "template",
+  "author": "quatrixone",
+  "version": 1,
   "owner": {
     "github_id": 57962558,
     "github_login": "quatrixone"

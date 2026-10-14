@@ -1,12 +1,13 @@
 {
-  "kind": "script",
-  "id": "home-ps5",
   "name": "PS5: Return Home",
-  "description": "Hold PS to return to Home from an application, Settings or User Guide. ",
+  "console_type": "ps5",
+  "description": "Hold PS to return to Home from an application, Settings or User Guide.",
+  "script": "home\nwait 1200",
+  "id": "home-ps5",
+  "builtin_id": "builtin:home-ps5",
+  "kind": "script",
   "author": "quatrixone",
   "version": 1,
-  "console_type": "ps5",
-  "script": "home\nwait 1200",
   "owner": {
     "github_id": 57962558,
     "github_login": "quatrixone"

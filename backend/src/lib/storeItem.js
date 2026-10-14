@@ -128,6 +128,12 @@ export function indexEntry(item, path) {
     ...(item.comingSoon ? { comingSoon: true } : {}),
     ...(item.console_type ? { console_type: item.console_type } : {}),
     ...(item.builtin_id ? { builtin_id: item.builtin_id } : {}),
+    ...(item.icon ? { icon: item.icon } : {}),
+    // The app matches a console's installed titles on homebrew_id and reads
+    // an owner from the index; both are listed under the names it expects.
+    ...(item.title_id ? { title_id: item.title_id, homebrew_id: item.title_id } : {}),
+    ...(item.homebrew_id ? { homebrew_id: item.homebrew_id } : {}),
+    ...(item.owner ? { owner: item.owner } : {}),
     ...(item.kind === 'template' ? { steps: item.steps.length, requiresProfile: item.requiresProfile !== false, ...(item.autoTrigger ? { autoTrigger: item.autoTrigger } : {}) } : {}),
     ...(item.kind === 'script' ? { lines: item.script.split('\n').filter((l) => l.trim() && !l.trim().startsWith('//')).length } : {}),
     ...(['homebrew', 'payload'].includes(item.kind) ? {
@@ -135,6 +141,10 @@ export function indexEntry(item, path) {
       ...(item.app_version ? { app_version: item.app_version } : {}),
       ...(item.files.every((f) => f.size) ? { size: item.files.reduce((a, f) => a + f.size, 0) } : {}),
       ...(item.homepage ? { homepage: item.homepage } : {}),
+      // A single-file payload is listed with its checksum, so the app can
+      // recognise the very same file already in the library, whatever the
+      // user called it.
+      ...(item.files.length === 1 && item.files[0].sha256 ? { sha256: item.files[0].sha256 } : {}),
     } : {}),
     path,
   };

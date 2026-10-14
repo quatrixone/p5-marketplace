@@ -82,7 +82,16 @@ test('every curated script and template the app expects is present and current',
     'builtin:close-game', 'builtin:home-ps4', 'builtin:home-ps5',
     'builtin:open-user-guide', 'builtin:restart-ps5', 'builtin:user-guide-loader',
   ]);
-  assert.deepEqual(manifest('templates.json').map(t => t.id).sort(), ['tpl-goldhen-load', 'tpl-userguide-jailbreak-autoload']);
+  assert.deepEqual(manifest('templates.json').map(t => t.id).sort(), [
+    'tpl-download-extract-upload', 'tpl-full-pipeline', 'tpl-goldhen-full-flow',
+    'tpl-goldhen-load', 'tpl-userguide-jailbreak-autoload',
+  ]);
+  // The PS4 homebrew the app used to list itself has to be in the catalog,
+  // or switching the app over silently removes every PS4 entry.
+  const index = decodeCatalog(JSON.parse(fs.readFileSync(path.join(root, 'store/index.json'), 'utf8')));
+  for (const id of ['apollo-save-tool-ps4', 'ps4-cheats-manager', 'ps4-webdav-client']) {
+    assert.ok(index.items.some(i => i.kind === 'homebrew' && i.id === id), `${id} is listed`);
+  }
   // The jailbreak guide page asks for one more Cross than the certificate
   // prompt alone; three in a row is the live-tested sequence.
   const guide = manifest('inputScripts.json').find(s => s.id === 'builtin:open-user-guide');

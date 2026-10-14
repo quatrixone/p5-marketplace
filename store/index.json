@@ -1,6 +1,56 @@
 {
-  "generated": "2026-10-14T21:53:41.688Z",
+  "generated": "2026-10-14T22:10:14.288Z",
   "items": [
+    {
+      "kind": "template",
+      "id": "download-extract-upload",
+      "name": "Download → extract → upload (cross-platform)",
+      "description": "Open a Remote Play session (keeps the console awake), download a file, extract it locally, upload the result via FTP, then rest mode. Works for PS4 (GoldHEN FTP) or PS5 — adjust the destination path to your console.",
+      "author": "P5 Manager",
+      "version": 1,
+      "builtin_id": "tpl-download-extract-upload",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
+      "steps": 5,
+      "requiresProfile": true,
+      "path": "templates/download-extract-upload.json"
+    },
+    {
+      "kind": "template",
+      "id": "full-pipeline",
+      "name": "PS5: Full game pipeline (download → extract → mkpfs → FTP)",
+      "description": "Open a Remote Play session (holds PS5 awake), download, extract, convert to .ffpfsc, upload via FTP, then rest mode. PS5-specific because of the mkpfs pack step.",
+      "author": "P5 Manager",
+      "version": 1,
+      "console_type": "ps5",
+      "builtin_id": "tpl-full-pipeline",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
+      "steps": 6,
+      "requiresProfile": true,
+      "path": "templates/full-pipeline.json"
+    },
+    {
+      "kind": "template",
+      "id": "goldhen-full-flow",
+      "name": "PS4: GoldHEN + FTP ready (wake → load → start FTP → verify :2121)",
+      "description": "With an already-enabled BIN loader: wake the PS4, load goldhen.bin, then load ftp_server.bin and succeed when port 2121 (FTP) is open so you can immediately browse the PS4 from the File Ops tab.",
+      "author": "P5 Manager",
+      "version": 1,
+      "console_type": "ps4",
+      "builtin_id": "tpl-goldhen-full-flow",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
+      "steps": 8,
+      "requiresProfile": true,
+      "path": "templates/goldhen-full-flow.json"
+    },
     {
       "kind": "template",
       "id": "goldhen-load",
@@ -10,6 +60,10 @@
       "version": 1,
       "console_type": "ps4",
       "builtin_id": "tpl-goldhen-load",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "steps": 4,
       "requiresProfile": true,
       "path": "templates/goldhen-load.json"
@@ -23,6 +77,10 @@
       "version": 1,
       "console_type": "ps5",
       "builtin_id": "tpl-userguide-jailbreak-autoload",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "steps": 9,
       "requiresProfile": true,
       "autoTrigger": "loader_down",
@@ -37,6 +95,10 @@
       "version": 1,
       "console_type": "ps5",
       "builtin_id": "builtin:close-game",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "lines": 23,
       "path": "scripts/close-game.json"
     },
@@ -49,6 +111,10 @@
       "version": 1,
       "console_type": "ps4",
       "builtin_id": "builtin:home-ps4",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "lines": 2,
       "path": "scripts/home-ps4.json"
     },
@@ -61,6 +127,10 @@
       "version": 1,
       "console_type": "ps5",
       "builtin_id": "builtin:home-ps5",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "lines": 2,
       "path": "scripts/home-ps5.json"
     },
@@ -73,6 +143,10 @@
       "version": 2,
       "console_type": "ps5",
       "builtin_id": "builtin:open-user-guide",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "lines": 22,
       "path": "scripts/open-user-guide.json"
     },
@@ -85,6 +159,10 @@
       "version": 1,
       "console_type": "ps5",
       "builtin_id": "builtin:restart-ps5",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "lines": 11,
       "path": "scripts/restart-ps5.json"
     },
@@ -97,8 +175,35 @@
       "version": 1,
       "console_type": "ps5",
       "builtin_id": "builtin:user-guide-loader",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "lines": 2,
       "path": "scripts/user-guide-loader.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "apollo-save-tool-ps4",
+      "name": "Apollo Save Tool PS4",
+      "description": "Manage, export and import PS4 save data with Apollo Save Tool. Install through Remote Package Installer.",
+      "author": "bucanero",
+      "version": 1,
+      "console_type": "ps4",
+      "icon": "p5enc:v1:DEK_OBo5OC6Q6np_C-1c9C43Qji4XON45L3vw3Mlb9QEDV0X90F-caUEn15lKyfyVhY8ruYIGh0l5j8LgW7t5k-y6qM6xQ7dvyE586sSOUrgfc8iRkm1k9zwhv2ohaZPbvVFX9VGJyk",
+      "homebrew_id": "APOL00004",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
+      "files": [
+        "pkg"
+      ],
+      "app_version": "2.3.2",
+      "size": 22675456,
+      "homepage": "p5enc:v1:GWea3wWPySsT2AaKud9VxqFDZOETjl3RlyniYU3FuvAyiDzbwL1C_R36D1f4FHuB5Duo8-vEi5TA5rdDsu05SRDX",
+      "sha256": "2baf876cf5689a2fee96f7a1920ddf2f8713b92adfc6fe0e84f38707cb1e0f17",
+      "path": "homebrew/apollo-save-tool-ps4.json"
     },
     {
       "kind": "homebrew",
@@ -108,11 +213,18 @@
       "author": "Marice",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA01153",
+      "homebrew_id": "PPSA01153",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "02.000.001",
-      "homepage": "p5enc:v1:TxmFoPOxdwzGHXE2UpqVU2iHxtGDHj5ASuwWxS1Qi7u-pWjz9yi6mhGkRdVaFegXCe2Sem0CKJN6QpH-k_Hq1T8",
+      "homepage": "p5enc:v1:-bWVCi0u1gPO6QKofZki23w4HoxyT_ZhduWWQNkprt-0Sm1Ac2aAuRaJL8SdyLl_frXO2NUO3H_o8oPV51pgnTM",
+      "sha256": "c351a996249b2a905d69b3b52f5ad00a32cc6fc07f2bfe18ee47e2d9f5b2e93c",
       "path": "homebrew/hb-ppsa01153.json"
     },
     {
@@ -123,11 +235,18 @@
       "author": "TsvetomirGT",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA17641",
+      "homebrew_id": "PPSA17641",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "v0.1.0",
-      "homepage": "p5enc:v1:eSXRaSQtAsD2sbD_oGPl3rETsCwVD3D5HroLmHLU8NRNZQ3_o5o-t4aHWd-Ue25QhMDxsTywI0Jqd0Dz5i0vuJZyOE1bd_wIrGD-",
+      "homepage": "p5enc:v1:GNEwVmL9z8uGszkAriKfkFKLS6pEEyosvaVM94waKNOG8NHFnT5j3OqEtNAF5cuTEdbVTiDKkXAKvn2ZOa0aygiTHJTydFHs5Jai",
+      "sha256": "5327e36b9a57776a7bb7a32a16865d54b28be3b1622280c4dbc9e6ee469e2993",
       "path": "homebrew/hb-ppsa17641.json"
     },
     {
@@ -138,11 +257,18 @@
       "author": "GordonProsperoMan",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA19111",
+      "homebrew_id": "PPSA19111",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "1.3",
-      "homepage": "p5enc:v1:JqaUYtESxr7DhMla4goGw8d9_LwgUfElVjTa0Bp1KPI6xgBSVlbdo2AuVswWDWbrHLesg9SWi4cFuliHC_4JhT_0WdVYDcrNMsmR",
+      "homepage": "p5enc:v1:ueRYAg9WILNtVVqFS8jVTwCkZhQ3sPJc_8aIOj4Cdb0wSUoudG8xrqqEZHkh6qNVz1VxyHbv75Nl99Hn2dqSqZckyz2qkKa5t7cv",
+      "sha256": "1bb8f143016c51d0fac8e1621e95c65aa6cf143ee7eeb03b4ab3febe5c294670",
       "path": "homebrew/hb-ppsa19111.json"
     },
     {
@@ -153,11 +279,18 @@
       "author": "StonedModder",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA39410",
+      "homebrew_id": "PPSA39410",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "1.0.0",
-      "homepage": "p5enc:v1:947tZBD6FTnvX5DzWuqQb3qkJZz5HlxmMOINmojNh2aR2Zdbq7aoRPXCDXyH5NpW2J2TgUctxBYaAR7JpbmP4hs",
+      "homepage": "p5enc:v1:H6724f8JSKESfOfbw5fW2t5sABJ64V-XRidvfCSX5DViHZEpvnRVapMVH91SCq51wqLi9V0e38kz6KgYSDvjjhc",
+      "sha256": "d4e23aa6e511c2d9b7905174b11f0a4a70cf7d0a457ec0a1772b02d5d7e6ea09",
       "path": "homebrew/hb-ppsa39410.json"
     },
     {
@@ -168,11 +301,18 @@
       "author": "AngelXex",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA59322",
+      "homebrew_id": "PPSA59322",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "1.00",
-      "homepage": "p5enc:v1:5zgFCtCwvS57QZOSF0S3eKBS-lUnBNi1wErmKotCNoqRlziKJJnM5ly9cp91dGKeUXXruxtwuYFbCDuffKXK4ZA7",
+      "homepage": "p5enc:v1:6qF8P4feSaUiRAmt_OdD031WNMUAEmiVA2TW3ojyZL0yLsGoexnr0X4RYRsWwpqHehSBCJAjXZCU1VwhgbrEhm3q",
+      "sha256": "96861b81c1fbaac818080d1bf958b575e6b44d2c258684e1931f2940cee2fb43",
       "path": "homebrew/hb-ppsa59322.json"
     },
     {
@@ -183,11 +323,18 @@
       "author": "AZiZ",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA68091",
+      "homebrew_id": "PPSA68091",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "1.2.0",
-      "homepage": "p5enc:v1:IV-ddyrGKTUwaX0tglcKkUu9-ZqLAg1sezWRPIOKi0s5ZLHfFlN2HEfaOuEdfaydJyL1WGk2gszhCo-c5MEgWCq93sgn",
+      "homepage": "p5enc:v1:rNw9JfP2T09JFfHEaLcWAIuNEdRqNC70ZqQM9vXfR-194wu2aric7Cw1LPm95e_UyCh-uRDgJc3Vx0wErIfLlBdjNR6e",
+      "sha256": "b34b40b69da30dafce4ea67ee312a55b6bd9b07b59849741253b2c46147076be",
       "path": "homebrew/hb-ppsa68091.json"
     },
     {
@@ -198,11 +345,18 @@
       "author": "Marice",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA69420",
+      "homebrew_id": "PPSA69420",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "01.000.000",
-      "homepage": "p5enc:v1:mv3_6PVTlZtLUzJGSaerKYjF9kBhNBPQMbVj3MCI34NUDx94utXgGYXJKlXdrRQwel9Zy-oBuwT5KxIAEZBOZu1yaA",
+      "homepage": "p5enc:v1:H8gXyUxRBphFqN8emAsuRm51W6vjrmOAOf376IXLVjFNcIJ-Pa_wQ0p4hnEJJajW9SuEhmsiRdDbiE8lTRfRjOI9VA",
+      "sha256": "49a5c6d7bbb08f5a1539feb65b7fd2b537b6d7b304bdd3eed1c923e4ccbec8fd",
       "path": "homebrew/hb-ppsa69420.json"
     },
     {
@@ -213,11 +367,18 @@
       "author": "LoZazaMastro",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA74126",
+      "homebrew_id": "PPSA74126",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "0.5.6",
-      "homepage": "p5enc:v1:9vVVqAxCBskzzcWr5iOKaHVibhrpcL5STX9PeGp9HwFVvl-ANDdvm2gaX5mWqS59tnB40seUmWDTP4FHU549imEy6xkT88m2",
+      "homepage": "p5enc:v1:qyMbpGa_hHAvOpD77JfT6qq8h8d6lsaQ6stnvA24oPZcPCkxukZVxmJlpKTKOCPothpjkW1SfbZW5UhuIOokWw77-KOYUsW_",
+      "sha256": "b7be8ee7ab57dcde02635bd1f811ecb8518c861b6cba2c0cc0a87a7e03f9f78a",
       "path": "homebrew/hb-ppsa74126.json"
     },
     {
@@ -229,9 +390,15 @@
       "version": 1,
       "comingSoon": true,
       "console_type": "ps5",
+      "title_id": "PPSA76677",
+      "homebrew_id": "PPSA76677",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [],
       "size": 0,
-      "homepage": "p5enc:v1:uy54xwj8PV4k1IPN1n4OTZyaoXM6fjT-GDm11LswRzJlRo1vUuaoGuHUnV8LKgtsmiOcVbmVuh2FCV38S84h1A",
+      "homepage": "p5enc:v1:9xHF19EwtTdM9q5Rfclqztpmf7ro5Xu9k2W5tzquKw134iPpki-1Zm4eCgJdZAMzMf95RF7AaUQScb6-86iX_Q",
       "path": "homebrew/hb-ppsa76677.json"
     },
     {
@@ -242,11 +409,18 @@
       "author": "Argyris Vazaios",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA77711",
+      "homebrew_id": "PPSA77711",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "ffpfsc"
       ],
       "app_version": "1.0",
-      "homepage": "p5enc:v1:kbO57M1jnRDtnqmuA2eWfJNjhP-ZVgUiL4rYOreJxmfv27qz1_o-OVB9Hq3TKZlDFlHpdwcS-qZPKJwcaxERM0gnzaMY0mTdgVQpVAwgL95D",
+      "homepage": "p5enc:v1:Q3Wp9ULAoREZb5iSd-yHQC9yrDJdVOOTMEP8PpZYdVgQa8kQYTeHnOgTfJxClyx11gza44zzRnwyCahR2_OkE8K1dBPg-JQ7eFddj-T2ULXq",
+      "sha256": "7054e2022b73bca6d6fb0dbe807eadb006af07985aca0e0c770fd747c6c244a0",
       "path": "homebrew/hb-ppsa77711.json"
     },
     {
@@ -257,11 +431,18 @@
       "author": "Khalifa Al-Khatri",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA92280",
+      "homebrew_id": "PPSA92280",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "0.5.0",
-      "homepage": "p5enc:v1:ieYniktgYMOjlRdGOZTasySMFyVTO79_d2_l8Rv9L6d6TBut-ESZCUydAubEbHyUtSrUwcmcZd5nTJ7bXPdLaDz2ms8",
+      "homepage": "p5enc:v1:nle79ewVunIRcJLj98sBB_xW8mqKqYIh71tpzyPJ7rZLtOeVMJ_aiN4BOZjbh99ZY5OUX77LY98LQntXR_2Uk3-jFyU",
+      "sha256": "80b14507838cd835fca794a493cde6b4cf0e7ca923afafaa1bc37c08f8fca6ec",
       "path": "homebrew/hb-ppsa92280.json"
     },
     {
@@ -272,11 +453,18 @@
       "author": "SynoPiia",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA97510",
+      "homebrew_id": "PPSA97510",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "2.2.0",
-      "homepage": "p5enc:v1:wr_URq-JmBI4Ge3f1naVCDz7SG-064KGHq4l05BujOzLRXd3dL7oi7ZBnUD0MQHGZukSiKIBnLd09LqnKA",
+      "homepage": "p5enc:v1:fK9oHd4FGjlyQqail-A2hU5rZNQaV-V4Z89QZQYvp6Zb2QiuDkhwsJ8oKdeKhSI3RR8fTAB3vQSIBsI3hg",
+      "sha256": "8904a734f99ecd837071f78167214cb2fa867870936afe996f6f3c95f7b4af60",
       "path": "homebrew/hb-ppsa97510.json"
     },
     {
@@ -287,11 +475,18 @@
       "author": "Shabbypenguin",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA98001",
+      "homebrew_id": "PPSA98001",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "1.0.1",
-      "homepage": "p5enc:v1:mLauQldLYaQ1KBSD2Zs_ZMhsJBnol61VfZIR5l9pmu7exR4zPO1Z4p2opvOH0-yZ4vuciaBQqOEqZx57rV9nxdO-zHx_SfziZlofnxc",
+      "homepage": "p5enc:v1:xjfF62vKK2iyJZtJ0_zoWFyu9RFwr5YDLQncJK-_Pb2TSm9vvYRD7hbAaxrJPFP6Iqpen-1bcFnLdmx-QZRkfricLu3ZYFh9-FK1Mdk",
+      "sha256": "1c4ce867d890b797a87630042e4cd0c4371eb27ad0bb9dc6171c2fe42020a527",
       "path": "homebrew/hb-ppsa98001.json"
     },
     {
@@ -302,11 +497,18 @@
       "author": "AngelXex",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA98510",
+      "homebrew_id": "PPSA98510",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "1.0.4",
-      "homepage": "p5enc:v1:8FxRFe9HaCoXrqPu2PNAaYSYXVKiuHhfirc7WFL9NNNflrVmXjjyfVT9xTMTHTxDyGOtqNm1PopXXdedcQPUgVlHb3uz",
+      "homepage": "p5enc:v1:13yyf3-j4WkA83ynuoHPIHCKgdhIPBAgNPtyzPCrPgdo8QdcZ4uHuTRZbtQTNLb6ajamH_b0owWfr0kQvSzLSRAglkU4",
+      "sha256": "16b2caf318a4abe3a49f465d5efb12421ab71a89ed0e95aeaa4b1f210f052eb2",
       "path": "homebrew/hb-ppsa98510.json"
     },
     {
@@ -317,11 +519,18 @@
       "author": "BlackBearReloaded",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99000",
+      "homebrew_id": "PPSA99000",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "1.000.050",
-      "homepage": "p5enc:v1:I2D3803m1O-HsKtbsjclkD_oVCsHddAZG8znrJvDTYIr_Nu3BAKyEQRYE_tcreMScj0DnKjTLaOqdRj2UvXj4jMWd6s9aeFgbtzwPFlK",
+      "homepage": "p5enc:v1:0RNhd6nYRyQIucr8mfAf5oJGm5-UICBqJ91DYAwN4RnaJbLX8nIv4emCg9S6xxaeuXyZNtMYKEoCnrUNUV4NkF73gavFmOqdt64wR2NW",
+      "sha256": "acea9b0fac84c86ace96ee17c4d6f54522b681ba08d9dd72e6d9cd661e7cc500",
       "path": "homebrew/hb-ppsa99000.json"
     },
     {
@@ -332,11 +541,18 @@
       "author": "BlackBearReloaded",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99001",
+      "homebrew_id": "PPSA99001",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "01.000.010",
-      "homepage": "p5enc:v1:fp36EyvVzgDOgjEhPtA8B_RxZr2odZ0jLIIIc_KyDy4nllDJTwUeVbYBuvbXZM5kj5dCwelgsiMth6nLh7J9xUziAc1KSc20f6imLKkM",
+      "homepage": "p5enc:v1:dUSYcshQWNnvDoGEK_ftG4y9kQfVjap6scw60VXuFWSlhh-mW3rTSmO57Skr0YveLYkU6B2SVucie2PniJZHGMXSNVEsjxeBJZDmmcLO",
+      "sha256": "413011fcaf2cee3b1ce796388f3c9b13d3a0ac2e1a1a2b5bc5bba1adcd0fc020",
       "path": "homebrew/hb-ppsa99001.json"
     },
     {
@@ -347,11 +563,18 @@
       "author": "BlackBearReloaded",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99002",
+      "homebrew_id": "PPSA99002",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "01.000.090",
-      "homepage": "p5enc:v1:3nkEMrctWs9DwUGv_Om1MFS5J0YhNuUA83ZYFljHE9_PWY1_w4gBft7J7rNHRBOFjOF2JITlZa1DBAljnRWGOpuxKJtaCfaAadjMvXNn",
+      "homepage": "p5enc:v1:TeOBjtOZeFC5S3zT4dvQzofqsxgqU89k23EZjXWpOCt3ClwhFiThVyjZ0lhoILJQPZorCfufxuNaniRSpijYEtac6TfAbZE_JyCvAn7e",
+      "sha256": "5c6be91f0f2a432949748bd3d73e8514f9fd18a97e25cf7ff10665feb361ec7c",
       "path": "homebrew/hb-ppsa99002.json"
     },
     {
@@ -362,11 +585,18 @@
       "author": "BlackBearReloaded",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99003",
+      "homebrew_id": "PPSA99003",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "01.000.030",
-      "homepage": "p5enc:v1:LZl_8lASE2gQb7oMMfwVl01HCnAQp_tPhaC90l5Hs9tlzU0smvyA9s0aU41wmkY5FxcQTGsoZoE3HgDsJLoO6A8AIcTFjcyCu2dt",
+      "homepage": "p5enc:v1:QWok3Kg2bdQq6lSqUJmL6kjbMHw3vn8LAVfDSYjF9HcCnT1ywmk7PR0-m-ODBLwo7nrNwugMniRTwI1_tjhn133kjP3nofiir61b",
+      "sha256": "a2fa4b370c228cbcbef176cb4582dde4d2d9dfb36824b86f0b6dbeb74323b106",
       "path": "homebrew/hb-ppsa99003.json"
     },
     {
@@ -377,11 +607,18 @@
       "author": "BlackBearReloaded",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99004",
+      "homebrew_id": "PPSA99004",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "01.000.000",
-      "homepage": "p5enc:v1:OlmK7Wfa8_4TD4zlaRveHbR5uOMBOV-TAMMI31rgIErpmCzEiUqUMn1lP25ZP5b4pR8M9M75O3ES4sOX6lfQE34wL5HVEI54zeP5",
+      "homepage": "p5enc:v1:z279iuA2bHMcYcoP3LGgJ-lW5fiGQTujVJOlPVwjEqwLxFESWSpKcbJnSShuoL8a_gtE58oXTIIqSWAEDuCQOXOdXOZCuNMK0MjW",
+      "sha256": "19c2bacebf6fb1587b32d458fb5af2fb472d9f3844085993b0f1a30669dc0c69",
       "path": "homebrew/hb-ppsa99004.json"
     },
     {
@@ -392,11 +629,18 @@
       "author": "BlackBearReloaded",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99005",
+      "homebrew_id": "PPSA99005",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "1.0.1",
-      "homepage": "p5enc:v1:xN606AxkAyLV_Wk-R4uCQjg3SfVQKOouIlXHZWmYO4BOWqbl8QZOeZBX2PDPa_3ZgM8QVKZ30lYn0G1sAK6XbiaLzKH7oJu3y0OE",
+      "homepage": "p5enc:v1:0Myle8slMsBoBQ95K5ws8mCwhvUQD4Za1Ledc1xZ85yxvvYY0XUFntTZGeXUh7swqfHZ_QBGVeeUGyBSBkMR5mqqqhWdvfub_sEg",
+      "sha256": "d16eb7f779d382d21e7f3374a3871e54cce3dea150a9e7de1603a9011833c9f9",
       "path": "homebrew/hb-ppsa99005.json"
     },
     {
@@ -407,11 +651,18 @@
       "author": "BlackBearReloaded",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99006",
+      "homebrew_id": "PPSA99006",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "01.000.010",
-      "homepage": "p5enc:v1:q5VkAJMScJ8mzQMHDAe5BQ56foZu_4ER7w3GaHSbZr4r9DgnTp-S10NbUlngojyp6IbzwimTZpEaz2_vB3tnCW3MZuDZzDO1YfzTVfrc5C0",
+      "homepage": "p5enc:v1:NGwGvDgvUzjNKzBWxEQP-71-YvTCckSX1puI6_10TFcMSRWOj_H6FBGWwSgp-Ag4toQZuhMciurx9Jn9lQ6g7YfeLm-dVFXt_noEMVWjDQI",
+      "sha256": "9c7c7b57a885b1ecbd694ee32f7f68847ae909d99600b4c6a73c06605affd313",
       "path": "homebrew/hb-ppsa99006.json"
     },
     {
@@ -422,11 +673,18 @@
       "author": "BlackBearReloaded",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99007",
+      "homebrew_id": "PPSA99007",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "0.2.0-alpha.1",
-      "homepage": "p5enc:v1:r5hOA-6BHr-86atIplr8YkxOn_Q6nU3gZlJt_cmP3f0dPlE5e_bkGbsaa2UJONJmH76AbaHOsA1-kqehaGLrj2S0NAYGa0l6onhwOgQY8sL2Qg",
+      "homepage": "p5enc:v1:sLJXnHVKVO8yAPEQCv14MDMh53hkM9Wanu_I_vXty3x5jEZD2XlkB81wHFWcgCSafpi0HavQzFxWQGeoOqhmGU-Sd6eEC7spWHdmDuJ-iYLOpw",
+      "sha256": "4fa5da07498fe64ffc67229eed2347e0ddffd5073f1fea248ba5e69307229a70",
       "path": "homebrew/hb-ppsa99007.json"
     },
     {
@@ -437,11 +695,18 @@
       "author": "BlackBearReloaded",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99008",
+      "homebrew_id": "PPSA99008",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "1.000.090",
-      "homepage": "p5enc:v1:9Hn3Fu6HXCaYbaeIR48iUu6ERxLNTP1pYhQfnSz2e5P-Xce6GDvjnz26-XTWpoxyYKxxuXDe2MpR2DzKojDZMetBRrWO203HgiWC-QQ",
+      "homepage": "p5enc:v1:z6b1AOYApIy68haD5LR8pdqFs9kJney77-nievpW79EPDoOarb6dJ81W5wBcjv1GW7W-nbmNRza-vCmtMG7FckrtiuBVfbZ4fDEP19g",
+      "sha256": "3ea843a90df9c8d0b2aeaf25406fe807328f294cd18cf586e692550ad85ba145",
       "path": "homebrew/hb-ppsa99008.json"
     },
     {
@@ -452,11 +717,18 @@
       "author": "BlackBearReloaded",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99009",
+      "homebrew_id": "PPSA99009",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "01.000.000",
-      "homepage": "p5enc:v1:YmBzPGvGEpAKNytYptLmSdrmmiUNUSsQbN8JRLV2hwHGfRAI1wOBif0TbmpUurZfQ8UN3sWe9mTGmAH0SmBZZCnXy0fS2wNK1pc-f4qnQMA",
+      "homepage": "p5enc:v1:_3rlixjTHnAfRTl-V3P9WciINexAVal8jE-V_yaN7IEkDNdJo28m4-IoT8N6oBX6hMlUjJ3E7eyLzh46yNMJoV9cdrdvK25lRMumMp-tYUc",
+      "sha256": "37d4cd3021dffb43a951ce3d888051403c6a099a258bbf0c785f51203c6ef8bb",
       "path": "homebrew/hb-ppsa99009.json"
     },
     {
@@ -467,11 +739,18 @@
       "author": "Mihawk",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99010",
+      "homebrew_id": "PPSA99010",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "1.0",
-      "homepage": "p5enc:v1:2ABeJ5I-xH-fmnHDg9fr6SIk-PpRDSKyM4cgvDwdL7Vx5JoAC3vZESUSpNkXEjUKu9hTsgihlZZ7Mboen9YPKRNLEqc",
+      "homepage": "p5enc:v1:zRnQVRDeoS7gjEC1lLOEQcvH8D9TvC73sXG0LuMrUythjcFtVmd7f5IbBuWceHRmSv0if86g_vulr0XtGF7sybY4AU4",
+      "sha256": "aeabf17512eada3e96c18fb2d842b7e077ffea2fbb65caf93276cc0b2797b0e6",
       "path": "homebrew/hb-ppsa99010.json"
     },
     {
@@ -482,11 +761,18 @@
       "author": "BlackBearReloaded",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99011",
+      "homebrew_id": "PPSA99011",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "01.000.010",
-      "homepage": "p5enc:v1:0XMOKg7VAuzG2qLSyZoRpONkhQRcw6AL9Y7efCfwNliuMc0dAjCL50qWX6PcE1O-GwLGk5tHfJrFH_X5hPhY7USHRYAMYGJ-bw",
+      "homepage": "p5enc:v1:3hUCUU_Lh47wqiuosgpqoOc1cGLf_W8RVJHjDQ-34Ghn_cOAyNv2QRkCPnLxvQlei6H08hbcio3kcG7MQ5BKlVTrkOFwkV8jPg",
+      "sha256": "4fd35889c6b07c2d4736c91a7ca5c92062ab3498a71264e9f9b7afbb39d3e223",
       "path": "homebrew/hb-ppsa99011.json"
     },
     {
@@ -497,11 +783,18 @@
       "author": "Sain Saji",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99039",
+      "homebrew_id": "PPSA99039",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "0.11.0",
-      "homepage": "p5enc:v1:l4JH212BINv9ib6JtvBbcVqm02G3rQRkF_RmrSlNRzpZMpE4O-M4Wc1VCZfeBTXxOtq9lN9cE5CBeoq_bzrVoIkWLFguIQ",
+      "homepage": "p5enc:v1:Nxxy91ZMTkp1ibt9udtPqQBqQYt0Uo5BlO4rf2BjWt2-WS_CbnTGiOdxDORFL21-f0nEeYiXWzgkKem0EEKawuS7AXDvzA",
+      "sha256": "687c0f0f7b409807777716b8d947d7dcb48d07c218b39c0018f648e6af9b5349",
       "path": "homebrew/hb-ppsa99039.json"
     },
     {
@@ -512,11 +805,18 @@
       "author": "BlackBearReloaded",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99050",
+      "homebrew_id": "PPSA99050",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "01.000.010",
-      "homepage": "p5enc:v1:CVCzsKNKt8H4UHUPQGC_4YN4FqD4XOShhkX4Bvzi5NogFDxdKfy5vy_WON4soHGUn0k2wMh4gwTdPXbxtiS52S2tI-Gz50Girvdrv5SfrjQ",
+      "homepage": "p5enc:v1:GTJ57tk1sbQr8op3pvHXvuAiBQzM37dZGfKIwYJcFjgQxQNlt1miOwqfuxK_2nDZREcxs5WF28u3EwgXeujrgckoRNLJKXABh6dUWf3XbRA",
+      "sha256": "420a3fb50ad6451c0d63f5e9a5b6ca3e8579a9e29b63f2eb187e740ce853cdaf",
       "path": "homebrew/hb-ppsa99050.json"
     },
     {
@@ -527,11 +827,18 @@
       "author": "Portablelle",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99082",
+      "homebrew_id": "PPSA99082",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "0.0.7",
-      "homepage": "p5enc:v1:KthihC_GG05r_0NmdqGG0VR-K2XcTp6_jyOUFDDLRcbm54-RpSObvncxzSgRa0u-plMgX3mwSwEnTuXecG8Py9tVeS-x1w",
+      "homepage": "p5enc:v1:diRbxyUNZW5jWo4iuLiSdJg8v5ybHqPbt5e34F9HRX7H-ZMcSGAtCB2qj9qEyYHHODBwKa1f21mydNrLS9TaSaLpllzq5Q",
+      "sha256": "1e267e8600ad291cc856151107e1847e02d7d957bc419677e10eb3d3f9d1abc1",
       "path": "homebrew/hb-ppsa99082.json"
     },
     {
@@ -542,11 +849,18 @@
       "author": "SvenGDK",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99109",
+      "homebrew_id": "PPSA99109",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "1.0",
-      "homepage": "p5enc:v1:2MkL2rcPL3S2s0JQ-6sPfTwuQ64lxlH5Qiekg9bVEsdmJqO_ptvqrmGkiUuwrNjFkIee1zhCqymHz6RIE_MrLfsHADlY7LVg",
+      "homepage": "p5enc:v1:LG5SmadygSCKSVi-2mjl3a4wjGWSgBZ4aIFCzk0AppDrY6ApMzFAbdtLPCpHVx5m_lo7Y-jFnd60lQO_xviFlZe2W5zAsPle",
+      "sha256": "3eaee706e8aca772fce734b494e56729ddedec218597ab9baf940094a0cdfc7e",
       "path": "homebrew/hb-ppsa99109.json"
     },
     {
@@ -557,11 +871,18 @@
       "author": "SvenGDK",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99110",
+      "homebrew_id": "PPSA99110",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "1",
-      "homepage": "p5enc:v1:vQxaorNf0cMVsTExXRrT99vEQ-3De4xly71Z_nVnOokZ5Ln69pX1NtgTzmNUqei5iUxSw7Olbm6y3BZiAQPSrG4ffXyJkalcM0xE",
+      "homepage": "p5enc:v1:6zA89wXSOSHFkPiWM9JILM0ud-KyfuQHyShQk2mNBQKMfoyacSIpWzU9GdA2FJD8M7C7yT0BSTVigeEyAHK5Vwq-SNIcAr4hsUDy",
+      "sha256": "0e7c60d0e860cd0cafb939f668ccae57f53503f2c2371b4193a81ab306346d6b",
       "path": "homebrew/hb-ppsa99110.json"
     },
     {
@@ -572,11 +893,18 @@
       "author": "Mihawk",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99169",
+      "homebrew_id": "PPSA99169",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "1.0.0-beta.1",
-      "homepage": "p5enc:v1:yDtNvisZU4QikzR66rsfdJlDBfIEr_PAemgc3uEvTC9m-BS_YxMMMqaZZuXlQ7tao6HXIUs-6X0LbGyba0aY7mnSOc-atw",
+      "homepage": "p5enc:v1:9cmGbNOfyNQD1KCcxzzzk0QcUw9S3boW9TEZRJl48rsBeOkYS5tWOLwgBodOCRizLrxuUg5DNc92PCagD2zaXmzEWA8lNw",
+      "sha256": "9ba38f6608cb3b9c218135c1ba65ffe06da57e3a4a4d532fbf5aedb7663b7175",
       "path": "homebrew/hb-ppsa99169.json"
     },
     {
@@ -587,11 +915,18 @@
       "author": "Husam Osman",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99177",
+      "homebrew_id": "PPSA99177",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "1.0.0",
-      "homepage": "p5enc:v1:QYMIkmLS633KIZTNhbSwvUf1xroV1GUYmg4PEZKePz8NEfxqB_7MrJQyKYL8nhsAiFnCw7ss7XY15YokhaVO0nt-1A",
+      "homepage": "p5enc:v1:TkkralASWQCcEY32Y9GrCa2oC0BR35a8BdqIDqm2UGFzUb3KyQjJHOygAYh3JoZMt9NlcYC4o8adeTp2LBAM3yP9wA",
+      "sha256": "3bbd8f7716d6b0057393771d4bf93b4f51ba16f75cfbd2f25e44fffaadcf1534",
       "path": "homebrew/hb-ppsa99177.json"
     },
     {
@@ -602,11 +937,18 @@
       "author": "Sword",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99203",
+      "homebrew_id": "PPSA99203",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "vk-285-139",
-      "homepage": "p5enc:v1:L6sfUL1jY2a6WWxdCuQCtNVD1_3uELZjU_K8c1AYYdHLIWA7cY7UqyF86glbJswlpH3g5CaCvosSks-KMJw",
+      "homepage": "p5enc:v1:IhwwJA3uVDdBLQegCsfacssKauazXiW1Esphgt1LCVyTw0JRwr0tYSmqSaaDootfugihL27xwxVjNaIPazc",
+      "sha256": "7780c568edffe517cb282f7b33a0af1d49f9f025e122dcf2f77b841880c43046",
       "path": "homebrew/hb-ppsa99203.json"
     },
     {
@@ -617,11 +959,18 @@
       "author": "GameMaster",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99204",
+      "homebrew_id": "PPSA99204",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "1.0.0.8",
-      "homepage": "p5enc:v1:6xpOJBoGB8cTWeXWq2S8N_fpiyYNxSgPBSzkGapNRd0JHUUt1P9c2TBzPBiQJ8My9-sW_PgH1V-TNKIguee-2MgVyQ",
+      "homepage": "p5enc:v1:Eeki5m5IkL0AFfEH8H_sAY8Sc2IPwG1XddUFgxAn_7GDSvNs33-CL_AQ2jPeVV9mB7zD05H7ZMrckoY0WLbzl9Go7Q",
+      "sha256": "f1226e8db42b37cab75b4d6ec10854f85961611c238af27072e3f6961861a54e",
       "path": "homebrew/hb-ppsa99204.json"
     },
     {
@@ -632,11 +981,18 @@
       "author": "GameMaster",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99206",
+      "homebrew_id": "PPSA99206",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "releasev7",
-      "homepage": "p5enc:v1:eioX3rzNpNt-xk-1ue3Ja1xskxYB72omj95AikJminOMn4YozwHpsB5n0Fv-flgdF4NuvYHxjjzfDMSsX5gRX9O-KQ",
+      "homepage": "p5enc:v1:wJKR8G3D5mRN4fPOj8CyyT3bC9TmxJ3eo0g8kserNNUgruPF-e3UAeueqdlOoXlcF8THIkiBefRBkpFPsiZLSOHKxw",
+      "sha256": "278ff37b8efca37e6b2a25346e215571810f08e1fe4a8ecf019196478f363f42",
       "path": "homebrew/hb-ppsa99206.json"
     },
     {
@@ -647,11 +1003,18 @@
       "author": "VivaLaVent",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99420",
+      "homebrew_id": "PPSA99420",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "1.2",
-      "homepage": "p5enc:v1:gWHlr3HS8ftptdt3w8M8Em7Wejco4CVHZkdCoeWCcp_Kwgr263qYiD9cgITzGsIVqkGyeVqEp9qb58ihb7wg",
+      "homepage": "p5enc:v1:NUBkj2sXuAzA6PXaTtkGs30ogre-xHWxyJvE4qYxnCiHdYXmIVzmtextESD9B6ZKh7EggZMtgvYsZIo4xFU8",
+      "sha256": "5a9eeff4a0024a341a4924b8d283fe65b4ff94d7f5dbea446c8a677c4db157b6",
       "path": "homebrew/hb-ppsa99420.json"
     },
     {
@@ -662,11 +1025,18 @@
       "author": "02dnot",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99505",
+      "homebrew_id": "PPSA99505",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "0.5.0",
-      "homepage": "p5enc:v1:4rs_g5bfkw6jfpaQsst1MPaq3sHFfg-p-bXBHTzmatpSOISjj-PuXK7arOrYPg4n1dVXFVgE4_iMVjdU",
+      "homepage": "p5enc:v1:QCansKQJahRt8NNshy9XAS5GFuYoLHeQHA3FTkfBOIBz8KNsdoWXkImpWs3dACvhj_rLXuagrWTXzvo6",
+      "sha256": "89c2a701d5a6bba75358922d4b0d6c1c7191284d70d22ba49e6d5160c2ff9d2a",
       "path": "homebrew/hb-ppsa99505.json"
     },
     {
@@ -677,11 +1047,18 @@
       "author": "bornaradusin",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99515",
+      "homebrew_id": "PPSA99515",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "1.1.0",
-      "homepage": "p5enc:v1:rzE2v27kC82vygOfhLsfYfPP5hdyEv_2lmWZc2ApyqiqQHiI3fhODm0gu2992gur_2SH60baEEK9CjPKyCKpDl8",
+      "homepage": "p5enc:v1:G-402Uq0VW2fs3VKDHoTQybUKYs4pmDyFkL0kYBSJR1FhEjZQjHEjAbDEWQLPCKu48mqW3R7vliQLqkM1BLWroo",
+      "sha256": "9c6670d7642c3ed465183dd692f109672b981d50ac5b6d42776f76c45701b9d1",
       "path": "homebrew/hb-ppsa99515.json"
     },
     {
@@ -692,11 +1069,18 @@
       "author": "tertiumndatur",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99600",
+      "homebrew_id": "PPSA99600",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "1.0.0",
-      "homepage": "p5enc:v1:ZuguKCiV1gCpFBticN74aVFY_7x4JEoMO0N7UwvI_U6YQGKGftaKONLG-k10IqjNmFeg5cWNKMzNgSSEiXDFvxM1pkXYASmsgHjD",
+      "homepage": "p5enc:v1:jHFQXSpk6jCjM8QSzpwvxMNXNyEv5rAi9pcZv3uFjABZKPw5oz6Qk7YtKQN9lWED7jPgHxDLm3tkB6hTR1bxj_KD__BMfKCTXDHR",
+      "sha256": "fa47dd13c4ec4c8f1acf8ae41cc38f1411710b40c4853cddd65b135dc45ebb70",
       "path": "homebrew/hb-ppsa99600.json"
     },
     {
@@ -707,11 +1091,18 @@
       "author": "lowbit",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99666",
+      "homebrew_id": "PPSA99666",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "1.1.1",
-      "homepage": "p5enc:v1:5L_wG_Dhcd9eEAb8o6IKPwVDNf0RmbGF7j7ZkEKjx9Esz6XsTJ6sdbx7U81LEyEc-yLoKej5kNSY5fXIm7g",
+      "homepage": "p5enc:v1:aDwz6Kg-OOu3K_tIAclD3zwT2KmRI8Jk2yUEdIsPMAlC0ySCM8gFb76U8QyYZD97jb794AZIfYfuJeLrv58",
+      "sha256": "4d8e5b785b61696fbf1988c2d0d87c5c977734ff60b1ce11cc49134b0e711b5f",
       "path": "homebrew/hb-ppsa99666.json"
     },
     {
@@ -722,11 +1113,18 @@
       "author": "lowbit",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99728",
+      "homebrew_id": "PPSA99728",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "1.0.0",
-      "homepage": "p5enc:v1:fY7BO6tWOvhCp-psrsgzB21R1A1epXxJkazqGRcgzPxXOsYdI0J0JMYaLn5IZlgqse-_yADhE_h3UsG9mDo_lVR_",
+      "homepage": "p5enc:v1:D41RjFlHr-DPieaJPw9WQesVKGc7XmepRuN1R93nzFU176jAqa8BIpPHoI1ErYd0PhpnrZnx28_u1WS3ABkrtpKg",
+      "sha256": "f5c3d0a2168b5527a08ab2f335ab89057ab93082cde08813b6567b156fb1667e",
       "path": "homebrew/hb-ppsa99728.json"
     },
     {
@@ -737,11 +1135,18 @@
       "author": "Ruben Ripalda",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99764",
+      "homebrew_id": "PPSA99764",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "2.7",
-      "homepage": "p5enc:v1:wrbt7oCvuZC70heGYBgwp-RV5TuebF2RxGEjMEGRZ_hcsTJSHCiZm9LI7SgvAXAVNSOwQvTQY50Z3kYWzzcwZO0O5jHNdl3p3cbXX8sTjSMoDQAUjj5yMDkf",
+      "homepage": "p5enc:v1:u06iorF41XGpHzY62ou811s96J9F-wNvUj52NtH8orcnWhUFQFudheD4sM0kMWUcPtwgX0HfwGU0KzRrvXKekW73yGNZPIrfaaxXAh8OfZ2vf4W__TjSJ-Sm",
+      "sha256": "dbb895934d84a2445dc36cbcabdc0c299359aa76ddb540c8b4791da5e400891c",
       "path": "homebrew/hb-ppsa99764.json"
     },
     {
@@ -752,11 +1157,18 @@
       "author": "RafaelNGP",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99808",
+      "homebrew_id": "PPSA99808",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "0.1.2",
-      "homepage": "p5enc:v1:7_p_ovtu9axHDlbmysBHeJ8OLX7oyQH0j2p4xLpRymaxqAIvNFNBsJTAJHmvPvSnH8RChwO_XnMwVgbL5xtNywqZ",
+      "homepage": "p5enc:v1:PWkqy9uvXcZ_pJv5UjbgzXfsY7xy6ayM-uh7COclx2Br1ZXH5nOFJzseReNnu8Ce8OjqZjbjHqbpL1ceXoGN7CPF",
+      "sha256": "d76e2bd55ea3cb465da4943938bbeb575abde54fdd3ecefa09fb251f58e1382d",
       "path": "homebrew/hb-ppsa99808.json"
     },
     {
@@ -767,11 +1179,18 @@
       "author": "RafaelNGP",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99810",
+      "homebrew_id": "PPSA99810",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "0.7.0",
-      "homepage": "p5enc:v1:SXeJaGvU3Qb_-eNRRuVzPyBel2RtK07TBSyD1tpoK_75mpfuvdIshNUwiRGQAgLyg1ESzYYbbghhEJk1oQc4277Z0EVNOK3GpulQEifV",
+      "homepage": "p5enc:v1:gniN7us-wc969_aelsRE7FoCNtxG42M68tUtFJv0jhYEIQf2wGtuBKL7DJLpQxEOWfbKM3z2Jo3qrTP-5AaJLbdNRbrp_b62BsQvukiH",
+      "sha256": "94a9a61038eacfc13f1c8835ad496aa8789b272d4167fef0d481f87a439aff95",
       "path": "homebrew/hb-ppsa99810.json"
     },
     {
@@ -782,11 +1201,18 @@
       "author": "SvenGDK",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99920",
+      "homebrew_id": "PPSA99920",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "1.0",
-      "homepage": "p5enc:v1:uK2HFfDbzi-lIkfTgCn8gFJ_HETMdrtu4kcKaa0XQPflmAToZn_gCeAyWJ9J6XwHb6qIsgkGyl9AAl66ZSNWEKQ7DG-BBOE",
+      "homepage": "p5enc:v1:QZxWwXRAxjDZTRSguIEr-z8lE8Za6VN9S_T5wHNlk59bSa3JQ69PnmhPDaLVsdzCCkuG3zuo_5pAT8cEWp_7tlXjANNrhNs",
+      "sha256": "c48443aa779f682426b1ea94c669370d3ec10aeb70974f18bea7269745b90051",
       "path": "homebrew/hb-ppsa99920.json"
     },
     {
@@ -797,11 +1223,18 @@
       "author": "mpereiraesaa",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99995",
+      "homebrew_id": "PPSA99995",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "0.1.1",
-      "homepage": "p5enc:v1:6n-10-xNoD98n-YRlTB9_2Q038msAD6x2P0lKl6srsbdhsEBVhbTHhxZk1WbYRaWgjD9CRiw3Pd1RTlctB_q6iXdLHpA8Fir",
+      "homepage": "p5enc:v1:yF_75eVfLKRgWU3WfYfvYUlV9CuxgoSlIxB_pSI4rZA_We2zUYfyXa01Xs1_0mbaGUniGXfSsCjKxrpgK2VgNmNx3H0_U-YT",
+      "sha256": "fdfa016cd60979aae08040e61d70929c8759c9bf66c16001c6db8178a4d6c162",
       "path": "homebrew/hb-ppsa99995.json"
     },
     {
@@ -812,12 +1245,65 @@
       "author": "Bilawal Riaz",
       "version": 1,
       "console_type": "ps5",
+      "title_id": "PPSA99997",
+      "homebrew_id": "PPSA99997",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "zip"
       ],
       "app_version": "0.1.0-alpha.2",
-      "homepage": "p5enc:v1:3qGm4kZJPhrz6YDPawLctpqHArEVBgd1YhfjSQs9dWEnXUNaEAzjEQ-mHQDnU5TCxe5YVsgqmydIWff0qto-_sbBmb4h6JHs3_h0yrQ",
+      "homepage": "p5enc:v1:09ZduDzH3tdG26KZdDOdgSDS_TEYpdh1zva2m2Lw2i4ocbgLDFQQDDwTLxvYcpYDZJRKJSzXWcd3xdUbP7I48lZ8PO6V8AP7ijmIXNU",
+      "sha256": "48c795bb1083c9a3fa698714d1c2b23150459a93b72e9b8d1b626087d0349fb1",
       "path": "homebrew/hb-ppsa99997.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "ps4-cheats-manager",
+      "name": "PS4 Cheats Manager",
+      "description": "Manage GoldHEN cheats and game patches on PS4. Install through Remote Package Installer, then launch the app from Home.",
+      "author": "bucanero",
+      "version": 1,
+      "console_type": "ps4",
+      "icon": "p5enc:v1:xLInXOfi_GAXIg5PGrNwuFZVQhzDZbN8hM2GbKmy1W8vBdtE_bR37vVEkLeSOPAtgCyBdBltHqXnZWw",
+      "homebrew_id": "CHTM00777",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
+      "files": [
+        "pkg"
+      ],
+      "app_version": "1.2.2",
+      "size": 19202048,
+      "homepage": "p5enc:v1:PM6XUQQWLWZ4pPBRDzxwkWjkdZyg7lAu4OlX5t2kUpb0Gn_wBtu5C0G98SifWW3OPMRXtup93MQI-AVayt6VasX7RQ_RBpWy",
+      "sha256": "73f93d0c8343a0c9805768b68402dbba45c87f8bb882584e6aad503d79753b82",
+      "path": "homebrew/ps4-cheats-manager.json"
+    },
+    {
+      "kind": "homebrew",
+      "id": "ps4-webdav-client",
+      "name": "PS4 Webdav Client",
+      "description": "Browse WebDAV servers and transfer files with this PS4 homebrew client. Install through Remote Package Installer.",
+      "author": "cy33hc",
+      "version": 1,
+      "console_type": "ps4",
+      "icon": "p5enc:v1:N7-IQBOIZbB04Yc-gnNVJOvM9RZms7vQztQVdWKo7EAlzAPiqTXhKmWZJK3lX1ktvrqUy8wSYEpqn80",
+      "homebrew_id": "WDVC00001",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
+      "files": [
+        "pkg"
+      ],
+      "app_version": "1.04",
+      "size": 36044800,
+      "homepage": "p5enc:v1:VRzzUv9--qKNf97k043O98HAXd6RrBQkppjRKAl5dGQYRlD-6MqnjEmQyzFSqUI6ejs5pM71RmL_ynhbetSKKQctcjPco0s",
+      "sha256": "518182353dc6fe609bc6fc76432d13a2d7d34baa9bb839be846cdf7e058964c8",
+      "path": "homebrew/ps4-webdav-client.json"
     },
     {
       "kind": "payload",
@@ -827,10 +1313,15 @@
       "author": "ps5-payload-dev",
       "version": 1,
       "console_type": "ps5",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "elf"
       ],
       "size": 135248,
+      "sha256": "f6eb1b415ecf3340b89a56a0cb04ba5c714430085851ada13a98012b63a5a4cf",
       "path": "payloads/klogsrv-ps5.json"
     },
     {
@@ -841,10 +1332,15 @@
       "author": "EchoStretch",
       "version": 1,
       "console_type": "ps5",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "elf"
       ],
       "size": 1737080,
+      "sha256": "ab9a6cb4d3b1daf139d4d646e402b1cf569071acd64599c936d7a3a6164dc779",
       "path": "payloads/kstuff.json"
     },
     {
@@ -855,10 +1351,15 @@
       "author": "quatrixone",
       "version": 1,
       "console_type": "ps4",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "bin"
       ],
       "size": 46660,
+      "sha256": "b87ee2ada1c802b5b6a09e5e21b5d925180975b27737bcbc51b7b8d51cd73e8f",
       "path": "payloads/offact-ps4.json"
     },
     {
@@ -869,10 +1370,15 @@
       "author": "BestPig",
       "version": 1,
       "console_type": "ps5",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "elf"
       ],
       "size": 99800,
+      "sha256": "d74e4cd119b2bb1fd423f2f5b1c9a7f096b3e588c753af1ab48b983d56216a52",
       "path": "payloads/ps5-backpork.json"
     },
     {
@@ -883,10 +1389,15 @@
       "author": "quatrixone",
       "version": 1,
       "console_type": "ps4",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "bin"
       ],
       "size": 51972,
+      "sha256": "2eaf9662c8eaf407eabbb6988c169e0ea575d27c8c9bda361d27d6bf7db67913",
       "path": "payloads/rp-get-pin-ps4.json"
     },
     {
@@ -897,10 +1408,15 @@
       "author": "Gezine",
       "version": 1,
       "console_type": "ps5",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "lua"
       ],
       "size": 997,
+      "sha256": "4388b53bdb87b714735b938ebc2964a989912783cd87e1060ef607431c7ed047",
       "path": "payloads/setlogserver.json"
     },
     {
@@ -911,10 +1427,15 @@
       "author": "drakmor",
       "version": 1,
       "console_type": "ps5",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "elf"
       ],
       "size": 2437848,
+      "sha256": "2a7427e20ba7a70bd8cd01e47eb00ee7ca82db82dff3da7884f48f9c3fcbe95a",
       "path": "payloads/shadowmountplus.json"
     },
     {
@@ -925,10 +1446,15 @@
       "author": "seregonwar",
       "version": 1,
       "console_type": "ps5",
+      "owner": {
+        "github_id": 57962558,
+        "github_login": "quatrixone"
+      },
       "files": [
         "elf"
       ],
       "size": 19221056,
+      "sha256": "fc59b60aab2dce9a8bae385c106bfa174048d765c826101355f1f010a789b497",
       "path": "payloads/zftpd-ps5-zhttp-v1-6-0.json"
     }
   ]
